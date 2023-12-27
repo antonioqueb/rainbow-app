@@ -1,0 +1,73 @@
+/* Estilos generales del footer */
+.footer {
+    background-color: transparent; /* Fondo transparente para adaptarse a cualquier tema oscuro */
+    color: white; /* Color de texto para temas oscuros */
+    padding: 20px;
+    text-align: center; /* Centrar los elementos */
+}
+
+/* Logo y sección de imágenes */
+.footer__logo {
+    margin-bottom: 15px;
+}
+
+/* Navegación (Links) */
+.footer__navigation {
+    margin-bottom: 20px;
+}
+
+.footer__navigation a, /* Asegúrate de que tus enlaces sean 'a' y no 'span' */
+.footer__navigation span {
+    color: white; /* Asegurarse de que el texto sea visible en fondo oscuro */
+    text-decoration: none; /* Esto quita el subrayado */
+    margin: 0 10px;
+    cursor: pointer; /* Estilo de cursor para indicar que es un enlace */
+    display: inline-block; /* Esto permite que se apliquen las propiedades de padding y margin correctamente */
+}
+
+/* Iconos de redes sociales */
+.footer__icon {
+    color: white; /* Color de los iconos para mejorar la visibilidad */
+    margin: 0 10px;
+    transition: color 0.3s; /* Transición suave al cambiar de color */
+}
+
+/* Tamaño de los iconos ajustado para visibilidad */
+.footer__icon svg {
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Alto del icono */
+}
+
+/* Cambio de color al pasar el ratón por encima */
+.footer__icon:hover,
+.footer__icon:focus {
+    color: #c0c0c0; /* Color al pasar el ratón por encima para un efecto sutil */
+}
+
+/* Estilos para los enlaces del footer al pasar el mouse */
+.footer__rainbow1:hover { color: #ffb3ba; }
+.footer__rainbow2:hover { color: #ffdfba; }
+.footer__rainbow3:hover { color: #ffffba; }
+.footer__rainbow4:hover { color: #baffc9; }
+.footer__rainbow5:hover { color: #bae1ff; }
+.footer__rainbow6:hover { color: #ddb3ff; }
+
+
+
+/* Efecto de hover individual para cada icono */
+.footer__icon.facebook:hover { color: #ffb3ba; /* Color para Facebook */ }
+.footer__icon.instagram:hover { color: #ffdfba; /* Color para Instagram */ }
+.footer__icon.twitter:hover { color: #ffffba; /* Color para Twitter */ }
+.footer__icon.youtube:hover { color: #baffc9; /* Color para YouTube */ }
+
+
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .footer__navigation span,
+    .footer__social a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px; /* Tamaño para móviles */
+    }
+}

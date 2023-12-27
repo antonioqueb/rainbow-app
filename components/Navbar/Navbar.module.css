@@ -1,26 +1,30 @@
+/* Estilos para la barra de navegación */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  margin: 0 8vh 0 8vh;
+  margin: 0 8vh;
 }
 
+/* Estilos para la navegación */
 .navigation {
   display: flex;
   gap: 25px;
 }
 
-.navigation span {
-  text-decoration: none;
-  font-weight: bold;
+/* Aplica los estilos directamente a las etiquetas <a> dentro de .navigation */
+.navigation a {
+  text-decoration: none; /* Esto quita el subrayado de los enlaces */
   color: #fff;
   cursor: pointer;
   font-size: 1.1rem;
 }
 
+.navigation a:hover {
+  text-decoration: none; /* Asegúrate de quitar el subrayado también en hover */
+}
 
-
+/* Estilos para el hover de cada enlace con clase específica */
 .rainbow1:hover { color: #ffb3ba; } /* Rojo pastel */
 .rainbow2:hover { color: #ffdfba; } /* Naranja pastel */
 .rainbow3:hover { color: #ffffba; } /* Amarillo pastel */
