@@ -1,14 +1,11 @@
-import Image from 'next/image'
 import styles from './page.module.css'
+import Navbar from '../components/Navbar/Navbar'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Rainbow is a app from mimi
-        </p>
-      </div>
+      <Navbar />
+      
     </main>
   )
 }

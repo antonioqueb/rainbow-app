@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0 8vh 0 8vh;
+}
+
+.navigation {
+  display: flex;
+  gap: 25px;
+}
+
+.navigation span {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+
+
+.rainbow1:hover { color: #ffb3ba; } /* Rojo pastel */
+.rainbow2:hover { color: #ffdfba; } /* Naranja pastel */
+.rainbow3:hover { color: #ffffba; } /* Amarillo pastel */
+.rainbow4:hover { color: #baffc9; } /* Verde pastel */
+.rainbow5:hover { color: #bae1ff; } /* Azul pastel */
+.rainbow6:hover { color: #ddb3ff; } /* Índigo pastel */
+.rainbow7:hover { color: #ffbacd; } /* Violeta pastel */
+.rainbow8:hover { color: #ffcaff; } /* Rosa pastel */
