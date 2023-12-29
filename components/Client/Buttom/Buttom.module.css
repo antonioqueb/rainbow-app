@@ -1,0 +1,31 @@
+/* Boton.module.css */
+.boton {
+    /* Estilos base para el bloque 'boton' */
+    padding: 3px 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    gap: 10px;
+    height: 2.8vh;
+    font-size: 1rem;
+    border-radius: 13px;
+  }
+  
+  .boton--large {
+    /* Modificador para un botón grande */
+    font-size: 20px;
+  }
+  
+  .boton__text {
+    /* Elemento 'text' dentro del bloque 'boton' */
+    margin-right: 10px;
+  }
+  
+  .boton__icon {
+    /* Elemento 'icon' dentro del bloque 'boton' */
+    width: 20px;
+    height: 20px;
+  }
+
+ 

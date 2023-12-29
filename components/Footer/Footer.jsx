@@ -7,7 +7,7 @@ import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free
 const FooterComponent = () => (
   <footer className={style.footer}>
     <div className={style.footer__logo}>
-      <Image src="/pride.png" alt="Logo" width={100} height={100} />
+      <h1 className={style.logo_text}>ARK PROJECT</h1>
     </div>
     <div className={style.footer__navigation}>
       <Link href="/nosotros" passHref><span className={style.footer__rainbow1}>Nosotros</span></Link>

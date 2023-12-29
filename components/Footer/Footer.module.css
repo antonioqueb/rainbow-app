@@ -6,11 +6,13 @@
     text-align: center; /* Centrar los elementos */
 }
 
-/* Logo y sección de imágenes */
-.footer__logo {
-    margin-bottom: 15px;
-}
 
+.logo_text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.7rem 1rem;
+  }
 /* Navegación (Links) */
 .footer__navigation {
     margin-bottom: 20px;

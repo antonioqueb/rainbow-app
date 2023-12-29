@@ -9,6 +9,7 @@
 .hero_text {
     color: aliceblue;
     font-size: 1.3rem;
+    max-width: 95vh;
 }
 
 .hero_image {
