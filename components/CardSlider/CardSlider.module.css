@@ -1,0 +1,49 @@
+/* CardSlider.module.css */
+
+.cardSlider {
+  margin-top: 10px;
+  position: relative; /* Esto permite posicionar absolutamente los botones dentro */
+  display: flex;
+  justify-content: center; /* Centra la pista del deslizador */
+  
+}
+
+/* CardSlider.module.css */
+
+.cardSlider__track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  /* Other styles... */
+}
+
+
+.cardSlider__slide {
+  flex: 0 0 calc(100% / 6); /* Ajusta según el ancho deseado */
+  margin: 0 10px; /* Ajusta según el espacio deseado entre slides */
+  min-width: 30vh; /* Ajusta según el ancho mínimo deseado */
+  min-height: 20vh; /* Ajusta según el alto mínimo deseado */
+  
+
+  /* Otros estilos para tus slides */
+}
+
+/* Estilos para los botones de navegación */
+.cardSlider button {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajuste fino de la posición vertical */
+  background-color: transparent; /* O el color de fondo que prefieras */
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.cardSlider button[aria-label="Previous slide"] {
+  left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+.cardSlider button[aria-label="Next slide"] {
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+}

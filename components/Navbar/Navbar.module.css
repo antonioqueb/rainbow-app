@@ -7,8 +7,14 @@
 }
 
 /* Secciones de la navbar: Elementos del Bloque navbar */
-/* Se establece flex: 1 para que cada sección tenga el mismo ancho */
-.navbar__section--start, .navbar__section--center{
+.navbar__section--start{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__section--center {
   flex: 1;
   display: flex;
   align-items: center;
@@ -19,18 +25,6 @@
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-
-}
-
-
-/* Estilos para los iconos en la navbar */
-.navbar__icon {
-  color: #ffffff; /* Establece el color a blanco */
-  cursor: pointer; /* Establece el cursor a pointer */
-  margin: 0 0 0 1vh; /* Establece un margen de 10px */
-  font-size: 1.5rem; /* Aumenta el tamaño de los iconos a 24px (puedes ajustar este valor según tus preferencias) */
 }
 
 /* Estilo del texto del logo: Modificador del Elemento navbar__logo */
@@ -39,27 +33,28 @@
   font-size: 28px;
   color: #ffffff;
   cursor: pointer;
-
 }
 
 /* Estilos para la navegación: Elemento del Bloque navbar */
 .navbar__navigation {
   display: flex;
   align-items: center;
-
+  justify-content: space-between;
 }
+
 .navbar__logo, .navbar__navigation {
   width: 50%;
 }
+
 /* Ítems de navegación: Modificador del Elemento navbar__navigation */
 .navbar__item {
-  margin: 0 15px;
+  flex: 1;
+  margin: 0 10px;
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
 
 /* Estilos para el buscador: Elemento del Bloque navbar */
 .navbar__finder {
@@ -76,11 +71,9 @@
   outline: none;
   background-color: transparent;
   color: #ffffff;
-  width: 25vw;
+  width: 26vw;
   box-shadow: none;
   border: none;
-
-
 }
 
 /* Botón de búsqueda: Modificador del Elemento navbar__finder */
@@ -88,47 +81,48 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 5px;
+  padding: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: none;
 }
 
-
-.navbar__buttoms {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
+/* Estilos para los iconos en la navbar */
+.navbar__icon {
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0 0 0 1vh;
+  font-size: 1.5rem;
 }
+
 /* Estilos para los íconos: Elementos del Bloque navbar */
 .navbar__cart, .navbar__user {
-  margin-left: 30px;
+  margin-left: 50px;
   color: #ffffff;
 }
 
 .navbar__icons {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 50%;
+
 }
 
-
-/* Estilos por defecto para todos los elementos de la barra de navegación */
-/* ... tus estilos actuales ... */
+.navbar__buttoms {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 
 /* Media Query para pantallas menores a 1550px */
 @media only screen and (max-width: 1550px) {
-  /* Ocultar elementos específicos y ajustar otros según sea necesario */
-  .navbar__navigation,
-  
-  .navbar__cart {
+  .navbar__navigation, .navbar__cart {
     display: none;
   }
-
-  /* Posibles ajustes adicionales para otros elementos */
   .navbar__logo-text {
     font-size: 24px;
   }
@@ -139,9 +133,6 @@
 
 /* Media Query para pantallas menores a 1200px */
 @media only screen and (max-width: 1200px) {
-  /* Ocultar más elementos y realizar ajustes adicionales */
-
-
   .navbar__logo-text {
     font-size: 22px;
   }
@@ -149,35 +140,24 @@
 
 /* Media Query para pantallas menores a 1024px */
 @media only screen and (max-width: 1024px) {
-  /* Ajustes adicionales para elementos en pantallas medianas */
   .navbar__logo-text {
     font-size: 20px;
   }
- 
 }
 
 /* Media Query para pantallas menores a 768px */
 @media only screen and (max-width: 768px) {
-  /* Ajustes para dispositivos móviles y tabletas pequeñas */
   .navbar__logo-text {
     font-size: 18px;
   }
-
-  /* Posiblemente ocultar o ajustar otros elementos */
 }
 
 /* Media Query para pantallas menores a 480px */
 @media only screen and (max-width: 480px) {
-  /* Ajustes para teléfonos móviles pequeños */
   .navbar__finder {
     display: none;
   }
   .navbar__logo-text {
     font-size: 16px;
-
   }
-
-  /* Ocultar o ajustar otros elementos según sea necesario */
 }
-
-/* Continúa agregando Media Queries para tamaños de pantalla aún más pequeños si es necesario */

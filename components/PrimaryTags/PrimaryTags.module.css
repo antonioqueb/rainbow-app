@@ -1,0 +1,46 @@
+/* Estilos para el contenedor de etiquetas */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 2vh;
+    padding: 20px;
+    background-color: #2828282b; /* Color de fondo ligero */
+    
+}
+
+/* Estilos para cada etiqueta */
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 6px 15px;
+    background-color: #ffffff; /* Color de fondo para las etiquetas */
+    color: rgb(39, 38, 38); /* Color del texto */
+    border-radius: 18px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1rem;
+    transition: background-color 0.3s; /* Transición suave para el hover */
+    width: 120px;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Cambio de color al pasar el ratón por encima */
+.tag:hover {
+    background-color: #0057b300; /* Color más oscuro al hacer hover */
+    color: #ffffff; /* Color del texto al hacer hover */
+    border: solid 1px #a1a1a1; /* Borde al hacer hover */
+}
+
+.tagLink {
+    text-decoration: none;
+}
+.tags a {
+    text-decoration: none; /* Elimina el subrayado en los enlaces dentro de .tags */
+}
+
+/* Resto de los estilos... */

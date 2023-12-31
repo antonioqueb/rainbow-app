@@ -6,8 +6,8 @@ import Footer from '../components/Footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Comunidad LGBTIQ+',
-  description: 'Comunidad LGBTIQ+',
+  title: 'ARK PROJECT',
+  description: 'Web de ARK PROJECT',
 }
 
 export default function RootLayout({ children }) {

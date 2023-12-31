@@ -13,7 +13,6 @@ const NavbarComponent = () => (
   
   <nav className={styles.navbar}>
   
-    {/* Bloque: navbar__section */}
     <section className={styles['navbar__section--start']}>
       {/* Elemento: navbar__logo */}
       <div className={styles['navbar__logo']}>

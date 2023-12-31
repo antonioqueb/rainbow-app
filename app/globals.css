@@ -11,6 +11,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 html,
@@ -19,3 +21,12 @@ body {
   overflow-x: hidden;
   background-color: #0d0d0d;
 }
+
+/* styles/global.css */
+
+/* Global styles for custom scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
