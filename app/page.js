@@ -1,14 +1,22 @@
 import styles from './page.module.css'
-import Hero from '../components/Hero/Hero'
-import Footer from '../components/Footer/Footer'
-import CardSlider from '@/components/CardSlider/CardSlider'
-import PrimaryTags from '@/components/PrimaryTags/PrimaryTags'
+import Link from 'next/link'
+
 
 export default function Home() {
   return (
+    
     <main className={styles.main}>
-      <CardSlider />
-      <PrimaryTags />
+
+      <Link href="/leer">
+       About
+      </Link>
+
+      <Link href="/escribir">
+        Contact
+      </Link>
+
+
+     
     
      </main>
   )

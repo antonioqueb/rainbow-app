@@ -5,6 +5,8 @@ import { FaShoppingCart, FaUserAlt  } from "react-icons/fa";
 import { BsSearchHeartFill } from "react-icons/bs";
 import Buttom from '../Client/Buttom/Buttom'
 import { GrMoreVertical } from "react-icons/gr";
+import { FaUserLarge } from "react-icons/fa6";
+
 
 
 
@@ -48,12 +50,15 @@ const NavbarComponent = () => (
 
     <section className={styles['navbar__section--end']}>
       <div className={styles['navbar__buttoms']}>
-        <Buttom placeholder="Iniciar sesión" />
-        
-        <Buttom placeholder="Registrarse" />
+        <Buttom placeholder="Escuchar Podcast" />
 
       </div>
       <div className={styles['navbar__icons']}>
+        <div className={styles['navbar__login']}>
+        <Link href="/login">
+          <FaUserLarge className={styles['navbar__icon']} />
+        </Link>
+      </div>
       <div className={styles['navbar__cart']}>
         <Link href="/carrito">
           <FaShoppingCart className={styles['navbar__icon']} />

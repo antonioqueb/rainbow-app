@@ -1,0 +1,14 @@
+/* Estilo para el bloque principal (Block) */
+.text {
+    font-size: 28px;
+    color: #f9f9f9;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 4.1vh;
+}
+
+/* Puedes añadir más estilos según necesites */
