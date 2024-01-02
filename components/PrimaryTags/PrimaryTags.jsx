@@ -1,37 +1,29 @@
-"use client";
-// components/PrimaryTags/PrimaryTags.jsx
-
-import React, { useEffect, useState, useContext } from 'react';
+'use client';
+import React, { useState } from 'react';
 import style from './PrimaryTags.module.css';
-import Link from 'next/link';
-import Tags from '../../data/categories.json'; // Asegúrate de que la ruta es correcta
-import { TagContext } from './TagContext'; // Asegúrate de que la ruta es correcta
+import Tags from '../../data/categories.json';
+import { useDispatch } from 'react-redux';
+import { selectCategory } from '@/store/slice'; 
 
 const PrimaryTags = () => {
-    const [tags, setTags] = useState([]);
-    const { setSelectedTag } = useContext(TagContext);
-
-    useEffect(() => {
-        setTags(Tags.categories);
-    }, []);
+    const dispatch = useDispatch();
+    const [nuevoValor, setNuevoValor] = useState('');
 
     const handleTagClick = (tag) => {
-        setSelectedTag(tag);
+        setNuevoValor(tag);
+        dispatch(selectCategory(tag));
     };
-
-    
 
     return (
         <div className={style.tags}>
-            {tags.map((tag) => (
-                <Link href={`/categoria/${tag}`} key={tag}>
-                    <div 
-                        className={style.tagLink}
-                        onClick={() => handleTagClick(tag)}
-                    >
-                        <span className={style.tag}>{tag}</span>
-                    </div>
-                </Link>
+            {Tags.map((tag) => (
+                <button 
+                    className={style.tag}
+                    onClick={() => handleTagClick(tag)}
+                    key={tag}
+                >
+                    {tag}
+                </button>
             ))}
         </div>
     );

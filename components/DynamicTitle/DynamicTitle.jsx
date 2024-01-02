@@ -3,19 +3,16 @@
 // components/DynamicTitle/DynamicTitle.jsx
 import React, { useEffect } from 'react';
 import style from './DynamicTitle.module.css';
+import { useSelector } from 'react-redux';
 
-const DynamicTitle = ({ currentPath = "Todo" }) => { // Valor predeterminado para currentPath
-    useEffect(() => {
-        // Asegúrate de que currentPath no sea undefined
-        if (currentPath) {
-            const pageTitle = currentPath.charAt(0).toUpperCase() + currentPath.slice(1);
-            document.title = pageTitle;
-        }
-    }, [currentPath]);
+const DynamicTitle = () => {
+
+    const Category = useSelector((state) =>state.selectCategory.value);
+
 
     return (
         <div className={style.title}>
-            <h1 className={style.text}>{currentPath}</h1>
+            <h1 className={style.text}>{Category}</h1>
         </div>
     );
 };

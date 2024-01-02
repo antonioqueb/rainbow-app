@@ -9,7 +9,7 @@ export default function EscribirPage() {
     const dispatch = useDispatch();
     const modificar = () => {
         dispatch(selectCategory(nuevoValor))
-    }
+    } 
     return (
      <>
      <h1>Escribir: </h1>

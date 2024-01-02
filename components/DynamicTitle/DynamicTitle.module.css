@@ -1,7 +1,7 @@
 /* Estilo para el bloque principal (Block) */
 .text {
-    font-size: 28px;
-    color: #f9f9f9;
+    font-size: 1.2rem;
+    color: #ffffff;
 }
 
 .title {
@@ -11,4 +11,3 @@
     margin: 0 4.1vh;
 }
 
-/* Puedes añadir más estilos según necesites */
