@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useState } from 'react';
 import style from './PrimaryTags.module.css';
 import Tags from '../../data/categories.json';
@@ -15,16 +16,18 @@ const PrimaryTags = () => {
     };
 
     return (
-        <div className={style.tags}>
-            {Tags.map((tag) => (
-                <button 
-                    className={style.tag}
-                    onClick={() => handleTagClick(tag)}
-                    key={tag}
-                >
-                    {tag}
-                </button>
-            ))}
+        <div className={style.tagsContainer}> {/* Contenedor agregado para el deslizador */}
+            <div className={style.tags}> {/* Deslizador de etiquetas */}
+                {Tags.categories.map((tag) => (
+                    <button 
+                        className={style.tag}
+                        onClick={() => handleTagClick(tag)}
+                        key={tag}
+                    >
+                        {tag}
+                    </button>
+                ))}
+            </div>
         </div>
     );
 };

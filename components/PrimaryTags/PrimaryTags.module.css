@@ -1,46 +1,50 @@
 /* Estilos para el contenedor de etiquetas */
+
+.tagsContainer {
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita el salto de línea entre elementos */
+    padding: 10px;
+    margin: 1vh 0;
+}
+
+/* Estilos para el contenedor de etiquetas */
 .tags {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 2vh;
-    padding: 20px;
-    background-color: #2828282b; /* Color de fondo ligero */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Para desplazamiento táctil suave en iOS */
+    margin: 1vh 2vh;
+    gap: 10px; /* Añade espacio entre las etiquetas */
+   
     
 }
 
 /* Estilos para cada etiqueta */
 .tag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 0 0 auto; /* Evita que las etiquetas se estiren o encojan */
     margin: 5px;
     padding: 6px 15px;
-    background-color: #ffffff; /* Color de fondo para las etiquetas */
-    color: rgb(39, 38, 38); /* Color del texto */
-    border-radius: 18px; /* Bordes redondeados */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 1rem;
-    transition: background-color 0.3s; /* Transición suave para el hover */
-    width: 120px;
-    height: 40px;
-    box-sizing: border-box;
-    text-align: center;
+    border-radius: 8px;
+    /* Resto de tus estilos... */
 }
 
-/* Cambio de color al pasar el ratón por encima */
-.tag:hover {
-    background-color: #0057b300; /* Color más oscuro al hacer hover */
-    color: #ffffff; /* Color del texto al hacer hover */
-    border: solid 1px #a1a1a1; /* Borde al hacer hover */
+/* Eliminar flex-wrap para que las etiquetas no se envuelvan en una nueva línea */
+.tags {
+    flex-wrap: nowrap;
 }
 
-.tagLink {
-    text-decoration: none;
-}
-.tags a {
-    text-decoration: none; /* Elimina el subrayado en los enlaces dentro de .tags */
+/* Asegurarse de que el contenedor de etiquetas se ajuste al tamaño de la pantalla */
+@media screen and (max-width: 768px) {
+    .tags {
+        justify-content: flex-start; /* Alinea las etiquetas al principio */
+    }
 }
 
-/* Resto de los estilos... */
+/* Ajustes adicionales para pantallas más pequeñas si es necesario */
+@media screen and (max-width: 480px) {
+    .tag {
+        font-size: 0.9rem;
+        padding: 15px 12px; /* Ajusta el padding para que sea más adecuado para el tamaño */
+    }
+}
+
+/* Otras media queries si son necesarias... */

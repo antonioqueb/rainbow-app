@@ -4,28 +4,44 @@
     "title": "Pintor Innovador",
     "description": "Alex Martínez, cuyas pinturas vibrantes están transformando el arte contemporáneo.",
     "imageUrl": "/Trend/1.jpeg",
-    "category": "Pintura"
+    "category": "Pintura",
+    "profileUrl": "/artist/artist.jpeg",
+    "user": "@alexmartinez",
+    "likes": "100",
+    "views": "200"
   },
   {
     "id": "2",
     "title": "Escultora Visionaria",
     "description": "Sofía Rivera y sus esculturas abstractas que exploran la identidad.",
     "imageUrl": "/Trend/2.jpeg",
-    "category": "Escultura"
+    "category": "Escultura",
+    "profileUrl": "/artist/artist.jpeg",
+    "user": "@alexmartinez",
+    "likes": "100",
+    "views": "200"
   },
   {
     "id": "3",
     "title": "Icono Musical",
     "description": "Luis Gómez, un músico que mezcla géneros para un sonido único.",
     "imageUrl": "/Trend/3.jpeg",
-    "category": "Música"
+    "category": "Música",
+    "profileUrl": "/artist/artist.jpeg",
+    "user": "@alexmartinez",
+    "likes": "100",
+    "views": "200"
   },
   {
     "id": "4",
     "title": "Fotógrafa Revelación",
     "description": "Camila López, cuyas fotografías capturan la belleza de la diversidad.",
     "imageUrl": "/Trend/4.jpeg",
-    "category": "Fotografía"
+    "category": "Fotografía",
+    "profileUrl": "/artist/artist.jpeg",
+    "user": "@alexmartinez",
+    "likes": "100",
+    "views": "200"
   },
  
   {
@@ -33,21 +49,33 @@
     "title": "Narrador de Historias",
     "description": "Gabriela Hernández, escritora que da voz a la comunidad LGBTQ+ en sus novelas.",
     "imageUrl": "/Trend/5.jpeg",
-    "category": "Literatura"
+    "category": "Literatura",
+    "profileUrl": "/artist/artist.jpeg",
+    "user": "@alexmartinez",
+    "likes": "100",
+    "views": "200"
   },
   {
     "id": "6",
     "title": "Diseñador de Moda",
     "description": "Isabella García, cuyas colecciones de moda desafían las normas de género.",
     "imageUrl": "/Trend/6.jpeg",
-    "category": "Moda"
+    "category": "Moda",
+    "profileUrl": "/artist/artist.jpeg",
+    "user": "@alexmartinez",
+    "likes": "100",
+    "views": "200"
   },
   {
     "id": "7",
     "title": "Director de Cine",
     "description": "Carlos Ruiz, cineasta que destaca por sus películas sobre temas LGBTQ+.",
     "imageUrl": "/Trend/7.jpeg",
-    "category": "Cine"
+    "category": "Cine",
+    "profileUrl": "/artist/artist.jpeg",
+    "user": "@alexmartinez",
+    "likes": "100",
+    "views": "200"
   },
   
   {
@@ -55,6 +83,10 @@
     "title": "Estrella del Drag",
     "description": "Diego Sánchez, drag queen conocido por sus actuaciones únicas y su activismo.",
     "imageUrl": "/Trend/8.jpeg",
-    "category": "Drag"
+    "category": "Drag",
+    "profileUrl": "/artist/artist.jpeg",
+    "user": "@alexmartinez",
+    "likes": "100",
+    "views": "200"
   }
 ]

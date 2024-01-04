@@ -1,0 +1,139 @@
+.slide {
+    /* Tus estilos existentes */
+    min-height: 100%;
+    border-radius: 14px;
+    padding: 0px 1px;
+  }
+
+  .profileInfo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: center;
+    z-index: 5;
+    
+  }
+  .profileImageWrapper {
+    object-fit: center;
+
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    opacity: 1; /* Hace que profile sea inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    z-index: 15;
+    
+  }
+
+
+
+  .profileImage {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 10px 10px;
+    font-size: 0.9rem;
+  }
+  .userName {
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 600
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
+
+.views{
+  display: flex;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 5;
+  border-radius: 14px;
+  background-color: #1a1a1aac;
+  margin: 10px;
+  align-items: center;
+}
+.likes{
+  display: flex;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 5;
+  border-radius: 14px;
+  background-color: #1a1a1aac;
+  margin: 10px;
+  align-items: center;
+}
+
+.viewsIcon, .likesIcon {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  margin: 1px 0;
+  justify-content: center;
+  z-index: 5;
+}
+
+
+  
+  .category {
+    position: absolute;
+    top: 10px; /* Ajusta según necesidades */
+    left: 1.35rem; /* Ajusta según necesidades */
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 5;
+    border-radius: 14px;
+    background-color: #1a1a1aac;
+  }
+  
+  
+  .slide__content {
+    /* Tus estilos existentes */
+    backdrop-filter: blur(80px);
+    padding: 0px 1.7rem;
+  
+    
+  }
+  
+  .title{
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 1.4rem;
+  }
+  
+  .category {
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: #919090;
+    margin: 0 0 15px 0;
+    font-weight: 600
+  }
+  /* Tus media queries y otros estilos */
+  

@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google';
 import './globals.css'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
@@ -9,7 +9,14 @@ import Providers from '@/store/provider'
 
 
 
-const inter = Inter({ subsets: ['latin'] })
+
+const roboto = Roboto({
+  display: 'swap',
+  family: 'Roboto',
+  strategy: 'selfHosted',
+  subsets: ['latin'],
+  weight: ['400']  
+});
 
 export const metadata = {
   title: 'ARK PROJECT',
@@ -20,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <Providers>
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Navbar />
       <CardSlider />
       <PrimaryTags />

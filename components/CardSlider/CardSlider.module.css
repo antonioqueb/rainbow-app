@@ -1,7 +1,7 @@
 /* CardSlider.module.css */
 
 .cardSlider {
-  margin-top: 10px;
+  margin-top: 20px;
   position: relative; /* Esto permite posicionar absolutamente los botones dentro */
   display: flex;
   justify-content: center; /* Centra la pista del deslizador */
@@ -41,9 +41,9 @@
 }
 
 .cardSlider button[aria-label="Previous slide"] {
-  left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+  left: 2.1rem; /* Ajusta la distancia desde el borde izquierdo */
 }
 
 .cardSlider button[aria-label="Next slide"] {
-  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  right: 2.1rem; /* Ajusta la distancia desde el borde derecho */
 }

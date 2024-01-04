@@ -1,6 +1,6 @@
 .slide {
   /* Tus estilos existentes */
-  background: #333; /* Fondo oscuro */
+  background: #33333378; /* Fondo oscuro */
   min-height: 100%;
   border-radius: 14px;
   padding: 0px 1px;
@@ -18,7 +18,7 @@
 .category {
   position: absolute;
   top: 10px; /* Ajusta según necesidades */
-  left: 10px; /* Ajusta según necesidades */
+  left: 1.35rem; /* Ajusta según necesidades */
   color: #ffffff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -32,7 +32,7 @@
 .slide__content {
   /* Tus estilos existentes */
   backdrop-filter: blur(80px);
-  padding: 0px 15px;
+  padding: 0px 1.7rem;
 
   
 }

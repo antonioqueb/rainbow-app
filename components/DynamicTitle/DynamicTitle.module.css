@@ -1,13 +1,14 @@
 /* Estilo para el bloque principal (Block) */
-.text {
-    font-size: 1.2rem;
+.title {
+    font-size: 2rem;
     color: #ffffff;
 }
 
-.title {
+.container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 4.1vh;
+    margin: 2vh 4.1vh;
+    
 }
 
