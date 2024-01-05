@@ -2,9 +2,6 @@ import { Roboto } from 'next/font/google';
 import './globals.css'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
-import CardSlider from '@/components/CardSlider/CardSlider'
-import PrimaryTags from '@/components/PrimaryTags/PrimaryTags'
-import DynamicTitle from '@/components/DynamicTitle/DynamicTitle'
 import Providers from '@/store/provider'
 
 
@@ -29,9 +26,6 @@ export default function RootLayout({ children }) {
       <Providers>
       <body className={roboto.className}>
         <Navbar />
-      <CardSlider />
-      <PrimaryTags />
-      <DynamicTitle />
         {children}
         <Footer/>
         </body>
