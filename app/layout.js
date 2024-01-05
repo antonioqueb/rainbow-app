@@ -17,7 +17,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: 'ARK PROJECT',
-  description: 'Web de ARK PROJECT',
+  description: 'Página web de divulgación y compra-venta de arte',
 }
 
 export default function RootLayout({ children }) {
