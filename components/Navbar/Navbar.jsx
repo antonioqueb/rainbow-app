@@ -6,6 +6,8 @@ import { BsSearchHeartFill } from "react-icons/bs";
 import Buttom from '../Client/Buttom/Buttom'
 import { GrMoreVertical } from "react-icons/gr";
 import { FaUserLarge } from "react-icons/fa6";
+import { FaMicrophoneAlt } from "react-icons/fa";
+
 
 
 
@@ -20,7 +22,7 @@ const NavbarComponent = () => (
       <div className={styles['navbar__logo']}>
         <Link href="/">
           {/* Modificador: navbar__logo-text */}
-          <h1 className={styles['navbar__logo-text']}>ARK PROJECT</h1>
+          <Image src="/logo-b.svg" alt="Logo" width={90} height={90} />
         </Link>
       </div>
       
@@ -50,7 +52,16 @@ const NavbarComponent = () => (
 
     <section className={styles['navbar__section--end']}>
       <div className={styles['navbar__buttoms']}>
-        <Buttom placeholder="Escuchar Podcast" />
+        <div className={styles['navbar__podcast']}>
+        <button class={styles['bookmarkBtn']}>
+          <span class={styles['IconContainer']}>
+            <FaMicrophoneAlt className={styles['navbar__icon_podcast']} />
+          </span>
+          <p class={styles['text']}>Podcast</p>
+        </button>
+
+          
+        </div>
 
       </div>
       <div className={styles['navbar__icons']}>

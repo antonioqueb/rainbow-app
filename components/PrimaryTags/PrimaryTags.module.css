@@ -1,10 +1,10 @@
 /* Estilos para el contenedor de etiquetas */
 
 .tagsContainer {
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
-    white-space: nowrap; /* Evita el salto de línea entre elementos */
     padding: 10px;
-    margin: 1vh 0;
+    margin: 1.8vh 0;
+    align-items: center;
+    justify-content: center;
    
   
 }
@@ -12,34 +12,48 @@
 /* Estilos para el contenedor de etiquetas */
 .tags {
     display: flex;
-    flex: 1;
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
-    -webkit-overflow-scrolling: touch; /* Para desplazamiento táctil suave en iOS */
-    margin: 1vh 2vh;
-    gap: 3px; /* Añade espacio entre las etiquetas */
+    margin: 1vh 1vh;
     justify-content: center;
-
-    
-
-   
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 
 /* Estilos para cada etiqueta */
 .tag {
     flex: 1; 
-    margin: 1px;
-    padding: 15px 20px;
-    border-radius: 8px;
+    padding: 5px 10px;
+    border-radius: 14px;
     /* Resto de tus estilos... */
-    max-width: 15vh;
+    max-width: 20vh;
     font-size: 1rem;
-    font-weight: 540;
-    background-color: rgb(14, 14, 14);
-    color: white;
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    font-weight: 400;
+    background-color:  transparent;
+    border: solid 1px #ff88b9;
+    color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1vh;
+
  
 
+}
+
+.tagIcon {
+    padding: 5px;
+    font-size: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para hover */
+.tag:hover {
+    cursor: pointer;
+    background-color: #1b1b1bac;
+    color: white;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 }
 
 
