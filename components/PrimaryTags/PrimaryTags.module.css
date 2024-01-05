@@ -15,17 +15,18 @@
     margin: 1vh 1vh;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+
     
 }
 
 /* Estilos para cada etiqueta */
 .tag {
     flex: 1; 
-    padding: 5px 10px;
+    padding: 3px 40px; /* Ajusta el valor del segundo parámetro según sea necesario */
+    box-sizing: border-box;
     border-radius: 14px;
     /* Resto de tus estilos... */
-    max-width: 20vh;
+    max-width: 21vh;
     font-size: 1rem;
     font-weight: 400;
     background-color:  transparent;
@@ -34,14 +35,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 1vh;
+    margin: 0 0.7vh;
+
 
  
 
 }
 
 .tagIcon {
-    padding: 5px;
+    padding: 8px;
     font-size: 1.1rem;
     align-items: center;
     justify-content: center;
