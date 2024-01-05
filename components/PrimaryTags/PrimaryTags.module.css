@@ -5,32 +5,44 @@
     white-space: nowrap; /* Evita el salto de línea entre elementos */
     padding: 10px;
     margin: 1vh 0;
+   
+  
 }
 
 /* Estilos para el contenedor de etiquetas */
 .tags {
     display: flex;
+    flex: 1;
     overflow-x: auto; /* Permite el desplazamiento horizontal */
     -webkit-overflow-scrolling: touch; /* Para desplazamiento táctil suave en iOS */
     margin: 1vh 2vh;
-    gap: 10px; /* Añade espacio entre las etiquetas */
+    gap: 3px; /* Añade espacio entre las etiquetas */
+    justify-content: center;
+
+    
+
    
     
 }
 
 /* Estilos para cada etiqueta */
 .tag {
-    flex: 0 0 auto; /* Evita que las etiquetas se estiren o encojan */
-    margin: 5px;
-    padding: 6px 15px;
+    flex: 1; 
+    margin: 1px;
+    padding: 15px 20px;
     border-radius: 8px;
     /* Resto de tus estilos... */
+    max-width: 15vh;
+    font-size: 1rem;
+    font-weight: 540;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+ 
+
 }
 
-/* Eliminar flex-wrap para que las etiquetas no se envuelvan en una nueva línea */
-.tags {
-    flex-wrap: nowrap;
-}
+
 
 /* Asegurarse de que el contenedor de etiquetas se ajuste al tamaño de la pantalla */
 @media screen and (max-width: 768px) {
