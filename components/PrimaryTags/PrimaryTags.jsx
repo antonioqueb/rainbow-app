@@ -18,7 +18,7 @@ const PrimaryTags = () => {
     };
 
     return (
-        <div className={style.tagsContainer}>
+       
             <div className={style.tags}>
                 {Tags.categories.map((tag) => (
                     <button 
@@ -33,11 +33,12 @@ const PrimaryTags = () => {
                             height={50}
                             className={style.tagIcon}
                         />
+                        <div className={style.tagText}>
                         {tag}
+                        </div>
                     </button>
                 ))}
             </div>
-        </div>
     );
 };
 

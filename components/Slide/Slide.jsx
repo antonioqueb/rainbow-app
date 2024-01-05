@@ -17,7 +17,7 @@ const Slide = ({ content }) => {
       </div>
       <section className={style.slide__content}>
         <h2 className={style.title}>{content.title}</h2>
-        <p className={style.description}>{content.description.substring(0, 32) + " ..." }</p>
+        <p className={style.description}>{content.description.substring(0, 28) + " ..." }</p>
       </section>
     </div>
   );

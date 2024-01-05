@@ -1,20 +1,10 @@
-/* Estilos para el contenedor de etiquetas */
-
-.tagsContainer {
-    padding: 10px;
-    margin: 1.8vh 0;
-    align-items: center;
-    justify-content: center;
-   
-  
-}
 
 /* Estilos para el contenedor de etiquetas */
 .tags {
     display: flex;
-    margin: 1vh 1vh;
     justify-content: center;
     align-items: center;
+    margin: 1vh 0;
 
     
 }
@@ -26,28 +16,45 @@
     box-sizing: border-box;
     border-radius: 14px;
     /* Resto de tus estilos... */
-    max-width: 21vh;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     background-color:  transparent;
-    border: solid 1px #ff88b9;
+    border: solid 1px #ff88ba48;
     color: #e6e6e6;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0.7vh;
+    margin: 2vh 0.7vh;
+    max-width: 25vh;
+    max-height: 50px;
+ 
 
+}
+
+.tag:hover {
+
+    border: solid 1px #ff88baa0;
 
  
 
 }
 
 .tagIcon {
-    padding: 8px;
+    padding: 2px 0;
     font-size: 1.1rem;
     align-items: center;
     justify-content: center;
     align-items: center;
+    margin-right: 0.5vh;
+}
+
+.tagText {
+    padding: 2px 0;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+
 }
 
 /* Estilos para hover */

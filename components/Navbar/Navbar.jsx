@@ -7,6 +7,8 @@ import Buttom from '../Client/Buttom/Buttom'
 import { GrMoreVertical } from "react-icons/gr";
 import { FaUserLarge } from "react-icons/fa6";
 import { FaMicrophoneAlt } from "react-icons/fa";
+import { MdOutlineEmojiEvents } from "react-icons/md";
+
 
 
 
@@ -58,6 +60,16 @@ const NavbarComponent = () => (
             <FaMicrophoneAlt className={styles['navbar__icon_podcast']} />
           </span>
           <p class={styles['text']}>Podcast</p>
+        </button>
+
+          
+        </div>
+         <div className={styles['navbar__podcast']}>
+        <button class={styles['bookmarkBtn']}>
+          <span class={styles['IconContainer']}>
+            <MdOutlineEmojiEvents className={styles['navbar__icon_podcast']} />
+          </span>
+          <p class={styles['text']}>Eventos</p>
         </button>
 
           

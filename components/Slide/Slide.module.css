@@ -2,16 +2,26 @@
   /* Tus estilos existentes */
   background: #24242413; /* Fondo oscuro */
   min-height: 100%;
-  border-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;  
   padding: 0px 1px;
+      border: solid 1px #ff88ba48;
+
+}
+
+.slide:hover {
+  /* Tus estilos existentes */
+
+      border: solid 1px #ff88baa0;
+
 }
 
 .imageWrapper {
   position: relative;
   width: 100%;
   height: 190px;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
   overflow: hidden;
 }
 
@@ -38,8 +48,8 @@
 
 .title{
   margin: 10px 0;
-  color: #ffffff;
-  font-size: 1.4rem;
+  color: #e5e5e5;
+  font-size: 1rem;
 }
 
 .category {
@@ -48,9 +58,9 @@
 }
 
 .description {
-  font-size: 0.9rem;
-  color: #919090;
+  font-size: 0.7rem;
+  color: #c1c1c1;
   margin: 0 0 15px 0;
-  font-weight: 600
+  font-weight: 200;
 }
 /* Tus media queries y otros estilos */
