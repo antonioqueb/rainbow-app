@@ -5,16 +5,10 @@
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;  
   padding: 0px 1px;
-      border: solid 1px #ff88ba48;
 
 }
 
-.slide:hover {
-  /* Tus estilos existentes */
 
-      border: solid 1px #ff88baa0;
-
-}
 
 .imageWrapper {
   position: relative;
