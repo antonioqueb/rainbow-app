@@ -1,0 +1,12 @@
+.blog__contenedor {
+  display: flex;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.blog__column {
+  flex: 1;
+  border: 1px solid white;
+  background-color: transparent;
+}
+

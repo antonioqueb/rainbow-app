@@ -1,0 +1,18 @@
+.HeroPost__contenedor {
+  display: flex;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.HeroPost__column {
+  flex: 1;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.HeroPost__column {
+  flex: 1;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
