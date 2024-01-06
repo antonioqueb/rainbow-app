@@ -4,7 +4,7 @@
   position: relative; /* Esto permite posicionar absolutamente los botones dentro */
   display: flex;
   justify-content: center; /* Centra la pista del deslizador */
-  margin: 0;
+  margin: 0 1.5vh;
   
 }
 
@@ -20,8 +20,8 @@
 
 
 .cardSlider__slide {
-  flex: 0 0 calc(100% / 6); /* Ajusta según el ancho deseado */
-  margin: 0 10px; /* Ajusta según el espacio deseado entre slides */
+  flex: 0 0 calc(100% / 4); /* Ajusta según el ancho deseado */
+  margin: 0 5px; /* Ajusta según el espacio deseado entre slides */
   min-width: 30vh; /* Ajusta según el ancho mínimo deseado */
   min-height: 20vh; /* Ajusta según el alto mínimo deseado */
   
@@ -41,9 +41,9 @@
 }
 
 .cardSlider button[aria-label="Previous slide"] {
-  left: 2.1rem; /* Ajusta la distancia desde el borde izquierdo */
+  left: 1.1rem; /* Ajusta la distancia desde el borde izquierdo */
 }
 
 .cardSlider button[aria-label="Next slide"] {
-  right: 2.1rem; /* Ajusta la distancia desde el borde derecho */
+  right: 1.1rem; /* Ajusta la distancia desde el borde derecho */
 }

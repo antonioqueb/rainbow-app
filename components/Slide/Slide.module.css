@@ -1,6 +1,6 @@
 .slide {
   /* Tus estilos existentes */
-  background: #24242413; /* Fondo oscuro */
+  background:  #8c8bad1a; /* Fondo oscuro */
   min-height: 100%;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;  
@@ -13,7 +13,7 @@
 .imageWrapper {
   position: relative;
   width: 100%;
-  height: 190px;
+  height: 230px;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
   overflow: hidden;
@@ -22,28 +22,33 @@
 .category {
   position: absolute;
   top: 10px; /* Ajusta según necesidades */
-  left: 1.35rem; /* Ajusta según necesidades */
+  left: 0.5rem; /* Ajusta según necesidades */
   color: #ffffff;
+  text-shadow: #242424 3px 1px 10px;
   padding: 5px 10px;
   font-size: 14px;
   z-index: 5;
   border-radius: 14px;
-  background-color: #1a1a1aac;
+  background-color: #2b506a45;
+  backdrop-filter: blur(20px);
+
 }
 
 
 .slide__content {
   /* Tus estilos existentes */
   backdrop-filter: blur(80px);
-  padding: 0px 1.7rem;
+  padding: 0px 1.2rem;
+
 
   
 }
 
 .title{
   margin: 10px 0;
-  color: #e5e5e5;
+  color: #ffffff;
   font-size: 1rem;
+   font-weight: 400;
 }
 
 .category {
@@ -55,6 +60,6 @@
   font-size: 0.7rem;
   color: #c1c1c1;
   margin: 0 0 15px 0;
-  font-weight: 200;
+  font-weight: 100;
 }
 /* Tus media queries y otros estilos */

@@ -4,9 +4,12 @@ import Image from 'next/image'
 
 
 export default function AboutPage() {
+
+  
+
   return (
     <>
-    <section className={style.container}>
+    <section  className={style.container}>
       <div className={style.container__img}>
         <Image src="/Iconos/Arquitectura.svg" width={500} height={500} />
       </div>
@@ -17,7 +20,7 @@ export default function AboutPage() {
         <p className={style.container__text__paragraph}>Nuestro compromiso es brindar un excelente servicio, para que nuestros clientes se sientan satisfechos.</p>
       </div>
     </section>
-     <section className={style.container_reverse}>
+     <section  className={style.container_reverse}>
       <div className={style.container__img}>
         <Image src="/Iconos/Danza.svg" width={500} height={700} />
       </div>
@@ -28,7 +31,7 @@ export default function AboutPage() {
         <p className={style.container__text__paragraph}>Nuestro compromiso es brindar un excelente servicio, para que nuestros clientes se sientan satisfechos.</p>
       </div>
     </section>
-        <section className={style.container}>
+        <section  className={style.container}>
       <div className={style.container__img}>
         <Image src="/Iconos/Pintura.svg" width={500} height={500} />
       </div>
@@ -39,7 +42,7 @@ export default function AboutPage() {
         <p className={style.container__text__paragraph}>Nuestro compromiso es brindar un excelente servicio, para que nuestros clientes se sientan satisfechos.</p>
       </div>
     </section>
-         <section className={style.container_reverse}>
+         <section  className={style.container_reverse}>
       <div className={style.container__img}>
         <Image src="/Iconos/Escultura.svg" width={500} height={500} />
       </div>
