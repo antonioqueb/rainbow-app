@@ -39,7 +39,7 @@
   .userName {
     font-size: 0.9rem;
     color: #ffffff;
-    font-weight: 600
+    font-weight: 200;
   }
   
   .imageWrapper {
@@ -54,21 +54,21 @@
 .views{
   display: flex;
   color: #ffffff;
-  padding: 5px 10px;
+  padding: 5px 5px;
   font-size: 14px;
   z-index: 5;
   border-radius: 14px;
-  margin: 10px;
+  margin: 5px;
   align-items: center;
 }
 .likes{
   display: flex;
   color: #ffffff;
-  padding: 5px 10px;
+  padding: 5px 5px;
   font-size: 14px;
   z-index: 5;
   border-radius: 14px;
-  margin: 10px;
+  margin: 5px;
   align-items: center;
 }
 
@@ -76,7 +76,7 @@
   font-size: 1.2rem;
   color: #ffffff;
   font-weight: 600;
-  margin: 10px;
+  margin: 7px;
   justify-content: center;
   align-items: center;
 }

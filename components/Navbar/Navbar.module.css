@@ -51,6 +51,8 @@
   align-items: center; /* Opcional: para alinear verticalmente el contenido del enlace */
 }
 
+
+
 .navbar__logo, .navbar__navigation {
     text-decoration: none;
 
@@ -67,6 +69,11 @@
   text-decoration: none;
 
 }
+.navbar__item:hover {
+  color: #ff88b9; /* Hereda el color de texto del elemento padre */
+
+}
+
 
 /* Estilos para el buscador: Elemento del Bloque navbar */
 .navbar__finder {
@@ -83,7 +90,7 @@
   outline: none;
   background-color: transparent;
   color: #ffffff;
-  width: 26vw;
+  width: 30vw;
   box-shadow: none;
   border: none;
 }
@@ -109,7 +116,7 @@
 }
 
 .navbar__icon:hover {
-  color: #ff2982;
+  color: #ff88b9;
   transition-duration: 0.3s;
 }
 
@@ -120,7 +127,7 @@
   
 }
 .navbar__icon_podcast:hover {
-  color: #ff2982;
+  color: #ff88b9;
   transition-duration: 0.3s;
 }
 
@@ -133,7 +140,7 @@
 }
 
 .navbar__cart:hover, .navbar__user:hover {
-  color: #ff2982;
+  color: #ff88b9;
   transition-duration: 0.3s;
 }
 
@@ -181,7 +188,7 @@
 .IconContainer {
   width: 40px;
   height: 30px;
-  background: #fe9695; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ff88b9; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -192,7 +199,7 @@
 }
 .bookmarkBtn:hover {
   transition-duration: 0.3s;
-  border: 1px solid #ff2982;
+  border: 1px solid #ff88b9;
   
 }
 
@@ -254,6 +261,7 @@
   .navbar__buttoms {
     display: none;
   }
+  
 }
 
 /* Media Query para pantallas menores a 1200px */
@@ -261,6 +269,8 @@
   .navbar__logo-text {
     font-size: 22px;
   }
+
+
 }
 
 /* Media Query para pantallas menores a 1024px */
@@ -268,6 +278,8 @@
   .navbar__logo-text {
     font-size: 20px;
   }
+
+
 }
 
 /* Media Query para pantallas menores a 768px */
@@ -275,6 +287,7 @@
   .navbar__logo-text {
     font-size: 18px;
   }
+
 }
 
 /* Media Query para pantallas menores a 480px */
