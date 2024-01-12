@@ -70,7 +70,7 @@
 
 }
 .navbar__item:hover {
-  color: #ff88b9; /* Hereda el color de texto del elemento padre */
+  color: #FF0295; /* Hereda el color de texto del elemento padre */
 
 }
 
@@ -116,18 +116,18 @@
 }
 
 .navbar__icon:hover {
-  color: #ff88b9;
+  color: #FF0295;
   transition-duration: 0.3s;
 }
 
 .navbar__icon_podcast {
-  color: #ffffff;
+  color: #fbfcff;
   cursor: pointer;
   font-size: 1.3rem;
   
 }
 .navbar__icon_podcast:hover {
-  color: #ff88b9;
+  color: #FF0295;
   transition-duration: 0.3s;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .navbar__cart:hover, .navbar__user:hover {
-  color: #ff88b9;
+  color: #FF0295;
   transition-duration: 0.3s;
 }
 
@@ -188,7 +188,7 @@
 .IconContainer {
   width: 40px;
   height: 30px;
-  background: #ff88b9; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FF0295; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -199,7 +199,7 @@
 }
 .bookmarkBtn:hover {
   transition-duration: 0.3s;
-  border: 1px solid #ff88b9;
+  border: 1px solid #FF0295;
   
 }
 
