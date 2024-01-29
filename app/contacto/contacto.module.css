@@ -2,7 +2,7 @@
 .contacto {
     color: #9c9c9c; /* Color principal de texto, usando Color 03 */
     padding: 20px 30px;
-    border-radius: 14px;
+    border-radius: 20px;
     margin: 30px 0;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
 
     margin-top: 20px;
     padding: 10px 10px;
-    border-radius: 14px;
+    border-radius: 20px;
     border: 1px solid #9c9c9c;
     outline: none;
     font-size: 16px;
@@ -52,7 +52,7 @@
   }
   .formGroup {
     margin-bottom: 20px;
-    border-radius: 14px;
+    border-radius: 20px;
     padding: 0;
     margin: 0;
     max-width: 490px;
@@ -61,7 +61,7 @@
     .formGroup input {
     
       padding: 10px 18px;
-      border-radius: 14px;
+      border-radius: 20px;
       border: 1px solid #9c9c9c;
       outline: none;
       font-size: 16px;

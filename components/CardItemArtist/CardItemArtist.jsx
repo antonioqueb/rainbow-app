@@ -12,10 +12,11 @@ const CardItemArtist = ({ content }) => {
       <div className={style.imageWrapper}>
         <Image
           src={content.imageUrl}
-          layout='fill'
-          objectFit="cover"
-          objectPosition="center"
           alt={content.imageAlt || "Slide image"}
+          width={300}
+          height={300}
+          objectPosition="center"
+          objectFit="cover"
         />
       </div>
       <div className={style.profile}>
@@ -26,6 +27,8 @@ const CardItemArtist = ({ content }) => {
           width={50}
           height={50}
           alt={content.profileAlt || "Profile image"}
+          objectPosition="center"
+          objectFit="cover"
         />
         </div>
         <div className={style.profileInfo}>

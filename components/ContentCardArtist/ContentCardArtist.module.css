@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta el ancho mínimo de la columna */
     grid-gap: 10px; /* Espacio entre los elementos de la grilla */
-    padding: 2vh;
     /*background: linear-gradient(to right, #2b506a82, #ff88ba70); */
     /* Otros estilos que necesites */
   }

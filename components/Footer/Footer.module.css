@@ -2,7 +2,6 @@
 .footer {
     background-color: transparent; /* Fondo transparente para adaptarse a cualquier tema oscuro */
     color: white; /* Color de texto para temas oscuros */
-    padding: 20px;
     text-align: center; /* Centrar los elementos */
 }
 
@@ -11,7 +10,7 @@
     font-size: 2rem;
     font-weight: 600;
     color: #fff;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 0;
   }
 /* Navegación (Links) */
 .footer__navigation {

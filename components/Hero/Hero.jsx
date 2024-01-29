@@ -9,7 +9,7 @@ const HeroComponent = () => (
             </h1>
         </div>
         <div class={styles.hero_image}>
-            <img src="//Trend/1.jpeg" alt="Logo" width={500} height={500} />
+            <img src="//Trend/1.jpeg" alt="Logo" width={400} height={400} />
         </div>
 
 

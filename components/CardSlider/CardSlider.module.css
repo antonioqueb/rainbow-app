@@ -4,7 +4,6 @@
   position: relative; /* Esto permite posicionar absolutamente los botones dentro */
   display: flex;
   justify-content: center; /* Centra la pista del deslizador */
-  margin: 0 1.5vh;
   
 }
 

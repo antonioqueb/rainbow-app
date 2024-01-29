@@ -11,12 +11,12 @@ export default function Home() {
     
     <main className={styles.main}>
 
-
+      {/* 
       <CardSlider />
       <PrimaryTags />
       <DynamicTitle />
       <ContentCardArtist />
-    
+      */}
 
 
      

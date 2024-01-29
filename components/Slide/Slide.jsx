@@ -9,10 +9,11 @@ const Slide = ({ content }) => {
         <div className={style.category}>{content.category}</div>
         <Image
           src={content.imageUrl}
-          layout='fill'
-          objectFit="cover"
-          objectPosition="center"
           alt={content.imageAlt || "Slide image"}
+          width={500}
+          height={500}
+          objectPosition="center"
+          objectFit="cover" 
         />
       </div>
       <section className={style.slide__content}>

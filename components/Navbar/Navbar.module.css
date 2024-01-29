@@ -2,7 +2,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0.2vw 2vw;
+  padding: 0.2rem 0;
   align-items: center;
 }
 
@@ -80,7 +80,7 @@
   display: flex;
   align-items: center;
   border: solid 1px #ffffff;
-  border-radius: 14px;
+  border-radius: 20px;
   padding: 5px 10px;
 }
 
@@ -174,7 +174,7 @@
 .bookmarkBtn {
   width: 150px;
   height: 40px;
-  border-radius: 14px;
+  border-radius: 20px;
   border: 1px solid #ffffff;
   background-color: rgb(12, 12, 12);
   display: flex;
@@ -189,7 +189,7 @@
   width: 40px;
   height: 30px;
   background: #FF0295; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius: 14px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;

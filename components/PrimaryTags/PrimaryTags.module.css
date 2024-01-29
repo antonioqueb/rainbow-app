@@ -2,7 +2,7 @@
 /* Estilos para el contenedor de etiquetas */
 .tags {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 1vh 0;
 
@@ -12,9 +12,9 @@
 /* Estilos para cada etiqueta */
 .tag {
     flex: 1; 
-    padding: 3px 40px; /* Ajusta el valor del segundo parámetro según sea necesario */
+    padding: 2rem 0; /* Ajusta el valor del segundo parámetro según sea necesario */
     box-sizing: border-box;
-    border-radius: 14px;
+    border-radius: 20px;
     /* Resto de tus estilos... */
     font-size: 0.8rem;
     font-weight: 400;
@@ -78,7 +78,7 @@
 @media screen and (max-width: 480px) {
     .tag {
         font-size: 0.9rem;
-        padding: 15px 12px; /* Ajusta el padding para que sea más adecuado para el tamaño */
+        padding: 1rem 0; /* Ajusta el padding para que sea más adecuado para el tamaño */
     }
 }
 
