@@ -1,286 +1,211 @@
 /* Estilo general de la navbar */
+
+/* Estilos previos... */
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0.2rem 0;
   align-items: center;
+  max-width: 100%;
+  position: fixed; /* Fijar el Navbar */
+  backdrop-filter: blur(5px); /* Efecto esmerilado */
+  z-index: 10; /* Asegurarse de que el Navbar esté sobre otros elementos */
+  transition: background-color 0.3s, backdrop-filter 0.3s; /* Transiciones suaves */
+
   
+  
+  
+
 }
+
+
+.navbar__navigation {
+  width: calc(100% - 16rem); /* ajusta el ancho para compensar el padding */
+  max-width: 100%;
+  /* Resto de tus estilos... */
+}
+
+.navbar.scrolled {
+  background: #0d0d0d50; /* Aumentar transparencia al hacer scroll */
+  backdrop-filter: blur(15px); /* Intensificar efecto esmerilado */
+}
+
+/* Resto de tus estilos... */
+
+  
 
 /* Secciones de la navbar: Elementos del Bloque navbar */
 .navbar__section--start{
-  flex: 1;
+  flex: 20%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+}
+.navbar__section--end{
+  flex: 20%;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__section--center {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar__section--end { 
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-/* Estilo del texto del logo: Modificador del Elemento navbar__logo */
-.navbar__logo-text {
-  display: flex;
-  font-size: 1rem;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-/* Estilos para la navegación: Elemento del Bloque navbar */
-.navbar__navigation {
+  flex: 60%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
 
-.navbar__navigation a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: inherit; /* Hereda el color de texto del elemento padre */
-  display: flex; /* Opcional: si quieres que los enlaces se comporten como elementos flex */
-  align-items: center; /* Opcional: para alinear verticalmente el contenido del enlace */
+
+.navbar__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  flex: 1;
+  text-decoration: none;
+  
+  
+
 }
 
+ .navbar__logo {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+
+}
+
+.navbar__icons {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0.5;
+  transform: translateX(10px);
 
 
-.navbar__logo, .navbar__navigation {
-    text-decoration: none;
+}
 
+.navbar__cta-button {
+  background-color:#BF9F78; /* A pleasant blue */
+  color: #26211F;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  margin: 0 68px 0 0;
+
+}
+
+.navbar__cta{
+  display: flex;
+  align-items: center;
   width: 100%;
+  justify-content: flex-start;
+  padding: 5px 0;
+  margin: 0 0 0 128px;
 }
+
+
 
 /* Ítems de navegación: Modificador del Elemento navbar__navigation */
 .navbar__item {
   flex: 1;
-  font-size: 1rem;
-  color: #ffffff;
+  font-size: 1.3rem;
+  color: #F2F2F2;
   cursor: pointer;
   transition: color 0.3s ease;
-  text-decoration: none;
+  text-align: center;
+  margin: 0 0 0 3vw;
+  text-decoration: none; 
 
 }
+
+
+
+
 .navbar__item:hover {
-  color: #FF0295; /* Hereda el color de texto del elemento padre */
-
+  color: #BF9F78;
 }
 
-
-/* Estilos para el buscador: Elemento del Bloque navbar */
-.navbar__finder {
-  display: flex;
-  align-items: center;
-  border: solid 1px #ffffff;
-  border-radius: 20px;
-  padding: 5px 10px;
-}
-
-/* Input de búsqueda: Modificador del Elemento navbar__finder */
-.navbar__search-input {
-  padding: 5px 10px;
-  outline: none;
-  background-color: transparent;
-  color: #ffffff;
-  width: 30vw;
-  box-shadow: none;
-  border: none;
-}
-
-/* Botón de búsqueda: Modificador del Elemento navbar__finder */
-.navbar__search-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: none;
-}
 
 /* Estilos para los iconos en la navbar */
 .navbar__icon {
-  color: #ffffff;
+  color: #F2F2F2;
   cursor: pointer;
-  margin: 0 0 0 1vh;
   font-size: 1.5rem;
+  transition-duration: 0.3s;
+
 }
 
 .navbar__icon:hover {
-  color: #FF0295;
+  color:#BF9F78;
   transition-duration: 0.3s;
 }
-
-.navbar__icon_podcast, .navbar__icon_event {
-  color: #0D0D0D;
-  cursor: pointer;
-  font-size: 1rem;
-  
-}
-
-
-
-
-
 
 /* Estilos para los íconos: Elementos del Bloque navbar */
-.navbar__cart, .navbar__user {
+.navbar__cart, .navbar__login {
   margin-left: 50px;
-  color: #ffffff;
-}
-
-.navbar__cart:hover, .navbar__user:hover {
-  color: #FF0295;
-  transition-duration: 0.3s;
-}
-
-.navbar__icons {
+  color: #F2F2F2;
   flex: 1;
+}
+
+
+.navbar__user {
+  color: #F2F2F2;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+
 
 }
 
-.navbar__buttoms {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 5px 17px;
-  height: 60px;
+
+
+
+
+
+@media (max-width: 599px) {
   
-}
-
-
-.navbar__podcast {
-  display: flex; /* Usa flexbox para alinear los elementos en línea */
-  align-items: center; /* Alinea los elementos verticalmente en el centro */
-  padding: 10px 10px; /* Espaciado interno */
-
-}
-
-
-.bookmarkBtn {
-  width: 150px;
-  height: 40px;
-  border-radius: 20px;
-  border: 1px solid #ffffff;
-  background-color: rgb(12, 12, 12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition-duration: 0.3s;
-  overflow: hidden;
-}
-
-.IconContainer {
-  width: 40px;
-  height: 30px;
-  background: #FF0295; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  z-index: 2;
-  transition-duration: 0.3s;
-}
-.bookmarkBtn:hover {
-  transition-duration: 0.3s;
-  border: 1px solid #FF0295;
-  
-}
-
-
-.icon {
-  border-radius: 1px;
-}
-
-.text {
-  height: 100%;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  z-index: 1;
-  transition-duration: 0.3s;
-  font-size:1rem;
-}
-
-.bookmarkBtn:hover .IconContainer {
-  width: 100px;
-  transition-duration: 0.3s;
-}
-
-.bookmarkBtn:hover .text {
-  transform: translate(10px);
-  width: 0;
-  font-size: 0;
-  transition-duration: 0.3s;
-}
-
-.bookmarkBtn:active {
-  transform: scale(0.95);
-  transition-duration: 0.3s;
-}
-
-
-
-
-
-
-
-
-/* Estilos específicos para enlaces dentro de navbar__item y navbar__logo-text */
-.navbar__item a, .navbar__logo-text a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: inherit; /* Hereda el color de texto del elemento padre */
-}
-/* Para pantallas menores a 600px */
-@media only screen and (max-width: 599px) {
-  .navbar__finder, .navbar__navigation, .navbar__cart, .navbar__login, .navbar__buttoms {
-    display: none;
+  .navbar {
+    left: 2rem; /* ajustar según sea necesario */
+    right: 2rem; /* ajustar según sea necesario */
+    background: #0d0d0d00; /* Color de fondo con transparencia */
+    backdrop-filter: none; /* Efecto esmerilado */
   }
-  .navbar__logo-text {
-    font-size: 1rem; /* El tamaño más pequeño de fuente se aplica */
+  
+  .navbar__section--start, .navbar__section--end {
+    /* Asegúrate de que estos estén definidos y tengan un ancho o flexión adecuados */
+    flex: 1;
+  }
+
+ 
+
+  .navbar__navigation, .navbar__section--center {
+    display: none; /* Oculta los elementos del centro en modo móvil */
   }
 }
+
+
 
 /* Tabletas: desde 601px hasta 900px */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  .navbar__navigation, .navbar__cart, .navbar__login {
-    display: none;
+@media (min-width: 601px) and (max-width: 1368px) {
+
+    .navbar__item {
+      font-size: 1rem;
+    }
+    
+    .navbar__section--center{
+      display: none;
+    }
+    .navbar__navigation{
+      display: none;
+    }
+
+   
   }
-  .navbar__logo-text {
-    font-size: 1rem; /* Se elige el tamaño de fuente intermedio */
-  }
-  .navbar__buttoms {
-    display: none;
-  }
-}
 
 /* Escritorio: más de 900px */
-@media only screen and (min-width: 901px) {
-  .navbar__navigation, .navbar__cart, .navbar__login {
-    display: none;
-  }
-  .navbar__logo-text {
-    font-size: 1rem; /* Se elige el tamaño de fuente más grande */
-  }
-  .navbar__buttoms {
-    display: none;
-  }
+@media (min-width: 1369px) {
+
 }

@@ -1,0 +1,133 @@
+
+
+.post_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.post_container{
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+
+
+}
+
+.post_title{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+
+.post_article {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #faebff;
+    font-weight: 100;
+    margin: 0 0 1.1rem 0;
+    width: 100%;
+    text-align: start;
+    padding: 2rem 0;
+}
+
+.post_paragraph{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: start;
+    color: #ffffff;
+    width: 100%;
+
+}
+
+.post_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    object-position: center;
+}
+
+.post_author__date{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 100;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.post_date{
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+}
+
+.post_author__name{
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+@media (max-width: 599px) {
+    .post_title{
+        font-size: 1.75rem;
+    }
+    .post_paragraph{
+        font-size: 1rem;
+    }
+    .post_article {
+        font-size: 1rem;
+    }
+    .post_author__date{
+        font-size: 1rem;
+    }
+    .post_date{
+        font-size: 1rem;
+    }
+    .post_author__name{
+        font-size: 1rem;
+    }
+
+
+  }
+  
+  
+  /* Tabletas: desde 601px hasta 900px */
+  @media (min-width: 601px) and (max-width: 900px) {
+
+    .post_title{
+        font-size: 2rem;
+    }
+    .post_paragraph{
+        font-size: 1.25rem;
+    }
+    .post_article {
+        font-size: 1.25rem;
+    }
+    .post_author__date{
+        font-size: 1.25rem;
+    }
+    .post_date{
+        font-size: 1.25rem;
+    }
+    .post_author__name{
+        font-size: 1.25rem;
+    }
+  
+  }

@@ -1,0 +1,147 @@
+/* Estilos base */
+.sidebar{
+    width: 30%;
+    height: 100%;
+    background-color: #0d0d0d99;
+    position: fixed;
+    backdrop-filter: blur(21px);
+    border: rgba(255, 255, 255, 0.288) 1px solid inset;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    overflow-x: hidden;
+    padding: 1rem 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.sidebar_title{
+    color: white;
+    font-size: 1.1rem; /* Se ajustará en las media queries */
+    font-weight: 50;
+}
+
+.sidebar_icon{
+    color: white;
+    font-size: 1.7rem; /* Se ajustará en las media queries */
+    cursor: pointer;
+}
+
+.sidebar_icon_ImMenu{
+    color: white;
+    font-size: 1.3rem; /* Se ajustará en las media queries */
+    cursor: pointer;
+}
+
+.sidebar_links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.sidebar_link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    color: white;
+    font-size: 1.2rem; /* Se ajustará en las media queries */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar_link_active{
+    color: #BF9F78;
+}
+
+.sidebar_subtitle{
+    color: #a9a9a9;
+    font-size: 1.25rem; /* h4 en escritorio */
+    font-weight: 300;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+
+.Hero__container__header {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin: 1rem 0 2rem 0;
+  }
+
+  .sidebar_title{
+    font-size: 1.5rem; /* h1 en escritorio */
+    position: absolute;
+    left: 20%;
+  }
+
+
+/* Estilos para dispositivos Móviles */
+@media screen and (max-width: 600px) {
+    .sidebar{
+        width: 60%; /* Ancho completo para móviles */
+
+    }
+
+    .sidebar_title{
+        font-size: 1rem; /* h1 en móvil */
+        left: 30%;
+
+    }
+
+    .sidebar_subtitle{
+        font-size: 1rem; /* h4 en móvil */
+    }
+
+    .sidebar_link{
+        font-size: 0.9rem; /* span en móvil */
+    }
+
+    .sidebar_icon_ImMenu{
+        font-size: 0.9rem; /* span en móvil */
+    }
+
+    
+.sidebar_icon{
+    color: white;
+    font-size: 1.2rem; /* Se ajustará en las media queries */
+    cursor: pointer;
+}
+}
+/* Tabletas: desde 601px hasta 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    .sidebar{
+        width: 60%; /* Ancho más amplio para móviles */
+
+    }
+
+    .sidebar_title{
+        font-size: 1.2rem; /* h1 en móvil */
+        left: 38%;
+    }
+
+    .sidebar_subtitle{
+        font-size: 1rem; /* h4 en móvil */
+    }
+
+    .sidebar_link{
+        font-size: 0.9rem; /* span en móvil */
+    }
+
+    .sidebar_icon_ImMenu{
+        font-size: 0.9rem; /* span en móvil */
+    }
+    .sidebar_icon{
+        color: white;
+        font-size: 1.7rem; /* Se ajustará en las media queries */
+        cursor: pointer;
+    }
+}
+
+
