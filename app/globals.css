@@ -30,8 +30,16 @@ body {
 /* styles/global.css */
 
 /* Global styles for custom scrollbars */
-::-webkit-scrollbar {
-  display: none;
+
+
+/* Estilos para WebKit browsers */
+
+/* Asegúrate de que los inputs no hereden el color transparente en otros navegadores */
+input, textarea {
+  caret-color: auto; /* O el color que desees */
 }
 
 
+::-webkit-scrollbar {
+  display: none;
+}

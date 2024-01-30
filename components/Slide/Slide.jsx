@@ -15,11 +15,13 @@ const Slide = ({ content }) => {
         />
       </div>
       <section className={style.slide__content}>
-        <h2 className={style.title}>{content.title}</h2>
-        <p className={style.description}>{content.description.substring(0, 28) + " ..." }</p>
-      </section>
+        <h4 className={style.title}>{content.title}</h4>
+        <p className={style.description}>{content.description.substring(0, 53) + "..." }</p>
+      </ section>
     </div>
   );
 };
 
 export default Slide;
+
+clasmodule

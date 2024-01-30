@@ -27,10 +27,10 @@ const CardSlider = () => {
         ))}
       </div>
       <button onClick={prev} aria-label="Previous slide">
-        <FaChevronCircleLeft style={{ color: 'white', fontSize: '24px' }} />
+        <FaChevronCircleLeft style={{ color: 'white', fontSize: '2rem' }} />
       </button>
       <button onClick={next} aria-label="Next slide">
-        <FaChevronCircleRight style={{ color: 'white', fontSize: '24px' }} />
+        <FaChevronCircleRight style={{ color: 'white', fontSize: '2rem' }} />
       </button>
     </div>
   );

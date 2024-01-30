@@ -4,7 +4,7 @@
   position: relative; /* Esto permite posicionar absolutamente los botones dentro */
   display: flex;
   justify-content: center; /* Centra la pista del deslizador */
-  
+  padding-top: 1rem;
   
 }
 
@@ -47,3 +47,5 @@
 .cardSlider button[aria-label="Next slide"] {
   right: 1.1rem; /* Ajusta la distancia desde el borde derecho */
 }
+
+
