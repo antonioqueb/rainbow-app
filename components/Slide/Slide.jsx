@@ -24,4 +24,3 @@ const Slide = ({ content }) => {
 
 export default Slide;
 
-clasmodule

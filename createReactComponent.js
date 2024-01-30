@@ -10,31 +10,31 @@ const rl = readline.createInterface({
 const generateJsTemplate = (name, columns, divideMore, divideSide, additionalFeatures) => {
   let divs = '';
   for (let i = 0; i < columns; i++) {
-    const columnClass = `styles.${name}__column`;
+    const columnClass = `${name}__column`;
     let innerDivs = '';
     if (divideMore) {
       if (divideSide === 'ambos' || divideSide === 'izquierdo') {
-        innerDivs += `<div className={styles.${name}__inner-div-left}>División Izquierda ${i + 1}</div>`;
+        innerDivs += `<div className={style[\`${name}__inner-div-left\`]}>División Izquierda ${i + 1}</div>`;
       }
       if (divideSide === 'ambos' || divideSide === 'derecho') {
-        innerDivs += `<div className={styles.${name}__inner-div-right}>División Derecha ${i + 1}</div>`;
+        innerDivs += `<div className={style[${name}__inner-div-right]}>División Derecha ${i + 1}</div>`;
       }
     }
     const innerContent = divideMore ? innerDivs : `Columna ${i + 1}`;
-    divs += `<div className={${columnClass}}>${innerContent}</div>\n  `;
+    divs += `<div className={style[${columnClass}]}>${innerContent}</div>\n  `;
   }
 
   let additionalJs = '';
   if (additionalFeatures.includes('boton')) {
-    additionalJs += `<button className={styles.${name}__boton}>Haz clic aquí</button>\n  `;
+    additionalJs += `<button className={style[${name}__boton]}>Haz clic aquí</button>\n  `;
   }
 
   return `import React from 'react';
-import styles from './${name}.module.css';
+import style from './${name}.module.css';
 
 export const ${name} = () => {
   return (
-    <div className={styles.${name}__contenedor}>
+    <div className={style[${name}]}>
       ${divs}
       ${additionalJs}
     </div>
@@ -47,11 +47,11 @@ export default ${name}
 };
 
 const generateCssTemplate = (name, columns, divideMore, additionalFeatures) => {
-  let columnStyles = '';
+  let style = '';
   for (let i = 0; i < columns; i++) {
-    columnStyles += `.${name}__column {\n  flex: 1;\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n`;
+    style += `.${name}__column {\n  flex: 1;\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n`;
     if (divideMore) {
-      columnStyles += `.${name}__inner-div-left, .${name}__inner-div-right {\n  /* Estilos adicionales para divisiones internas */\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n`;
+      style += `.${name}__inner-div-left, .${name}__inner-div-right {\n  /* Estilos adicionales para divisiones internas */\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n`;
     }
   }
 
@@ -60,7 +60,7 @@ const generateCssTemplate = (name, columns, divideMore, additionalFeatures) => {
     additionalCss += `.${name}__boton {\n  /* Estilos adicionales para botones */\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n`;
   }
 
-  return `.${name}__contenedor {\n  display: flex;\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n${columnStyles}${additionalCss}`;
+  return `.${name}__contenedor {\n  display: flex;\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n${columnstyle}${additionalCss}`;
 };
 
 rl.question('¿Componente o Página? (c/p): ', (type) => {
