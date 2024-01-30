@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center; /* Centra la pista del deslizador */
   
+  
 }
 
 /* CardSlider.module.css */
@@ -20,9 +21,9 @@
 
 .cardSlider__slide {
   flex: 0 0 calc(100% / 4); /* Ajusta según el ancho deseado */
-  margin: 0 5px; /* Ajusta según el espacio deseado entre slides */
-  min-width: 30vh; /* Ajusta según el ancho mínimo deseado */
+  min-width: 25vh; /* Ajusta según el ancho mínimo deseado */
   min-height: 20vh; /* Ajusta según el alto mínimo deseado */
+  margin: 0 0.5rem; /* Ajusta según el margen deseado */
   
 
   /* Otros estilos para tus slides */

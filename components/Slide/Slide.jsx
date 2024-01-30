@@ -11,9 +11,7 @@ const Slide = ({ content }) => {
           src={content.imageUrl}
           alt={content.imageAlt || "Slide image"}
           width={500}
-          height={500}
-          objectPosition="center"
-          objectFit="cover" 
+          height={500} 
         />
       </div>
       <section className={style.slide__content}>

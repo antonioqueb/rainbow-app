@@ -15,8 +15,6 @@ const CardItemArtist = ({ content }) => {
           alt={content.imageAlt || "Slide image"}
           width={300}
           height={300}
-          objectPosition="center"
-          objectFit="cover"
         />
       </div>
       <div className={style.profile}>
@@ -27,8 +25,7 @@ const CardItemArtist = ({ content }) => {
           width={50}
           height={50}
           alt={content.profileAlt || "Profile image"}
-          objectPosition="center"
-          objectFit="cover"
+          
         />
         </div>
         <div className={style.profileInfo}>

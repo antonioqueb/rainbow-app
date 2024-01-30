@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 0.2rem 0;
   align-items: center;
+  
 }
 
 /* Secciones de la navbar: Elementos del Bloque navbar */
@@ -56,7 +57,7 @@
 .navbar__logo, .navbar__navigation {
     text-decoration: none;
 
-  width: 50%;
+  width: 100%;
 }
 
 /* Ítems de navegación: Modificador del Elemento navbar__navigation */
@@ -120,16 +121,15 @@
   transition-duration: 0.3s;
 }
 
-.navbar__icon_podcast {
-  color: #fbfcff;
+.navbar__icon_podcast, .navbar__icon_event {
+  color: #0D0D0D;
   cursor: pointer;
   font-size: 1.3rem;
   
 }
-.navbar__icon_podcast:hover {
-  color: #FF0295;
-  transition-duration: 0.3s;
-}
+
+
+
 
 
 
@@ -249,53 +249,38 @@
   text-decoration: none; /* Elimina el subrayado */
   color: inherit; /* Hereda el color de texto del elemento padre */
 }
-
-/* Media Query para pantallas menores a 1550px */
-@media only screen and (max-width: 1550px) {
-  .navbar__navigation, .navbar__cart {
+/* Para pantallas menores a 600px */
+@media only screen and (max-width: 599px) {
+  .navbar__finder, .navbar__navigation, .navbar__cart, .navbar__login, .navbar__buttoms {
     display: none;
   }
   .navbar__logo-text {
-    font-size: 24px;
+    font-size: 16px; /* El tamaño más pequeño de fuente se aplica */
+  }
+}
+
+/* Tabletas: desde 601px hasta 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .navbar__navigation, .navbar__cart, .navbar__login {
+    display: none;
+  }
+  .navbar__logo-text {
+    font-size: 20px; /* Se elige el tamaño de fuente intermedio */
   }
   .navbar__buttoms {
     display: none;
   }
-  
 }
 
-/* Media Query para pantallas menores a 1200px */
-@media only screen and (max-width: 1200px) {
-  .navbar__logo-text {
-    font-size: 22px;
-  }
-
-
-}
-
-/* Media Query para pantallas menores a 1024px */
-@media only screen and (max-width: 1024px) {
-  .navbar__logo-text {
-    font-size: 20px;
-  }
-
-
-}
-
-/* Media Query para pantallas menores a 768px */
-@media only screen and (max-width: 768px) {
-  .navbar__logo-text {
-    font-size: 18px;
-  }
-
-}
-
-/* Media Query para pantallas menores a 480px */
-@media only screen and (max-width: 480px) {
-  .navbar__finder {
+/* Escritorio: más de 900px */
+@media only screen and (min-width: 901px) {
+  .navbar__navigation, .navbar__cart, .navbar__login {
     display: none;
   }
   .navbar__logo-text {
-    font-size: 16px;
+    font-size: 24px; /* Se elige el tamaño de fuente más grande */
+  }
+  .navbar__buttoms {
+    display: none;
   }
 }

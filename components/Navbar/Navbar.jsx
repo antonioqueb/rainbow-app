@@ -24,7 +24,7 @@ const NavbarComponent = () => (
       <div className={styles['navbar__logo']}>
         <Link href="/">
           {/* Modificador: navbar__logo-text */}
-          <Image src="/logo-b.svg" alt="Logo" width={90} height={90}  objectPosition="center" objectFit="cover" />
+          <Image src="/logo-b.svg" alt="Logo" width={90} height={90} />
         </Link>
       </div>
       
@@ -67,7 +67,7 @@ const NavbarComponent = () => (
          <div className={styles['navbar__podcast']}>
         <button class={styles['bookmarkBtn']}>
           <span class={styles['IconContainer']}>
-            <MdOutlineEmojiEvents className={styles['navbar__icon_podcast']} />
+            <MdOutlineEmojiEvents className={styles['navbar__icon_event']} />
           </span>
           <p class={styles['text']}>Eventos</p>
         </button>

@@ -32,8 +32,6 @@ const PrimaryTags = () => {
                             width={50}
                             height={50}
                             className={style.tagIcon}
-                            objectPosition="center"
-                            objectFit="cover"
                         />
                         <div className={style.tagText}>
                         {tag}
