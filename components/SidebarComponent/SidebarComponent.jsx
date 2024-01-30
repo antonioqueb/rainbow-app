@@ -84,7 +84,7 @@ const SidebarComponent = ({onClose}) => {
 
           {/* Categoría: Servicios */}
           <h4 className={styles.sidebar_subtitle}>Servicios</h4>
-          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/colabora" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="https://docs.google.com/forms/d/e/1FAIpQLSeLBSBXjW1vIp0DMtsT0m7leWSYeZU1TNGvsiZlVPaFDKDkyg/viewform" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <TbMoneybag className={styles.sidebar_icon} />
             Vender Arte
           </Link>

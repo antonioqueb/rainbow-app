@@ -7,7 +7,7 @@ import { GrMoreVertical } from "react-icons/gr";
 import SidebarComponent from '../SidebarComponent/SidebarComponent';
 
 const links = [
-  { href: "/colaborar", label: "Colaborar", key: "colaborar" },
+  { href: "https://docs.google.com/forms/d/e/1FAIpQLSeLBSBXjW1vIp0DMtsT0m7leWSYeZU1TNGvsiZlVPaFDKDkyg/viewform", label: "Colaborar", key: "colaborar" },
   { href: "/contacto", label: "Contacto", key: "contacto" },
   { href: "/blog", label: "Blog", key: "blog" },
   { href: "/nosotros", label: "Nosotros", key: "nosotros" },
