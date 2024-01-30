@@ -1,74 +1,88 @@
-/* Estilos generales del footer */
-.footer {
-    background-color: transparent; /* Fondo transparente para adaptarse a cualquier tema oscuro */
-    color: white; /* Color de texto para temas oscuros */
-    text-align: center; /* Centrar los elementos */
+
+
+.Footer{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+
 }
 
 
-.logo_text {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #fff;
-    padding: 0.7rem 0;
-  }
-/* Navegación (Links) */
-.footer__navigation {
-    margin-bottom: 20px;
+.Footer__container{
+    width: 100%;
 }
 
-.footer__navigation a, /* Asegúrate de que tus enlaces sean 'a' y no 'span' */
-.footer__navigation span {
-    color: white; /* Asegurarse de que el texto sea visible en fondo oscuro */
-    text-decoration: none; /* Esto quita el subrayado */
-    margin: 0 10px;
-    cursor: pointer; /* Estilo de cursor para indicar que es un enlace */
-    display: inline-block; /* Esto permite que se apliquen las propiedades de padding y margin correctamente */
+
+.Footer__container__row{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Iconos de redes sociales */
-.footer__icon {
-    color: white; /* Color de los iconos para mejorar la visibilidad */
-    margin: 0 10px;
-    transition: color 0.3s; /* Transición suave al cambiar de color */
+.Footer__container__row__footer__links{
+    width: 25%;
+
+
 }
 
-/* Tamaño de los iconos ajustado para visibilidad */
-.footer__icon svg {
-    width: 30px; /* Ancho del icono */
-    height: 30px; /* Alto del icono */
+.Footer__container__footer__links__title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #F2F2F2;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    border-bottom: #FF0295 2px solid;
 }
 
-/* Cambio de color al pasar el ratón por encima */
-.footer__icon:hover,
-.footer__icon:focus {
-    color: #c0c0c0; /* Color al pasar el ratón por encima para un efecto sutil */
+.Footer__container__footer__links__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Estilos para los enlaces del footer al pasar el mouse */
-.footer__rainbow1:hover { color: #ffb3ba; }
-.footer__rainbow2:hover { color: #ffdfba; }
-.footer__rainbow3:hover { color: #ffffba; }
-.footer__rainbow4:hover { color: #baffc9; }
-.footer__rainbow5:hover { color: #bae1ff; }
-.footer__rainbow6:hover { color: #ddb3ff; }
+.Footer__container__footer__links__list__item__link{
+    font-size: 1.1rem;
+    color: #c9c9c9;
+    padding: 0.5rem 0;
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.Footer__container__footer__links__list__item__link:hover{
+    color: #FF0295;
+    transform: translateX(2px);
+}
 
 
+.Footer__container__footer__links__title__social__link__icon{
+  display: inline-block;
+  min-height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #F2F2F2;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  padding: 8px;
+  margin: 0 25px 25px 0;
 
-/* Efecto de hover individual para cada icono */
-.footer__icon.facebook:hover { color: #ffb3ba; /* Color para Facebook */ }
-.footer__icon.instagram:hover { color: #ffdfba; /* Color para Instagram */ }
-.footer__icon.twitter:hover { color: #ffffba; /* Color para Twitter */ }
-.footer__icon.youtube:hover { color: #baffc9; /* Color para YouTube */ }
+}
 
+.Footer__container__footer__links__title__social__link__icon:hover{
+    background-color: #021417;
+    color: #ffffff;
+    transform: translateX(2px);
+}
 
+@media(max-width: 991px){
+    .Footer__container__row{
+        text-align: center;
+    }
 
-/* Responsividad */
-@media (max-width: 600px) {
-    .footer__navigation span,
-    .footer__social a {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 1rem; /* Tamaño para móviles */
+    .Footer__container__row__footer__links{
+        width: 100%;
+        margin-bottom: 2rem;
     }
 }

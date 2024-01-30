@@ -11,10 +11,10 @@ export default function AboutPage() {
     <>
     <section  className={style.container}>
       <div className={style.container__img}>
-        <Image src="/Iconos/Arquitectura.svg" width={500} height={500} />
+        <Image src="/ark/arktoart.jpg" width={330} height={330} />
       </div>
       <div className={style.container__text}>
-        <h2 className={style.container__text__title}>¿Quiénes somos nosotros?</h2>
+        <h2 className={style.container__text__title}>¿Quiénes somos?</h2>
         <p className={style.container__text__paragraph}>Somos una empresa dedicada a la venta de productos de limpieza, para el hogar, oficina, industria, etc. Contamos con productos de calidad y precios competitivos.</p>
         <p className={style.container__text__paragraph}>Nuestro objetivo es satisfacer las necesidades de nuestros clientes, ofreciendo productos de calidad y precios competitivos.</p>
         <p className={style.container__text__paragraph}>Nuestro compromiso es brindar un excelente servicio, para que nuestros clientes se sientan satisfechos.</p>
@@ -22,10 +22,10 @@ export default function AboutPage() {
     </section>
      <section  className={style.container_reverse}>
       <div className={style.container__img}>
-        <Image src="/Iconos/Danza.svg" width={500} height={700} />
+        <Image src="/ark/newartist.jpg" width={330} height={330} />
       </div>
       <div className={style.container__text}>
-        <h2 className={style.container__text__title}>Misión</h2>
+        <h2 className={style.container__text__title}>Nuestra Misión</h2>
         <p className={style.container__text__paragraph}>Somos una empresa dedicada a la venta de productos de limpieza, para el hogar, oficina, industria, etc. Contamos con productos de calidad y precios competitivos.</p>
         <p className={style.container__text__paragraph}>Nuestro objetivo es satisfacer las necesidades de nuestros clientes, ofreciendo productos de calidad y precios competitivos.</p>
         <p className={style.container__text__paragraph}>Nuestro compromiso es brindar un excelente servicio, para que nuestros clientes se sientan satisfechos.</p>
@@ -33,10 +33,10 @@ export default function AboutPage() {
     </section>
         <section  className={style.container}>
       <div className={style.container__img}>
-        <Image src="/Iconos/Pintura.svg" width={500} height={500} />
+        <Image src="/ark/vision.jpg" width={330} height={330} />
       </div>
       <div className={style.container__text}>
-        <h2 className={style.container__text__title}>Visión</h2>
+        <h2 className={style.container__text__title}>Nuestra Visión</h2>
         <p className={style.container__text__paragraph}>Somos una empresa dedicada a la venta de productos de limpieza, para el hogar, oficina, industria, etc. Contamos con productos de calidad y precios competitivos.</p>
         <p className={style.container__text__paragraph}>Nuestro objetivo es satisfacer las necesidades de nuestros clientes, ofreciendo productos de calidad y precios competitivos.</p>
         <p className={style.container__text__paragraph}>Nuestro compromiso es brindar un excelente servicio, para que nuestros clientes se sientan satisfechos.</p>
@@ -44,10 +44,10 @@ export default function AboutPage() {
     </section>
          <section  className={style.container_reverse}>
       <div className={style.container__img}>
-        <Image src="/Iconos/Escultura.svg" width={500} height={500} />
+        <Image src="/ark/valores.jpg" width={330} height={330} />
       </div>
       <div className={style.container__text}>
-        <h2 className={style.container__text__title}>Valores</h2>
+        <h2 className={style.container__text__title}>Nuestros Valores</h2>
         <p className={style.container__text__paragraph}>Somos una empresa dedicada a la venta de productos de limpieza, para el hogar, oficina, industria, etc. Contamos con productos de calidad y precios competitivos.</p>
         <p className={style.container__text__paragraph}>Nuestro objetivo es satisfacer las necesidades de nuestros clientes, ofreciendo productos de calidad y precios competitivos.</p>
         <p className={style.container__text__paragraph}>Nuestro compromiso es brindar un excelente servicio, para que nuestros clientes se sientan satisfechos.</p>

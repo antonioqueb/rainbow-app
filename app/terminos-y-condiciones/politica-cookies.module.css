@@ -9,15 +9,22 @@
   
   }	
   
-  
+  .toptitle {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
+  }
   .container__title {
     text-align: center;
   }
   
   .title {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 400;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     text-align: center;
     color: #ffffff;
   
@@ -39,7 +46,7 @@
   }
   
   .heading {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       margin-top: 15px;
       font-weight: 400;
       margin: 0 0 1.1rem 0;
@@ -52,5 +59,26 @@
       font-weight: 100;
       margin: 0 0 1.5rem 0;
   
+    }
+    
+
+    @media (max-width: 599px) {
+
+
+      .container__text h2 {
+        font-size: 1.75rem;
+        text-align: start;
+  
+        
+      }
+      .title {
+        font-size: 1.75rem;
+      
+      
+      }
+  
+  
+    
+      /* Estilos que se aplican cuando la pantalla tiene menos de 600px de ancho */
     }
     
