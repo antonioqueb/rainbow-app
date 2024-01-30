@@ -32,7 +32,7 @@
 /* Estilo del texto del logo: Modificador del Elemento navbar__logo */
 .navbar__logo-text {
   display: flex;
-  font-size: 28px;
+  font-size: 1rem;
   color: #ffffff;
   cursor: pointer;
 }
@@ -63,7 +63,7 @@
 /* Ítems de navegación: Modificador del Elemento navbar__navigation */
 .navbar__item {
   flex: 1;
-  font-size: 16px;
+  font-size: 1rem;
   color: #ffffff;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -124,7 +124,7 @@
 .navbar__icon_podcast, .navbar__icon_event {
   color: #0D0D0D;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1rem;
   
 }
 
@@ -217,7 +217,7 @@
   color: white;
   z-index: 1;
   transition-duration: 0.3s;
-  font-size: 1.04em;
+  font-size:1rem;
 }
 
 .bookmarkBtn:hover .IconContainer {
@@ -255,7 +255,7 @@
     display: none;
   }
   .navbar__logo-text {
-    font-size: 16px; /* El tamaño más pequeño de fuente se aplica */
+    font-size: 1rem; /* El tamaño más pequeño de fuente se aplica */
   }
 }
 
@@ -265,7 +265,7 @@
     display: none;
   }
   .navbar__logo-text {
-    font-size: 20px; /* Se elige el tamaño de fuente intermedio */
+    font-size: 1rem; /* Se elige el tamaño de fuente intermedio */
   }
   .navbar__buttoms {
     display: none;
@@ -278,7 +278,7 @@
     display: none;
   }
   .navbar__logo-text {
-    font-size: 24px; /* Se elige el tamaño de fuente más grande */
+    font-size: 1rem; /* Se elige el tamaño de fuente más grande */
   }
   .navbar__buttoms {
     display: none;

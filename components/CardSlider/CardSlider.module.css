@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center; /* Centra la pista del deslizador */
   padding-top: 1rem;
+ 
   
 }
 
@@ -21,9 +22,10 @@
 
 .cardSlider__slide {
   flex: 0 0 calc(100% / 4); /* Ajusta según el ancho deseado */
-  min-width: 25vh; /* Ajusta según el ancho mínimo deseado */
-  min-height: 20vh; /* Ajusta según el alto mínimo deseado */
-  margin: 0 0.5rem; /* Ajusta según el margen deseado */
+  min-width: 25rem; /* Ajusta según el ancho mínimo deseado */
+  min-height: 20rem; /* Ajusta según el alto mínimo deseado */
+  margin: 0 1rem 0 0; /* Ajusta según el margen deseado */
+  
   
 
   /* Otros estilos para tus slides */
@@ -41,11 +43,43 @@
 }
 
 .cardSlider button[aria-label="Previous slide"] {
-  left: 1.1rem; /* Ajusta la distancia desde el borde izquierdo */
+  left: 0.9rem; /* Ajusta la distancia desde el borde izquierdo */
 }
 
 .cardSlider button[aria-label="Next slide"] {
-  right: 1.1rem; /* Ajusta la distancia desde el borde derecho */
+  right: 0.9rem; /* Ajusta la distancia desde el borde derecho */
 }
 
 
+@media (max-width: 599px) {
+  .cardSlider__slide {
+    flex: 0 0 calc(100% / 1); /* Ajusta según el ancho deseado */
+    min-width: 25rem; /* Ajusta según el ancho mínimo deseado */
+    min-height: 20rem; /* Ajusta según el alto mínimo deseado */
+    
+  
+    /* Otros estilos para tus slides */
+  }
+  
+  /* Estilos que se aplican cuando la pantalla tiene menos de 600px de ancho */
+}
+
+
+/* Tabletas: desde 601px hasta 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .cardSlider__slide {
+    flex: 0 0 calc(100% / 2); /* Ajusta según el ancho deseado */
+    min-width: 25vh; /* Ajusta según el ancho mínimo deseado */
+    min-height: 20vh; /* Ajusta según el alto mínimo deseado */
+    margin: 0 0.5rem; /* Ajusta según el margen deseado */
+    
+  
+    /* Otros estilos para tus slides */
+  }
+
+}
+
+/* Escritorio: más de 900px */
+@media (min-width: 901px) {
+
+}

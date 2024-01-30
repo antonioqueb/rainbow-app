@@ -6,8 +6,7 @@ import useSlider from '../../hooks/useSlider';
 import CardItemArtist from '../CardItemArtist/CardItemArtist';
 import style from './ContentCardArtist.module.css';
 import slidesData from '../../data/slides.json';
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
-import Image from 'next/image';
+
 
 const ContentCardArtist = () => {
   const { currentSlide, next, prev } = useSlider(slidesData.length);

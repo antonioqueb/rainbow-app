@@ -12,7 +12,7 @@ const DynamicTitle = () => {
 
     return (
         <div className={style.container}>
-            <h1 className={style.title}>{Category}</h1>
+            <h3>{Category}</h3>
         </div>
     );
 };

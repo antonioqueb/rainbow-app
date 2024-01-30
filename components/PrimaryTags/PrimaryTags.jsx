@@ -33,9 +33,9 @@ const PrimaryTags = () => {
                             height={50}
                             className={style.tagIcon}
                         />
-                        <div className={style.tagText}>
+                        <p className={style.tagText}>
                         {tag}
-                        </div>
+                        </p>
                     </button>
                 ))}
             </div>

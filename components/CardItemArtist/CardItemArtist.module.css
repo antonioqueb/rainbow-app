@@ -30,10 +30,10 @@
     height: 35px;
     border-radius: 50px;
     margin: 10px 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .userName {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #ffffff;
     font-weight: 200;
   }
@@ -51,7 +51,7 @@
   display: flex;
   color: #ffffff;
   padding: 5px 5px;
-  font-size: 14px;
+  font-size: 1rem;
   z-index: 5;
   border-radius: 20px;
   margin: 5px;
@@ -61,7 +61,7 @@
   display: flex;
   color: #ffffff;
   padding: 5px 5px;
-  font-size: 14px;
+  font-size: 1rem;
   z-index: 5;
   border-radius: 20px;
   margin: 5px;
@@ -69,7 +69,7 @@
 }
 
 .viewsIcon, .likesIcon {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffffff;
   font-weight: 600;
   margin: 7px;
@@ -93,7 +93,7 @@
     left: 1.35rem; /* Ajusta según necesidades */
     color: #ffffff;
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 1rem;
     z-index: 5;
     border-radius: 20px;
   }
@@ -110,19 +110,33 @@
   .title{
     margin: 10px 0;
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   
   .category {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #ffffff;
   }
   
   .description {
-    font-size: 0.9rem;
+    font-size:1rem;
     color: #919090;
     margin: 0 0 15px 0;
     font-weight: 600
   }
   /* Tus media queries y otros estilos */
+  @media (max-width: 599px) {
   
+    /* Estilos que se aplican cuando la pantalla tiene menos de 600px de ancho */
+  }
+  
+  
+  /* Tabletas: desde 601px hasta 900px */
+  @media (min-width: 601px) and (max-width: 900px) {
+  
+  }
+  
+  /* Escritorio: más de 900px */
+  @media (min-width: 901px) {
+  
+  }

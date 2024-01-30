@@ -13,8 +13,8 @@ const CardItemArtist = ({ content }) => {
         <Image
           src={content.imageUrl}
           alt={content.imageAlt || "Slide image"}
-          width={300}
-          height={300}
+          width={400}
+          height={400}
         />
       </div>
       <div className={style.profile}>

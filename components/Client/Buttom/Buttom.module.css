@@ -14,7 +14,7 @@
   
   .boton--large {
     /* Modificador para un botón grande */
-    font-size: 20px;
+    font-size:1rem;
   }
   
   .boton__text {

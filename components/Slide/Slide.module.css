@@ -4,6 +4,7 @@
   min-height: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;  
+  
 
 }
 
@@ -20,11 +21,11 @@
 .category {
   position: absolute;
   top: 10px; /* Ajusta según necesidades */
-  left: 0.5rem; /* Ajusta según necesidades */
+  left: 0.3rem; /* Ajusta según necesidades */
   color: #ffffff;
   text-shadow: #020000 3px 1px 10px;
-  padding: 5px 10px;
-  font-size: 14px;
+  padding: 5px 15px;
+  font-size: 1rem;
   z-index: 5;
   border-radius: 20px;
   background-color: #2b506a45;
@@ -36,7 +37,7 @@
 .slide__content {
   /* Tus estilos existentes */
   backdrop-filter: blur(80px);
-  padding: 0px 1.2rem;
+  padding: 0px 0.3rem;
 
 
   
@@ -45,12 +46,12 @@
 .title{
   margin: 10px 0;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1rem;
    font-weight: 400;
 }
 
 .category {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 
@@ -69,4 +70,23 @@
   white-space: normal;
   overflow: break-word;
   
+}
+
+
+@media (max-width: 599px) {
+  
+  /* Estilos que se aplican cuando la pantalla tiene menos de 600px de ancho */
+
+
+}
+
+
+/* Tabletas: desde 601px hasta 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+
+}
+
+/* Escritorio: más de 900px */
+@media (min-width: 901px) {
+
 }

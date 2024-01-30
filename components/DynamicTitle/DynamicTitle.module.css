@@ -1,14 +1,38 @@
 /* Estilo para el bloque principal (Block) */
-.title {
-    font-size: 1.5rem;
-    color: #ffffff;
-}
+
 
 .container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 1rem 0;
     
 }
 
+.container h3 {
+    padding : 1rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
+@media (max-width: 599px) {
+
+    .container h3 {
+      
+        font-size: 1.25rem;
+    }
+  
+    /* Estilos que se aplican cuando la pantalla tiene menos de 600px de ancho */
+  }
+  
+  
+  /* Tabletas: desde 601px hasta 900px */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .container h3 {
+      
+        font-size: 1.5rem;
+    }
+  
+  
+  }
+  

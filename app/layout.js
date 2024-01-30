@@ -25,13 +25,23 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <Providers>
       <body className={roboto.className}>
-        {/* 
+      
+    <div class="container-layout">
+        <div class="glass">
         <Navbar />
-        */}
-        {children}
-         {/* 
-        <Footer/>
-              */}
+       
+       {children}
+        
+       <Footer/>
+        </div>
+        <div class="moving-balls">
+			      <div class="ball small-day"></div>
+            <div class="ball medium"></div>
+            <div class="ball ultra-tiny"></div>
+            <div class="ball mini"></div>
+            <div class="ball giant"></div>
+        </div>
+    </div>
         </body>
        </Providers>
     </html>

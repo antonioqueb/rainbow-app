@@ -17,7 +17,7 @@ const Slide = ({ content }) => {
       <section className={style.slide__content}>
         <h4 className={style.title}>{content.title}</h4>
         <p className={style.description}>{content.description.substring(0, 53) + "..." }</p>
-      </ section>
+      </section>
     </div>
   );
 };

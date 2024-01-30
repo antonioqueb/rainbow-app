@@ -69,6 +69,6 @@
     .footer__social a {
         display: block;
         margin-bottom: 10px;
-        font-size: 16px; /* Tamaño para móviles */
+        font-size: 1rem; /* Tamaño para móviles */
     }
 }
