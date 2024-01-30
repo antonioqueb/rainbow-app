@@ -1,20 +1,36 @@
-import React from 'react';
+// CardItemArtist.js
+import React, { useState, useEffect } from 'react';
 import style from './CardItemArtist.module.css';
 import Image from 'next/image';
-import { FaEye } from "react-icons/fa6";
+import { FaEye } from "react-icons/fa";
 import { FcLike } from "react-icons/fc";
-
-
+import SkeletonCardItemArtist from './SkeletonCardItemArtist'; // Importa el componente de esqueleto
 
 const CardItemArtist = ({ content }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simula la carga de datos
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 250); // Ajusta el tiempo según sea necesario
+    return () => clearTimeout(timer);
+  }, [content]); // Dependencia para recargar si el contenido cambia
+
+  if (loading) {
+    return <SkeletonCardItemArtist />;
+  }
+
   return (
     <div className={style.slide}>
       <div className={style.imageWrapper}>
         <Image
           src={content.imageUrl}
           alt={content.imageAlt || "Slide image"}
-          width={400}
-          height={400}
+          width={500}
+          height={500}
+          placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,..."
         />
       </div>
       <div className={style.profile}>
@@ -25,6 +41,8 @@ const CardItemArtist = ({ content }) => {
           width={50}
           height={50}
           alt={content.profileAlt || "Profile image"}
+          placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,..."
           
         />
         </div>

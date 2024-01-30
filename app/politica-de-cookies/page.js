@@ -7,7 +7,8 @@ export default function PoliticaCookies() {
       <div className={style.container}>
         
         <div className={style.container__title}>
-        <Image src="/Iconos/COOKIES.svg" width={230} height={230} />
+        <Image src="/Iconos/COOKIES.svg" width={230} height={230} placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,..."/>
         </div>
         
         <div className={style.container__text}>

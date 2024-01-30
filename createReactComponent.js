@@ -7,97 +7,43 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const generateJsTemplate = (name, columns, divideMore, divideSide, additionalFeatures) => {
-  let divs = '';
-  for (let i = 0; i < columns; i++) {
-    const columnClass = `${name}__column`;
-    let innerDivs = '';
-    if (divideMore) {
-      if (divideSide === 'ambos' || divideSide === 'izquierdo') {
-        innerDivs += `<div className={style[\`${name}__inner-div-left\`]}>División Izquierda ${i + 1}</div>`;
-      }
-      if (divideSide === 'ambos' || divideSide === 'derecho') {
-        innerDivs += `<div className={style[${name}__inner-div-right]}>División Derecha ${i + 1}</div>`;
-      }
-    }
-    const innerContent = divideMore ? innerDivs : `Columna ${i + 1}`;
-    divs += `<div className={style[${columnClass}]}>${innerContent}</div>\n  `;
-  }
-
-  let additionalJs = '';
-  if (additionalFeatures.includes('boton')) {
-    additionalJs += `<button className={style[${name}__boton]}>Haz clic aquí</button>\n  `;
-  }
-
+const generateJsTemplate = (name, type) => {
+  const componentName = type.toLowerCase() === 'c' ? name : 'Page';
   return `import React from 'react';
-import style from './${name}.module.css';
+import styles from './${name}.module.css';
 
-export const ${name} = () => {
+export const ${componentName} = () => {
   return (
-    <div className={style[${name}]}>
-      ${divs}
-      ${additionalJs}
-    </div>
+    <section className={styles['${name}__section']}>
+      Hola
+    </section>
   );
 }
 
-export default ${name}
-
-;`;
+export default ${componentName};
+`;
 };
 
-const generateCssTemplate = (name, columns, divideMore, additionalFeatures) => {
-  let style = '';
-  for (let i = 0; i < columns; i++) {
-    style += `.${name}__column {\n  flex: 1;\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n`;
-    if (divideMore) {
-      style += `.${name}__inner-div-left, .${name}__inner-div-right {\n  /* Estilos adicionales para divisiones internas */\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n`;
-    }
-  }
-
-  let additionalCss = '';
-  if (additionalFeatures.includes('boton')) {
-    additionalCss += `.${name}__boton {\n  /* Estilos adicionales para botones */\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n`;
-  }
-
-  return `.${name}__contenedor {\n  display: flex;\n  border: 1px solid white;\n  background-color: transparent;\n}\n\n${columnstyle}${additionalCss}`;
+const generateCssTemplate = (name) => {
+  return `.${name}__section {\n  /* Estilos para la sección */\n}\n`;
 };
 
 rl.question('¿Componente o Página? (c/p): ', (type) => {
   rl.question('Ingresa el nombre: ', (name) => {
-    rl.question('¿Cuántas columnas? (Ingresa un número): ', (columns) => {
-      rl.question('¿Dividir más las columnas? (sí/no): ', (divideMoreInput) => {
-        const divideMore = divideMoreInput.trim().toLowerCase() === 'sí';
-        let divideSide = null;
-        if (divideMore) {
-          rl.question('¿Qué lado dividir? (derecho/izquierdo/ambos): ', (sideInput) => {
-            divideSide = sideInput.trim().toLowerCase();
-            askForAdditionalFeatures(name, columns, divideMore, divideSide, type);
-          });
-        } else {
-          askForAdditionalFeatures(name, columns, divideMore, divideSide, type);
-        }
-      });
-    });
-  });
-});
-
-function askForAdditionalFeatures(name, columns, divideMore, divideSide, type) {
-  rl.question('¿Alguna característica adicional? (botón, entrada, etc., separa por comas): ', (features) => {
     const directory = type.toLowerCase() === 'c' ? './components' : './app';
+    const folderPath = path.join(directory, name);
     const fileName = type.toLowerCase() === 'c' ? `${name}.jsx` : 'page.jsx';
-    const jsFilePath = path.join(directory, name, fileName);
-    const cssFilePath = path.join(directory, name, `${name}.module.css`);
+    const jsFilePath = path.join(folderPath, fileName);
+    const cssFilePath = path.join(folderPath, `${name}.module.css`);
 
-    const additionalFeatures = features.split(',').map(feature => feature.trim().toLowerCase());
-    const jsContent = generateJsTemplate(name, parseInt(columns), divideMore, divideSide, additionalFeatures);
-    const cssContent = generateCssTemplate(name, parseInt(columns), divideMore, additionalFeatures);
+    const jsContent = generateJsTemplate(name, type);
+    const cssContent = generateCssTemplate(name);
 
-    fs.mkdirSync(path.join(directory, name), { recursive: true });
+    fs.mkdirSync(folderPath, { recursive: true });
     fs.writeFileSync(jsFilePath, jsContent, 'utf8');
     fs.writeFileSync(cssFilePath, cssContent, 'utf8');
 
     console.log(`Se creó ${type === 'c' ? 'el componente' : 'la página'} ${name} en ${jsFilePath} con su módulo CSS correspondiente en ${cssFilePath}`);
     rl.close();
   });
-}
+});

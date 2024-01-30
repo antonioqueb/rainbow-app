@@ -1,0 +1,91 @@
+.CardPosts__container__news{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.CardPost__container__news__title h3{
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    color: #C18BD9;
+}
+
+.CardPost__container__news__description p{
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+.CardPost__container__news__image__img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    border-radius: 14px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+.CardPost__container__news__title,
+.CardPost__container__news__description {
+  width: 100%; /* Asegurarse de que el contenedor del texto use todo el ancho disponible */
+}
+
+.CardPost__container__news__title h3,
+.CardPost__container__news__description p {
+  white-space: normal; /* Asegurarse de que el texto se ajuste correctamente */
+  overflow-wrap: break-word; /* Permite que las palabras largas se rompan y pasen a la siguiente línea */
+}
+
+
+@media (max-width: 599px) {
+  
+    .CardPost__container__news__title h3{
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .CardPost__container__news__description p{
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Estilos que se aplican cuando la pantalla tiene menos de 600px de ancho */
+  }
+  
+  
+  /* Tabletas: desde 601px hasta 900px */
+  @media (min-width: 601px) and (max-width: 900px) {
+
+    .CardPost__container__news__title h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .CardPost__container__news__description p{
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+  
+  }
+  
+  /* Escritorio: más de 900px */
+  @media (min-width: 901px) {
+  
+  }

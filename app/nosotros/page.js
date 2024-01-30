@@ -22,7 +22,8 @@ export default function AboutPage() {
     </section>
      <section  className={style.container_reverse}>
       <div className={style.container__img}>
-        <Image src="/ark/newartist.jpg" width={330} height={330} />
+        <Image src="/ark/newartist.jpg" width={330} height={330} placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,..."/>
       </div>
       <div className={style.container__text}>
         <h2 className={style.container__text__title}>Nuestra Misión</h2>
@@ -33,7 +34,8 @@ export default function AboutPage() {
     </section>
         <section  className={style.container}>
       <div className={style.container__img}>
-        <Image src="/ark/vision.jpg" width={330} height={330} />
+        <Image src="/ark/vision.jpg" width={330} height={330} placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,..."/>
       </div>
       <div className={style.container__text}>
         <h2 className={style.container__text__title}>Nuestra Visión</h2>
@@ -44,7 +46,8 @@ export default function AboutPage() {
     </section>
          <section  className={style.container_reverse}>
       <div className={style.container__img}>
-        <Image src="/ark/valores.jpg" width={330} height={330} />
+        <Image src="/ark/valores.jpg" width={330} height={330} placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,..."/>
       </div>
       <div className={style.container__text}>
         <h2 className={style.container__text__title}>Nuestros Valores</h2>

@@ -1,0 +1,46 @@
+/* DynamicTitleSkeleton.module.css */
+@keyframes loading {
+    0% {
+      background-color: #0d0d0d;
+    }
+    25% {
+      background-color: #0d0d0d85;
+    }
+    50% {
+      background-color: #0d0d0d80;
+    }
+    75% {
+      background-color: #0d0d0d85;
+    }
+    100% {
+      background-color: #0d0d0d;
+    }
+  }
+  
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .skeletonTitle {
+    width: 70%; /* Ajusta esto según sea necesario */
+    height: 2rem; /* Altura aproximada de tu título, ajusta según sea necesario */
+    background-color: #2e2e2e40;
+    animation: loading 1.8s infinite;
+    border-radius: 4px;
+  }
+  
+  /* Manteniendo los estilos responsive para que el esqueleto se ajuste como el componente real */
+  @media (max-width: 599px) {
+    .skeletonTitle {
+      height: 1.25rem; /* Ajusta la altura para dispositivos móviles */
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .skeletonTitle {
+      height: 1.5rem; /* Ajusta la altura para tabletas */
+    }
+  }
+  

@@ -24,7 +24,8 @@ const NavbarComponent = () => (
       <div className={styles['navbar__logo']}>
         <Link href="/">
           {/* Modificador: navbar__logo-text */}
-          <Image src="/logo-b.svg" alt="Logo" width={90} height={90} />
+          <Image src="/logo-b.svg" alt="Logo" width={90} height={90} placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,..." />
         </Link>
       </div>
       

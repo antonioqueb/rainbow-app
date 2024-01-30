@@ -1,0 +1,68 @@
+/* SkeletonPrimaryTags.module.css */
+.skeletonTags {
+    /* Repite los estilos de tu componente .tags para mantener la estructura */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vh 0 0 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 1vh;
+    
+  }
+  
+  .skeletonTag {
+    background-color: #2e2e2e40; /* Color de fondo del esqueleto */
+    width: 250px; 
+    padding: 2rem 1rem; /* Ajusta el valor del segundo parámetro según sea necesario */
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* Resto de tus estilos... */
+    font-size: 1rem;
+    font-weight: 400;
+    background-color:  transparent;
+    color: #e6e6e6;
+    border: solid 1px #2e2e2e40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh 0 0 0;
+    max-width: 25vh;
+    max-height: 50px;
+    transition: all 0.3s ease-in;
+    animation: loading 1.8s infinite;
+  }
+  
+  .skeletonTagIcon {
+    width: 50px;
+    height: 50px;
+    background-color: #2e2e2e40;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .skeletonTagText {
+    width: 100px;
+    height: 20px;
+    background-color: #00000070;
+    border-radius: 5px;
+  }
+  @keyframes loading {
+    0% {
+      background-color: #0d0d0d;
+    }
+    25% {
+      background-color: #0d0d0d85;
+    }
+    50% {
+      background-color: #0d0d0d80;
+    }
+    75% {
+      background-color: #0d0d0d85;
+    }
+    100% {
+      background-color: #0d0d0d;
+    }
+  }
+  

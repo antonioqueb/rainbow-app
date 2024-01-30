@@ -7,7 +7,8 @@ export default function PoliticaCookies() {
       <div className={style.container}>
         
         <div className={style.container__title}>
-          <Image src="/ark/terminos.svg" width={230} height={230} />
+          <Image src="/ark/terminos.svg" width={230} height={230} placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,..."/>
           <h3 className={style.toptitle}>Políticas</h3>
           <h1 className={style.title}>Términos y condiciones</h1>
         </div>
