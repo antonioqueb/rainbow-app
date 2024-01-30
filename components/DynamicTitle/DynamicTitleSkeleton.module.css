@@ -1,4 +1,7 @@
 /* DynamicTitleSkeleton.module.css */
+
+
+
 @keyframes loading {
     0% {
       background-color: #0d0d0d;
@@ -21,6 +24,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 1rem 0;
   }
   
   .skeletonTitle {

@@ -6,15 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
+  left: 2rem;
+  right: 2rem;
   position: fixed; /* Fijar el Navbar */
   backdrop-filter: blur(5px); /* Efecto esmerilado */
   z-index: 10; /* Asegurarse de que el Navbar esté sobre otros elementos */
   transition: background-color 0.3s, backdrop-filter 0.3s; /* Transiciones suaves */
+  height: 80px;
 
-  
-  
-  
 
 }
 
@@ -26,7 +25,6 @@
 }
 
 .navbar.scrolled {
-  background: #0d0d0d50; /* Aumentar transparencia al hacer scroll */
   backdrop-filter: blur(15px); /* Intensificar efecto esmerilado */
 }
 

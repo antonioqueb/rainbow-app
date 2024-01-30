@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 80px;
+
 
 }	
 
@@ -91,7 +93,7 @@
     .container__text {
       font-size: 1rem;
     }
-    
+
     
 
 

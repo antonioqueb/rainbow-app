@@ -15,6 +15,20 @@ import { MdSettingsSuggest } from "react-icons/md";
 import { SiGoogleanalytics } from "react-icons/si";
 import { SiHiveBlockchain } from "react-icons/si";
 import { AiFillBulb } from "react-icons/ai";
+import { GrMoreVertical } from "react-icons/gr";
+import { MdOutlineFindReplace } from "react-icons/md";
+import { RiGitRepositoryPrivateFill } from "react-icons/ri";
+import { IoDocumentText } from "react-icons/io5";
+import { MdPrivacyTip } from "react-icons/md";
+import { LiaCookieSolid } from "react-icons/lia";
+import { TbMoneybag } from "react-icons/tb";
+import { GiPayMoney } from "react-icons/gi";
+
+
+
+
+
+
 
 
 
@@ -28,69 +42,59 @@ const SidebarComponent = () => {
         
         {/* Icono del Menú y Título */}
         <div className={styles.Hero__container__header}>
-        <Image src="/logo-b.svg" alt="Logotipo de la marca ark to art" width={40} height={40}/>
-        <p className={styles.sidebar_title}>Alphaqueb</p>
+        <Image src="/logo-b.png" alt="Logotipo de la marca Ark to Art" width={70} height={70}/>
       </div>
 
         {/* Links del Menú */}
         <div className={styles.sidebar_links}>
-          <Link href="/" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link style={{textDecoration: 'none'}} href="/" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <MdHomeFilled className={styles.sidebar_icon} />
             Inicio
           </Link>
-          <Link href="/about" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link style={{textDecoration: 'none'}} href="/nosotros" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
            <AiFillApi className={styles.sidebar_icon} />
             Nosotros
           </Link>
-          <Link href="/contact" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link style={{textDecoration: 'none'}} href="/contacto" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
            <MdContactPage className={styles.sidebar_icon} />
             Contacto
           </Link>
-          <Link href="/blog" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link style={{textDecoration: 'none'}} href="/blog" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <FaBlog className={styles.sidebar_icon} />
             Blog
           </Link> 
+          <Link style={{textDecoration: 'none'}} href="/explorar" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+            <MdOutlineFindReplace className={styles.sidebar_icon} />
+            Explorar
+          </Link>
+          <Link style={{textDecoration: 'none'}} href="/politica-de-privacidad" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+            <RiGitRepositoryPrivateFill className={styles.sidebar_icon} />
+            Política de Privacidad
+          </Link>
+          <Link style={{textDecoration: 'none'}} href="/terminos-y-condiciones" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+            <IoDocumentText className={styles.sidebar_icon} />
+            Términos y Condiciones
+          </Link>
+          <Link style={{textDecoration: 'none'}} href="/aviso-de-privacidad" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+            <MdPrivacyTip className={styles.sidebar_icon} />
+            Aviso de Privacidad
+          </Link>
+          <Link style={{textDecoration: 'none'}} href="/politica-de-cookies" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+            <LiaCookieSolid className={styles.sidebar_icon} />
+            Politíca de Cookies
+          </Link>
 
 
           {/* Categoría: Servicios */}
           <h4 className={styles.sidebar_subtitle}>Servicios</h4>
-        <Link href="/software-development" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-          <MdDeveloperMode className={styles.sidebar_icon} />
-          Desarrollo de Software
-        </Link>
-        <Link href="/cloud-integration" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-          <FaCloud className={styles.sidebar_icon} />
-          Integración Cloud
-        </Link>
-        <Link href="/ui-ux-design" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-          <SiAffinitydesigner className={styles.sidebar_icon} />
-          Diseño UI/UX
-        </Link>
-        <Link href="/digital-strategy" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-          <PiStrategyBold className={styles.sidebar_icon} />
-          Estrategia Digital
-        </Link>
-        <Link href="/it-support" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-          <HiSupport className={styles.sidebar_icon} />
-          Soporte TI
-        </Link>
-        <Link href="/process-automation" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-          <MdSettingsSuggest className={styles.sidebar_icon} />
-          Automatización de Procesos
-        </Link>
-        <Link href="/data-analytics" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-          <SiGoogleanalytics className={styles.sidebar_icon} />
-          Analítica de Datos
-        </Link>
-        <Link href="/blockchain-solutions" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-          <SiHiveBlockchain className={styles.sidebar_icon} />
-          Soluciones Blockchain
-        </Link>
-        <Link href="/tech-training" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-          <AiFillBulb className={styles.sidebar_icon} />
-          Capacitación Tech
-        </Link>
-
+          <Link style={{textDecoration: 'none'}} href="/colabora" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+            <TbMoneybag className={styles.sidebar_icon} />
+            Vender Arte
+          </Link>
+        <Link style={{textDecoration: 'none'}} href="/colabora" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+            <GiPayMoney className={styles.sidebar_icon} />
+            Comprar Arte
+          </Link>
          
           
         </div>

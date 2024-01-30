@@ -7,10 +7,10 @@ import { GrMoreVertical } from "react-icons/gr";
 import SidebarComponent from '../SidebarComponent/SidebarComponent';
 
 const links = [
-  { href: "/", label: "Nosotros", key: "nosotros" },
-  { href: "/tienda", label: "Servicios", key: "tienda" },
-  { href: "/colaborar", label: "Herramientas", key: "colaborar" },
+  { href: "/explorar", label: "Explorar", key: "explorar" },
+  { href: "/contacto", label: "Contacto", key: "contacto" },
   { href: "/blog", label: "Blog", key: "blog" },
+  { href: "/nosotros", label: "Nosotros", key: "nosotros" },
 ];
 
 const NavbarComponent = () => {
@@ -47,7 +47,7 @@ const NavbarComponent = () => {
       <nav className={navbarClasses.join(' ')}>
         <div className={styles['navbar__logo']}>
           <Link href="/">
-            <Image src="/logo-b.svg" alt="Logo" width={50} height={50} />
+            <Image src="/logo-b.png" alt="Logo" width={70} height={70} />
           </Link>
         </div>
 

@@ -2,7 +2,7 @@
 .sidebar{
     width: 30%;
     height: 100%;
-    background-color: #0d0d0d99;
+    background-color: #0d0d0dfa;
     position: fixed;
     backdrop-filter: blur(21px);
     border: rgba(255, 255, 255, 0.288) 1px solid inset;
@@ -115,16 +115,13 @@
 }
 }
 /* Tabletas: desde 601px hasta 900px */
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 1200px) {
     .sidebar{
         width: 60%; /* Ancho más amplio para móviles */
 
     }
 
-    .sidebar_title{
-        font-size: 1.2rem; /* h1 en móvil */
-        left: 38%;
-    }
+  
 
     .sidebar_subtitle{
         font-size: 1rem; /* h4 en móvil */

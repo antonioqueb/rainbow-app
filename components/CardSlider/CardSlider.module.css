@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center; /* Centra la pista del deslizador */
   padding-top: 1rem;
+  margin-top: 80px;
  
   
 }
