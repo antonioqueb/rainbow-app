@@ -35,7 +35,7 @@ import { GiPayMoney } from "react-icons/gi";
 
 
 
-const SidebarComponent = () => {
+const SidebarComponent = ({onClose}) => {
   return (
     <div className={styles.sidebar}>
       <section className={styles.sidebar_section}>
@@ -47,39 +47,36 @@ const SidebarComponent = () => {
 
         {/* Links del Menú */}
         <div className={styles.sidebar_links}>
-          <Link style={{textDecoration: 'none'}} href="/" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <MdHomeFilled className={styles.sidebar_icon} />
             Inicio
           </Link>
-          <Link style={{textDecoration: 'none'}} href="/nosotros" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/nosotros" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
            <AiFillApi className={styles.sidebar_icon} />
             Nosotros
           </Link>
-          <Link style={{textDecoration: 'none'}} href="/contacto" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/contacto" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
            <MdContactPage className={styles.sidebar_icon} />
             Contacto
           </Link>
-          <Link style={{textDecoration: 'none'}} href="/blog" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/blog" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <FaBlog className={styles.sidebar_icon} />
             Blog
           </Link> 
-          <Link style={{textDecoration: 'none'}} href="/explorar" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-            <MdOutlineFindReplace className={styles.sidebar_icon} />
-            Explorar
-          </Link>
-          <Link style={{textDecoration: 'none'}} href="/politica-de-privacidad" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+         
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/politica-de-privacidad" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <RiGitRepositoryPrivateFill className={styles.sidebar_icon} />
             Política de Privacidad
           </Link>
-          <Link style={{textDecoration: 'none'}} href="/terminos-y-condiciones" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/terminos-y-condiciones" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <IoDocumentText className={styles.sidebar_icon} />
             Términos y Condiciones
           </Link>
-          <Link style={{textDecoration: 'none'}} href="/aviso-de-privacidad" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/aviso-de-privacidad" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <MdPrivacyTip className={styles.sidebar_icon} />
             Aviso de Privacidad
           </Link>
-          <Link style={{textDecoration: 'none'}} href="/politica-de-cookies" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/politica-de-cookies" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <LiaCookieSolid className={styles.sidebar_icon} />
             Politíca de Cookies
           </Link>
@@ -87,11 +84,11 @@ const SidebarComponent = () => {
 
           {/* Categoría: Servicios */}
           <h4 className={styles.sidebar_subtitle}>Servicios</h4>
-          <Link style={{textDecoration: 'none'}} href="/colabora" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href="/colabora" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <TbMoneybag className={styles.sidebar_icon} />
             Vender Arte
           </Link>
-        <Link style={{textDecoration: 'none'}} href="/colabora" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+        <Link onClick={onClose} style={{textDecoration: 'none'}} href="/colabora" className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <GiPayMoney className={styles.sidebar_icon} />
             Comprar Arte
           </Link>

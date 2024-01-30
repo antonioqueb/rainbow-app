@@ -50,8 +50,15 @@
     transition: all 0.2s ease-in-out;
 }
 
+
+.sidebar_link:hover{
+    color: #EAF205;
+    transform: translateX(10px);
+}
+
+
 .sidebar_link_active{
-    color: #BF9F78;
+    color: #EAF205;
 }
 
 .sidebar_subtitle{

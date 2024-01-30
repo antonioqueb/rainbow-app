@@ -19,7 +19,7 @@ const Slide = ({ content }) => {
     return <SkeletonSlide />;
   }
   return (
-    <div className={style.slide}>
+    <div  id="explorar" className={style.slide}>
       <div className={style.imageWrapper}>
         <div className={style.category}>{content.category}</div>
         <Image

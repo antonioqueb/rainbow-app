@@ -82,7 +82,7 @@
 }
 
 .navbar__cta-button {
-  background-color:#BF9F78; /* A pleasant blue */
+  background-color:#FF0295; /* A pleasant blue */
   color: #26211F;
   border: none;
   border-radius: 4px;
@@ -124,7 +124,7 @@
 
 
 .navbar__item:hover {
-  color: #BF9F78;
+  color: #FF0295#BF9F78;
 }
 
 
@@ -138,7 +138,7 @@
 }
 
 .navbar__icon:hover {
-  color:#BF9F78;
+  color:#FF0295;
   transition-duration: 0.3s;
 }
 
