@@ -4,22 +4,16 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
-
     ports:
       - '3005:3005'
-
     volumes:
-      - /app/node_modules
       - .:/app
 
   server-dev:
     build:
       context: .
       dockerfile: Dockerfile.prod
-
     ports:
       - '5000:5000'
-
     volumes:
-      - /app/node_modules
       - .:/app
