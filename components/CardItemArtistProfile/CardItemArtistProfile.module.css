@@ -1,10 +1,14 @@
 .slide {
   border-radius: 20px;
   overflow: hidden;
-  display: flex; /* Asegura que el div de la imagen se ajuste al tamaño del contenedor */
-  justify-content: center; /* Centra la imagen horizontalmente */
-  align-items: center; /* Centra la imagen verticalmente */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Asegúrate de que no haya margen extra */
+  width: 195px; /* Ajusta al tamaño de la imagen */
+  height: 195px; /* Ajusta al tamaño de la imagen */
+}
+
 
   
 

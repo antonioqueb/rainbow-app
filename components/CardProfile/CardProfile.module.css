@@ -91,10 +91,9 @@
 
 .CardProfile__CardProfile__left__cardsContainer_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas con fracciones iguales */
-  grid-gap: 1rem; /* Espacio entre tarjetas */
-  padding: 1rem; /* Padding dentro del contenedor del grid */
-  border: solid 1px #ff8f8f; /* Borde del contenedor del grid */
-  align-items: start; /* Alinea los elementos al inicio de la celda de la cuadrícula */
-  justify-items: center; /* Centra los elementos horizontalmente en la celda de la cuadrícula */
+  grid-template-columns: repeat(3, 195px); /* Ajusta las columnas al tamaño fijo de las imágenes */
+  justify-content: center; /* Centra las tarjetas en el contenedor si hay espacio adicional */
+  grid-gap: 1rem;
+  padding: 1rem;
+  border: solid 1px #ff8f8f;
 }
