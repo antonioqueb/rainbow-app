@@ -39,7 +39,7 @@ const PrimaryTags = () => {
                     key={tag}
                 >
                     <Image
-                        src={`/Iconos/${tag}.png`}
+                        src={`/svg/${tag}.svg`}
                         alt={tag}
                         width={60}
                         height={60}
