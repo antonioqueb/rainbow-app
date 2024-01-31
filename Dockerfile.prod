@@ -3,17 +3,20 @@ FROM node:20.9.0 AS builder
 # Establece el directorio de trabajo en el contenedor
 WORKDIR /app
 
-
 # Copia los archivos de dependencias de Node.js
 COPY package*.json ./
-COPY . .
 
+# Instala dependencias
 RUN npm install
 
+# Copia el resto del código fuente
+COPY . .
+
+# Construye la aplicación
 RUN npm run build
 
-# Expone el puerto 80
+# Expone el puerto 5000
 EXPOSE 5000
 
 # Inicia la aplicación
-CMD ["npm", "run", "start"]
+CMD ["npx", "next", "start"]
