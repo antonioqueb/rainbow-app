@@ -12,16 +12,4 @@ services:
       - /app/node_modules
       - .:/app
 
-  server-dev:
-    build:
-      context: .
-      dockerfile: Dockerfile.prod
-
-    ports:
-      - '80:80'
-
-    volumes:
-      - /app/node_modules
-      - ./server:/app
-
-   
+ 
