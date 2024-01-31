@@ -7,7 +7,7 @@ export default function PoliticaCookies() {
       <div className={style.container}>
         
         <div className={style.container__title}>
-        <Image src='/Iconos/COOKIES.svg' width={230} height={230} alt='cover'  
+        <Image src='/ark/cookies.svg' width={230} height={230} alt='cover'  
          />
         </div>
         
