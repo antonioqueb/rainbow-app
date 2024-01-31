@@ -29,7 +29,7 @@ const CardItemArtist = ({ content }) => {
           alt={content.imageAlt || "Slide image"}
           width={500}
           height={500}
-          placeholder="blur"
+            
          
         />
       </div>
@@ -41,7 +41,7 @@ const CardItemArtist = ({ content }) => {
           width={50}
           height={50}
           alt={content.profileAlt || "Profile image"}
-          placeholder="blur"
+            
          
           
         />

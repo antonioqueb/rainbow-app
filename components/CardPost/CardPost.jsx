@@ -37,7 +37,7 @@ export const CardPost = ({ Titulo, Description, ImagePost }) => {
         alt={Titulo}
         width={540}
         height={360}
-        placeholder="blur"
+          
           // Aquí tu imagen en base64
         className={styles.CardPost__container__news__image__img}
       />

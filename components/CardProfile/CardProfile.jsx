@@ -8,7 +8,7 @@ export const CardProfile = () => {
       <div className={styles['CardProfile__left']} >
         <header className={styles['CardProfile__CardProfile__left__header']} >
           <div className={styles['CardProfile__CardProfile__left__header__img']} >
-            <Image src="/artist/artist.jpeg" alt="perfil" width={100} height={100}  className={styles['CardProfile__CardProfile__left__header__img__Image']}/>
+            <Image src='/artist/artist.jpeg' alt='perfil' width={100} height={100}  className={styles['CardProfile__CardProfile__left__header__img__Image']}/>
             <div className={styles['CardProfile__CardProfile__left__header__title']} >
             <h3>@ariadnarte</h3>
             </div>

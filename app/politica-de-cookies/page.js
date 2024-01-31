@@ -1,5 +1,5 @@
 import style from './politica-cookies.module.css'
-import Image from "next/image"
+import Image from 'next/image'
 
 export default function PoliticaCookies() {
   return (
@@ -7,7 +7,7 @@ export default function PoliticaCookies() {
       <div className={style.container}>
         
         <div className={style.container__title}>
-        <Image src="/Iconos/COOKIES.svg" width={230} height={230} placeholder="blur"
+        <Image src='/Iconos/COOKIES.svg' width={230} height={230} alt='cover'  
          />
         </div>
         
@@ -48,7 +48,7 @@ export default function PoliticaCookies() {
           </p>
 
           <p className={style.text}>
-          Para conocer las cookies que utiliza este sitio web, por favor dé clic en "Manage cookie preferences" ubicado en la parte superior de este Aviso de manejo de cookies.
+          Para conocer las cookies que utiliza este sitio web, por favor dé clic en 'Manage cookie preferences' ubicado en la parte superior de este Aviso de manejo de cookies.
           </p>
 
           <h4 className={style.text}>
@@ -57,7 +57,7 @@ export default function PoliticaCookies() {
           </h4>
 
           <p className={style.text}>
-          El tiempo que una cookie permanecerá en su dispositivo lo determinará la naturaleza de la misma, que puede ser "permanente" o de "sesión".
+          El tiempo que una cookie permanecerá en su dispositivo lo determinará la naturaleza de la misma, que puede ser 'permanente' o de 'sesión'.
           </p>
 
 
@@ -76,7 +76,7 @@ export default function PoliticaCookies() {
           </p>
 
           <p className={style.text}>
-          En caso de que las cookies no sean estrictamente necesarias para el funcionamiento de nuestro sitio web, le pediremos su consentimiento para utilizarlas cuando nos visite por primera vez. Este consentimiento se podrá proporcionar o revocar, dando clic en "Manage cookie preferences" ubicado en la parte superior de esta página.
+          En caso de que las cookies no sean estrictamente necesarias para el funcionamiento de nuestro sitio web, le pediremos su consentimiento para utilizarlas cuando nos visite por primera vez. Este consentimiento se podrá proporcionar o revocar, dando clic en 'Manage cookie preferences' ubicado en la parte superior de esta página.
           </p>
 
           <p className={style.text}>
@@ -122,7 +122,7 @@ export default function PoliticaCookies() {
           </p>
 
           <p className={style.text}>
-          En caso de que estos cambios se lleven a cabo, se actualizará la fecha de "última revisión" que se señala en la parte superior de esta página web. Las modificaciones se harán efectivas a partir de la última fecha de revisión.
+          En caso de que estos cambios se lleven a cabo, se actualizará la fecha de 'última revisión' que se señala en la parte superior de esta página web. Las modificaciones se harán efectivas a partir de la última fecha de revisión.
           </p>
 
           <p className={style.text}>

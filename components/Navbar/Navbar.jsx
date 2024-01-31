@@ -1,16 +1,16 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
-import { GrMoreVertical } from "react-icons/gr";
+import { GrMoreVertical } from 'react-icons/gr';
 import SidebarComponent from '../SidebarComponent/SidebarComponent';
 
 const links = [
-  { href: "https://docs.google.com/forms/d/e/1FAIpQLSeLBSBXjW1vIp0DMtsT0m7leWSYeZU1TNGvsiZlVPaFDKDkyg/viewform", label: "Colaborar", key: "colaborar" },
-  { href: "/contacto", label: "Contacto", key: "contacto" },
-  { href: "/blog", label: "Blog", key: "blog" },
-  { href: "/nosotros", label: "Nosotros", key: "nosotros" },
+  { href: 'https://docs.google.com/forms/d/e/1FAIpQLSeLBSBXjW1vIp0DMtsT0m7leWSYeZU1TNGvsiZlVPaFDKDkyg/viewform', label: 'Colaborar', key: 'colaborar' },
+  { href: '/contacto', label: 'Contacto', key: 'contacto' },
+  { href: '/blog', label: 'Blog', key: 'blog' },
+  { href: '/nosotros', label: 'Nosotros', key: 'nosotros' },
 ];
 
 const NavbarComponent = () => {
@@ -53,8 +53,8 @@ const NavbarComponent = () => {
     <>
       <nav className={navbarClasses.join(' ')}>
         <div className={styles['navbar__logo']}>
-          <Link href="/">
-            <Image src="/logo-b.png" alt="Logo" width={70} height={70} />
+          <Link href='/'>
+            <Image src='/logo-b.png' alt='Logo' width={70} height={70} />
           </Link>
         </div>
 

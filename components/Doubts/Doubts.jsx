@@ -24,7 +24,7 @@ export const Doubts = () => {
         </div>
 
       </div>
-      <Image src="/ark/contact.svg" alt="Doubts" width={600} height={600} placeholder="blur"
+      <Image src="/ark/contact.svg" alt="Doubts" width={600} height={600}   
           className={styles.Doubts__container__image}/>
 
      

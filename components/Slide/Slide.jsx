@@ -27,7 +27,7 @@ const Slide = ({ content }) => {
           alt={content.imageAlt || "Slide image"}
           width={500}
           height={500} 
-          placeholder="blur"
+            
            
         />
       </div>

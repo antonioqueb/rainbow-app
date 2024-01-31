@@ -1,5 +1,5 @@
 import style from './politica-privacidad.module.css'
-import Image from "next/image"
+import Image from  'next/image '
 
 export default function AvisoPrivacidad() {
   return (
@@ -7,7 +7,7 @@ export default function AvisoPrivacidad() {
       <div className={style.container}>
         
         <div className={style.container__title}>
-          <Image src="/Iconos/politicas.svg" width={330} height={330} placeholder="blur"
+          <Image src= '/Iconos/politicas.svg ' width={330} height={330}  alt= 'iconos-politicas ' 
         />
           <h3 className={style.toptitle}>Políticas</h3>
           <h1 className={style.title}>Aviso de Privacidad</h1>
