@@ -1,15 +1,13 @@
 .CardProfile {
   /* Estilos para la sección */
   margin-top: 120px;
-  border: solid 1px #ffffff;
-  height: 800px;
+  height: 100%;
   display: flex;
 }
 
 .CardProfile__right {
   /* Estilos para los contenedores */
   flex: 2;
-  border: solid 1px #ff8f8f;
 }
 
 .CardProfile__left {
@@ -24,7 +22,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border: solid 1px #ff8f8f;
   flex-direction: row
 }
 .CardProfile__CardProfile__left__header__img{
@@ -76,3 +73,28 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CardProfile__CardProfile__left__cardsContainer_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas con fracciones iguales */
+  grid-gap: 1rem; /* Espacio entre tarjetas */
+  padding: 1rem; /* Padding dentro del contenedor del grid */
+  border: solid 1px #ff8f8f; /* Borde del contenedor del grid */
+  align-items: start; /* Alinea los elementos al inicio de la celda de la cuadrícula */
+  justify-items: center; /* Centra los elementos horizontalmente en la celda de la cuadrícula */
+}

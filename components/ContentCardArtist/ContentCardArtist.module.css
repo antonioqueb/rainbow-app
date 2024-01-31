@@ -6,7 +6,11 @@
     /* Otros estilos que necesites */
   }
   
+  .cardGrid__item {
+    /* Estilos para cada elemento individual en la grilla */
 
+  }
+  
 
 
   @media (max-width: 599px) {

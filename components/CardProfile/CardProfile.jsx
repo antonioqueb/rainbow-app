@@ -1,8 +1,22 @@
-import React from 'react';
+'use client';
 import styles from './CardProfile.module.css';
 import Image from 'next/image';
+import useSlider from '../../hooks/useSlider';
+import slidesData from '../../data/slides.json';
+import CardItemArtistProfile from '../CardItemArtistProfile/CardItemArtistProfile';
 
 export const CardProfile = () => {
+
+
+  const { currentSlide, next, prev } = useSlider(slidesData.length);
+  const slidesToShow = 12;
+
+  // Calcular los índices de las tarjetas a mostrar
+  const slidesToRender = slidesData.slice(currentSlide, currentSlide + slidesToShow).concat(
+    slidesData.slice(0, Math.max(slidesToShow - (slidesData.length - currentSlide), 0))
+  );
+
+
   return (
     <section className={styles['CardProfile']}>
       <div className={styles['CardProfile__left']} >
@@ -35,13 +49,13 @@ export const CardProfile = () => {
 
          
         </header>
-        
-        
-        
-        
+          {slidesToRender.map((slide, index) => (
+          <div className={styles['CardProfile__CardProfile__left__cardsContainer_grid']} key={slide.id}>
+            <CardItemArtistProfile content={slide} />
+          </div>
+          ))} 
       </div>
-      <div className={styles['CardProfile__right']} >
-        
+      <div className={styles['CardProfile__right']} >    
       </div>
       
     </section>
