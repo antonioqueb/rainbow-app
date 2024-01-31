@@ -25,7 +25,7 @@ export const Doubts = () => {
 
       </div>
       <Image src="/ark/contact.svg" alt="Doubts" width={600} height={600} placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,..." className={styles.Doubts__container__image}/>
+          className={styles.Doubts__container__image}/>
 
      
       

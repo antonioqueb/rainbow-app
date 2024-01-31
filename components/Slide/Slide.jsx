@@ -28,7 +28,7 @@ const Slide = ({ content }) => {
           width={500}
           height={500} 
           placeholder="blur"
-          blurDataURL="data:image/svg+xml;base64,..."
+           
         />
       </div>
       <section className={style.slide__content}>

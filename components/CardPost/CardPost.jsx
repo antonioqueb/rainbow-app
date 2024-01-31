@@ -38,7 +38,7 @@ export const CardPost = ({ Titulo, Description, ImagePost }) => {
         width={540}
         height={360}
         placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,..." // Aquí tu imagen en base64
+          // Aquí tu imagen en base64
         className={styles.CardPost__container__news__image__img}
       />
       <div className={styles.CardPost__container__news__title}>

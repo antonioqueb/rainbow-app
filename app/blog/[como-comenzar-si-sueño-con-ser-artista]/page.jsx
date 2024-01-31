@@ -13,7 +13,7 @@ export const PostOne = () => {
       </header>
       <div className={styles['post_image']}>
         <Image src="/cover/1.jpg" alt="cover" placeholder="blur"
-          blurDataURL="data:image/svg+xml;base64,..." />
+            />
       </div>
       <article className={styles['post_article']}>
         <p className={styles['post_paragraph']}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet enim tortor at auctor urna nunc id cursus. Quis varius quam quisque id. Lobortis mattis aliquam faucibus purus in. Id neque aliquam vestibulum morbi. Tristique senectus et netus et malesuada fames ac turpis egestas. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Nulla facilisi morbi tempus iaculis urna id. Turpis massa sed elementum tempus egestas. Fusce ut placerat orci nulla pellentesque. Nam aliquam sem et tortor. Purus sit amet volutpat consequat. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Nulla pellentesque dignissim enim sit amet venenatis urna cursus. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Mauris augue neque gravida in fermentum et sollicitudin ac orci.
@@ -36,7 +36,7 @@ export const PostOne = () => {
         </p>
         <div className={styles['post_image']}>
         <Image src="/cover/1.jpg" alt="cover" placeholder="blur"
-          blurDataURL="data:image/svg+xml;base64,..."/>
+           />
        </div>
 
         <p className={styles['post_paragraph']}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet enim tortor at auctor urna nunc id cursus. Quis varius quam quisque id. Nisl nunc mi ipsum faucibus vitae aliquet

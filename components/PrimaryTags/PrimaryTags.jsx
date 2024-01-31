@@ -45,7 +45,7 @@ const PrimaryTags = () => {
                         height={50}
                         className={style.tagIcon}
                         placeholder="blur"
-                        blurDataURL="data:image/svg+xml;base64,..."
+                         
                     />
                     <p className={style.tagText}>
                     {tag}

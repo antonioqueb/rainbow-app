@@ -8,7 +8,7 @@ export default function PoliticaPrivacidad() {
         
         <div className={style.container__title}>
           <Image src="/Iconos/politicas.svg" width={230} height={230} placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,..."/>
+         />
           <h3 className={style.toptitle}>Políticas</h3>
           <h1 className={style.title}>Política de Privacidad</h1>
         </div>

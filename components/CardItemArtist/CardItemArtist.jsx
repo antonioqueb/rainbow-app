@@ -30,7 +30,7 @@ const CardItemArtist = ({ content }) => {
           width={500}
           height={500}
           placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,..."
+         
         />
       </div>
       <div className={style.profile}>
@@ -42,7 +42,7 @@ const CardItemArtist = ({ content }) => {
           height={50}
           alt={content.profileAlt || "Profile image"}
           placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,..."
+         
           
         />
         </div>
