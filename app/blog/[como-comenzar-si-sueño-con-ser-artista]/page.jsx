@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './PostOne.module.css';
+import Image from 'next/image';
 
 export const PostOne = () => {
   return (
@@ -11,7 +12,7 @@ export const PostOne = () => {
         
       </header>
       <div className={styles['post_image']}>
-        <img src="/cover/1.jpg" alt="cover" placeholder="blur"
+        <Image src="/cover/1.jpg" alt="cover" placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,..." />
       </div>
       <article className={styles['post_article']}>
@@ -23,7 +24,7 @@ export const PostOne = () => {
 
  </p>
         <div className={styles['post_image']}>
-        <img src="/cover/2.jpg" alt="cover" />
+        <Image src="/cover/2.jpg" alt="cover" />
       </div>
         <p className={styles['post_paragraph']}>Tincidunt eget nullam non nisi est sit amet facilisis magna. Natoque penatibus et magnis dis parturient montes nascetur. Rhoncus dolor purus non enim praesent elementum facilisis. Amet nisl suscipit adipiscing bibendum est. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Viverra nibh cras pulvinar mattis. Porttitor massa id neque aliquam vestibulum. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Volutpat blandit aliquam etiam erat velit. Ultrices eros in cursus turpis massa tincidunt dui ut ornare.
         </p>
@@ -34,7 +35,7 @@ export const PostOne = () => {
         <p className={styles['post_paragraph']}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet enim tortor at auctor urna nunc id cursus. Quis varius quam quisque id. Nisl nunc mi ipsum faucibus vitae aliquet
         </p>
         <div className={styles['post_image']}>
-        <img src="/cover/1.jpg" alt="cover" placeholder="blur"
+        <Image src="/cover/1.jpg" alt="cover" placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,..."/>
        </div>
 
