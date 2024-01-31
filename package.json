@@ -21,7 +21,6 @@
   "devDependencies": {
     "@axe-core/react": "^4.8.2",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "eslint-plugin-storybook": "^0.6.15"
+    "eslint-config-next": "14.0.4"
   }
 }
