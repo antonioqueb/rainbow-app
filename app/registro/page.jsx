@@ -6,7 +6,7 @@ export default function RegistroPage() {
   return (
     <div className={styles['login-page']}>
       <div className={styles['login-page__form-section']}>
-        <h1 className={styles['login-page__heading']}>Registrarme Ahora!</h1>
+        <h1 className={styles['login-page__heading']}>¡Registrarme!</h1>
         <form action="#" method="POST" className={styles['login-page__form']}>
         <div className={styles['form__input-group']}>
             <label htmlFor="username" className={styles['form__label']}>Nombre Completo</label>
