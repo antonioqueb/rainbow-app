@@ -1,5 +1,7 @@
+// CardPost.js
+
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './CardPost.module.css';
 import Image from 'next/image';
 import SkeletonCardPost from './SkeletonCardPost'
@@ -16,10 +18,13 @@ export const CardPost = ({ Titulo, Description, ImagePost }) => {
     return str.length > maxLength ? str.substring(0, maxLength) + "..." : str;
   };
 
-  // Función para manejar la carga de la imagen
-  const handleImageLoad = () => {
-    setLoading(false);
-  };
+  // Simular la carga de imagen o datos
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1); // Ajusta el tiempo según sea necesario
+    return () => clearTimeout(timer);
+  }, [ImagePost]); // Dependencia para recargar si la imagen cambia
 
   if (loading) {
     return <SkeletonCardPost />;
@@ -32,7 +37,8 @@ export const CardPost = ({ Titulo, Description, ImagePost }) => {
         alt={Titulo}
         width={540}
         height={360}
-        onLoad={handleImageLoad} // Manejar la carga de la imagen
+          
+          // Aquí tu imagen en base64
         className={styles.CardPost__container__news__image__img}
       />
       <div className={styles.CardPost__container__news__title}>

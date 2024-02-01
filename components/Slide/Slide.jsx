@@ -1,30 +1,34 @@
 import style from './Slide.module.css';
 import Image from 'next/image';
-import SkeletonSlide from './SkeletonSlide';
-import { useState } from 'react';
+import SkeletonSlide from './SkeletonSlide'; // Importa el componente de esqueleto
+import { useState, useEffect } from 'react';
+
 
 const Slide = ({ content }) => {
   const [loading, setLoading] = useState(true);
 
-  // Función para manejar la carga de la imagen
-  const handleImageLoad = () => {
-    setLoading(false);
-  };
+  // Simular la carga de imagen o datos
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1); // Ajusta el tiempo según sea necesario
+    return () => clearTimeout(timer);
+  }, [content]); // Dependencia para recargar si el contenido cambia
 
   if (loading) {
     return <SkeletonSlide />;
   }
-
   return (
-    <div id="explorar" className={style.slide}>
+    <div  id="explorar" className={style.slide}>
       <div className={style.imageWrapper}>
         <div className={style.category}>{content.category}</div>
         <Image
           src={content.imageUrl}
           alt={content.imageAlt || "Slide image"}
           width={500}
-          height={500}
-          onLoad={handleImageLoad} // Manejar la carga de la imagen
+          height={500} 
+            
+           
         />
       </div>
       <section className={style.slide__content}>
@@ -36,3 +40,4 @@ const Slide = ({ content }) => {
 };
 
 export default Slide;
+

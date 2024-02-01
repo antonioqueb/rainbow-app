@@ -17,7 +17,7 @@ const PrimaryTags = () => {
         // Simula la carga de datos
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 250); // Ajusta el tiempo de carga según sea necesario
+        }, 1); // Ajusta el tiempo de carga según sea necesario
         return () => clearTimeout(timer);
     }, []);
 
