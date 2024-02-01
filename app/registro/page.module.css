@@ -1,0 +1,108 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+   
+}
+
+
+
+.login-page__form-section {
+    display: flex;
+    flex-direction: column; /* Orientación vertical */
+    align-items: center; /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
+    padding: 4rem; /* Espaciado uniforme */
+    background: #0d0d0d; /* Fondo ligeramente más claro para la sección de formulario */
+    flex: 1;
+    margin: 2rem 0;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: #000000 0px 0px 80px 0px;
+}
+
+/* Media queries para responsividad */
+@media (min-width: 1024px) {
+    .login-page__form-section {
+        max-width: 520px; /* Limitamos el ancho del formulario para pantallas grandes */
+    
+    }
+}
+
+.login-page__heading {
+    font-size: 2rem; /* Tamaño de fuente más grande para el encabezado */
+    color: #fff; /* Texto blanco para mejor contraste */
+    margin-bottom: 2rem;
+}
+
+.form__input-group {
+    width: 100%; /* Aseguramos que el input use todo el ancho disponible */
+    margin-bottom: 1rem;
+}
+
+.form__label {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem; /* Espaciado entre etiqueta e input */
+}
+
+.form__input {
+    width: 100%;
+    border: none; /* Sin borde para un diseño más limpio */
+    border-bottom: 1px solid #cbd5e0; /* Borde inferior para delimitar inputs */
+    background: transparent; /* Fondo transparente */
+    padding: 0.75rem 0; /* Espaciado superior e inferior */
+    color: #ffffff; /* Texto blanco para el input */
+}
+
+.form__input:focus {
+    border-bottom-color: #FF0295; /* Color de enfoque para el borde inferior */
+    outline: none; /* Eliminamos el contorno predeterminado */
+}
+
+.form__checkbox-group {
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.form__checkbox {
+    margin-right: 0.5rem; /* Espaciado a la derecha de la caja */
+}
+
+.form__forgot-password,
+.form__signup-link {
+    color: #4299e1; /* Un color más claro para los enlaces */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.form__link {
+    color: #ffffff;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.form__link:hover {
+    color: #FF0295; /* Color al pasar el ratón */
+}
+
+.form__submit-button {
+    background-color: #FF0295;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    margin-top: 1rem; /* Espaciado superior para el botón */
+    border: none; /* Sin borde */
+}
+
+.form__submit-button:hover {
+    background-color: #af0066;
+}
+
+.form__signup-link {
+    text-align: center;
+    margin-top: 1rem; /* Espaciado superior para el enlace de registro */
+}

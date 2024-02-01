@@ -23,6 +23,8 @@ import { MdPrivacyTip } from 'react-icons/md';
 import { LiaCookieSolid } from 'react-icons/lia';
 import { TbMoneybag } from 'react-icons/tb';
 import { GiPayMoney } from 'react-icons/gi';
+import { FaUserAlt } from "react-icons/fa";
+import { RiUserAddFill } from "react-icons/ri";
 
 
 
@@ -91,6 +93,18 @@ const SidebarComponent = ({onClose}) => {
         <Link onClick={onClose} style={{textDecoration: 'none'}} href='/colabora' className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
             <GiPayMoney className={styles.sidebar_icon} />
             Comprar Arte
+          </Link>
+
+
+           {/* Categoría: Servicios */}
+           <h4 className={styles.sidebar_subtitle}>Acceso</h4>
+          <Link onClick={onClose} style={{textDecoration: 'none'}} href='/login' className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+            <FaUserAlt className={styles.sidebar_icon} />
+            Login
+          </Link>
+        <Link onClick={onClose} style={{textDecoration: 'none'}} href='/registro' className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
+            <RiUserAddFill className={styles.sidebar_icon} />
+            Registro
           </Link>
          
           
