@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const Slice = createSlice({
     name: "selectCategory",
     initialState: {
-        value: "All",
+        value: "Todo",
     },
     reducers: {
         selectCategory: (state, action) => {
