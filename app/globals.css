@@ -69,6 +69,22 @@ input, textarea {
   }
 }
 
+
+/* Estilos específicos para Safari en Mac */
+@media not all and (min-resolution:.001dpcm) { /* Detecta Safari */
+  @supports (-webkit-appearance:none) { /* Confirma que es Webkit (Safari) */
+      .glass {
+          /* Desactivar backdrop-filter o aplicar un estilo de fondo alternativo */
+          backdrop-filter: none;
+          background-color: rgba(13, 13, 13, 0.8); /* Color de fondo sólido con transparencia como ejemplo */
+          /* ... otros estilos alternativos si son necesarios ... */
+      }
+  }
+}
+
+
+
+
 .container-layout {
     min-width: 100%;
     position: relative;
