@@ -82,7 +82,16 @@ input, textarea {
   }
 }
 
-
+/* Estilos específicos para iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .glass {
+      /* Puedes ajustar los estilos según sea necesario para iPads */
+      /* Por ejemplo, puedes mantener o ajustar el backdrop-filter aquí */
+      backdrop-filter: none;
+      background-color: #0d0d0d; /* Color de fondo sólido con transparencia como ejemplo */
+      /* ... otros estilos alternativos si son necesarios ... */
+  }
+}
 
 
 .container-layout {
