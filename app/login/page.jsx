@@ -21,7 +21,7 @@ export default function PoliticaCookies() {
             <label htmlFor="remember" className={styles['form__label']}>Recuerdame</label>
           </div>
           <div className={styles['form__forgot-password']}>
-            <Link href="#" className={styles['form__link']} style={{textDecoration: 'none'}}>Forgot Password?</Link>
+            <Link href="#" className={styles['form__link']} style={{textDecoration: 'none'}}>Olvidaste la contraseña?</Link>
           </div>
           <button type="submit" className={styles['form__submit-button']}>Iniciar</button>
           <div className={styles['form__signup-link']}>
