@@ -14,7 +14,7 @@ const DynamicTitle = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false); // Cambia el estado a false después de un tiempo para simular la carga de datos
-        }, 250); // Ajusta el tiempo según sea necesario
+        }, 150); // Ajusta el tiempo según sea necesario
         return () => clearTimeout(timer);
     }, [Category]); // Dependencia para recargar si la categoría cambia
 

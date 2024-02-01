@@ -11,7 +11,7 @@ const Slide = ({ content }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 250); // Ajusta el tiempo según sea necesario
+    }, 150); // Ajusta el tiempo según sea necesario
     return () => clearTimeout(timer);
   }, [content]); // Dependencia para recargar si el contenido cambia
 
