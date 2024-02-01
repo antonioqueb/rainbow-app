@@ -76,7 +76,7 @@ input, textarea {
       .glass {
           /* Desactivar backdrop-filter o aplicar un estilo de fondo alternativo */
           backdrop-filter: none;
-          background-color: rgba(13, 13, 13, 0.8); /* Color de fondo sólido con transparencia como ejemplo */
+          background-color: #0d0d0d; /* Color de fondo sólido con transparencia como ejemplo */
           /* ... otros estilos alternativos si son necesarios ... */
       }
   }
