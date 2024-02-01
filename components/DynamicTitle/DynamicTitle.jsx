@@ -1,22 +1,22 @@
 "use client";
 
-// components/DynamicTitle/DynamicTitle.jsx
 import React, { useState, useEffect } from 'react';
 import style from './DynamicTitle.module.css';
 import { useSelector } from 'react-redux';
-import DynamicTitleSkeleton from './DynamicTitleSkeleton'; // Importa el componente de esqueleto
+import DynamicTitleSkeleton from './DynamicTitleSkeleton'; 
 
 const DynamicTitle = () => {
     const Category = useSelector((state) => state.selectCategory.value);
-    const [loading, setLoading] = useState(true); // Estado para manejar la carga
+    const [loading, setLoading] = useState(true); 
 
-    // Simular la carga de datos
+    // Escuchar cambios en Category y actualizar el estado de carga
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false); // Cambia el estado a false después de un tiempo para simular la carga de datos
-        }, 5); // Ajusta el tiempo según sea necesario
-        return () => clearTimeout(timer);
-    }, [Category]); // Dependencia para recargar si la categoría cambia
+        if (Category) {
+            setLoading(false); // Cambia el estado a false si Category está presente
+        } else {
+            setLoading(true); // Mantiene el estado en true si Category aún no está disponible
+        }
+    }, [Category]);
 
     // Si los datos están cargando, muestra el esqueleto
     if (loading) {
