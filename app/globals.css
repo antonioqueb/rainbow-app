@@ -59,6 +59,16 @@ input, textarea {
     overflow: hidden;
     
 }
+
+@-moz-document url-prefix() {
+  .glass {
+      /* Desactivar backdrop-filter o aplicar un estilo de fondo alternativo */
+      backdrop-filter: none;
+      background-color: #0d0d0d; /* Ejemplo: un color de fondo sólido con transparencia */
+      /* ... otros estilos alternativos si son necesarios ... */
+  }
+}
+
 .container-layout {
     min-width: 100%;
     position: relative;
