@@ -7,7 +7,7 @@ export default function PoliticaPrivacidad() {
       <div className={style.container}>
         
         <div className={style.container__title}>
-          <Image src="/ark/politicas.svg" width={230} height={230} alt="cover"  
+          <Image src="/svg/politicas.svg" width={230} height={230} alt="cover"  
          />
           <h3 className={style.toptitle}>Políticas</h3>
           <h1 className={style.title}>Política de Privacidad</h1>
