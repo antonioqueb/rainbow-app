@@ -25,6 +25,8 @@ import { TbMoneybag } from 'react-icons/tb';
 import { GiPayMoney } from 'react-icons/gi';
 import { FaUserAlt } from "react-icons/fa";
 import { RiUserAddFill } from "react-icons/ri";
+import { FaPen } from "react-icons/fa";
+
 
 
 
@@ -103,7 +105,7 @@ const SidebarComponent = ({onClose}) => {
             Login
           </Link>
         <Link onClick={onClose} style={{textDecoration: 'none'}} href='/registro' className={styles.sidebar_link} activeClassName={styles.sidebar_link_active}>
-            <RiUserAddFill className={styles.sidebar_icon} />
+            <FaPen className={styles.sidebar_icon} />
             Registro
           </Link>
          

@@ -9,7 +9,8 @@
     overflow-y: hidden;
     white-space: nowrap;
     gap: 1vh;
-    
+    padding:0 0 1rem 0;
+
 
     
 }
