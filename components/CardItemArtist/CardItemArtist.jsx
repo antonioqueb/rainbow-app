@@ -13,7 +13,7 @@ const CardItemArtist = ({ content }) => {
     // Simula la carga de datos
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 30); // Ajusta el tiempo según sea necesario
+    }, 5); // Ajusta el tiempo según sea necesario
     return () => clearTimeout(timer);
   }, [content]); // Dependencia para recargar si el contenido cambia
 

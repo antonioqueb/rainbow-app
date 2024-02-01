@@ -54,7 +54,7 @@ const NavbarComponent = () => {
       <nav className={navbarClasses.join(' ')}>
         <div className={styles['navbar__logo']}>
           <Link href='/'>
-            <Image src='/logo-b.png' alt='Logo' width={70} height={70} />
+            <Image src='/logo-b.svg' alt='Logo Ark Project' width={75} height={75} />
           </Link>
         </div>
 

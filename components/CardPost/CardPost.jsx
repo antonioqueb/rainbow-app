@@ -22,7 +22,7 @@ export const CardPost = ({ Titulo, Description, ImagePost }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 30); // Ajusta el tiempo según sea necesario
+    }, 5); // Ajusta el tiempo según sea necesario
     return () => clearTimeout(timer);
   }, [ImagePost]); // Dependencia para recargar si la imagen cambia
 
