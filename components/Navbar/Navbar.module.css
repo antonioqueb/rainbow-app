@@ -25,7 +25,8 @@
 }
 
 .navbar.scrolled {
-  backdrop-filter: blur(15px); /* Intensificar efecto esmerilado */
+  background-color: #0d0d0d;
+
 }
 
 /* Resto de tus estilos... */
