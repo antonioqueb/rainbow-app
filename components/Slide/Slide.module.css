@@ -1,9 +1,9 @@
 .slide {
   /* Tus estilos existentes */
-  background:  #27272780; /* Fondo oscuro */
   min-height: 100%;
   border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;  
+  border-bottom-right-radius: 20px;
+  background-color: #0d0d0d;
   
 
 }
