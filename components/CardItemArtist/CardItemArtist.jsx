@@ -27,8 +27,10 @@ const CardItemArtist = ({ content }) => {
         <Image
           src={content.imageUrl}
           alt={content.imageAlt || "Slide image"}
-          width={500}
-          height={500}
+          width={200}
+          height={200}
+          layout="fixed"
+          className={style.imageWrapper__img}
             
          
         />

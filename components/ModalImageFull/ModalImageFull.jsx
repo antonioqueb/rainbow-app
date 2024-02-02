@@ -6,12 +6,20 @@ import { AiOutlineFullscreenExit } from "react-icons/ai";
 export const ModalImageFull = () => {
   return (
     <section className={styles['ModalImageFull__section']}>
+
+
+
       {/* Botón de cierre en la esquina superior derecha */}
       <div className={styles['ModalImageFull__section__close__modal']}>
         <button className={styles['ModalImageFull__section__close__modal__button']}>
           <AiOutlineFullscreenExit  className={styles['ModalImageFull__section__close__modal__button__icon']} />
         </button>
       </div>
+
+
+
+
+
 
       {/* Contenido de la imagen a la izquierda */}
       <div className={styles['ModalImageFull__section__content']}>
@@ -29,8 +37,8 @@ export const ModalImageFull = () => {
 
    
 
-      {/* Comentarios a la derecha */}
-      <div className={styles['ModalImageFull__section__comments']}>
+      {/* Seccion a la derecha */}
+      <section className={styles['ModalImageFull__section__comments']}>
       <div className={styles['ModalImageFull__section__info__artist']}>
 
         <div className={styles['ModalImageFull__section__info__artist__text']}>
@@ -157,7 +165,9 @@ export const ModalImageFull = () => {
 
 
 
-      </div>
+      </section>
+
+
     </section>
   );
 }
