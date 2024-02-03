@@ -13,7 +13,6 @@
   z-index: 1000;
   flex-direction: row;
   padding: 2rem 10rem;
-  overflow: auto;
 
 
 }
@@ -46,7 +45,6 @@
   align-items: center;
   flex: 2;
   height: 100%;
-  overflow: hidden;
 
 
 
@@ -287,33 +285,33 @@
 
 
 @media (max-width: 599px) {
-  .ModalImageFull__section {
+.ModalImageFull__section {
     flex-direction: column;
-    padding: 0 1rem;
-  
-  
-
-  }
-
- 
-
-  .ModalImageFull__section__content {
+    padding: 0 2rem;
     position: relative;
-    max-height: 48%;
+    width: 100%;
+  
 
-  }
+}
+
+.ModalImageFull__section__content {
+    position: relative;
+    border:#F2529D 1px solid;
+    padding: 0;
+    margin: 0;
 
 
+}
 
-  .ModalImageFull__section__close__modal {
+.ModalImageFull__section__close__modal {
     position: absolute;
     top: 4rem;
     left: 0.1rem;
    
   
-  }
+}
 
-  .ModalImageFull__section__close__modal__button__icon {
+.ModalImageFull__section__close__modal__button__icon {
     font-size: 3rem;
     color: white;
     cursor: pointer;
@@ -322,10 +320,9 @@
     padding: 10px;
 
   
-  }
+}
 
-
-  .ModalImageFull__section__image__Image {
+.ModalImageFull__section__image__Image {
     border-radius: 20px;
     width: 22rem;
     height: 22rem;
@@ -333,10 +330,9 @@
   
   
   
-  }
+}
   
-  
-  .ModalImageFull__section__comments {
+.ModalImageFull__section__comments {
     margin-left: 0; /* Ajuste para separar la imagen de los comentarios */
     flex:1;
     height: 100%;
@@ -348,10 +344,7 @@
     width: 22rem;
     overflow: auto;
   
-  }
-
-  
-
+}
 
 .ModalImageFull__section__close__modal__button__icon {
   font-size: 3rem;
@@ -363,10 +356,6 @@
 
 
 }
-
-
-
-
 
 .ModalImageFull__section__info__artist__name p {
   color: #FAEBFF;
@@ -383,16 +372,12 @@
   font-weight: 400;
 }
 
-
-
-
 .ModalImageFull__section__info__artist__username {
   color: #FAEBFF;
   font-size: 0.8rem;
   margin: 0;
   font-weight: 50;
 }
-
 
 .ModalImageFull__section__info__artist__description p {
   color: #FAEBFF;
@@ -403,7 +388,6 @@
   padding-bottom: 4rem;
 }
 
-
 .ModalImageFull__section__info__artist__avatar__img {
   border-radius: 50%;
   margin-right: 10px;
@@ -413,7 +397,6 @@
 
 }
 
-  
 }
 
 

@@ -130,6 +130,16 @@
   }
   /* Tus media queries y otros estilos */
   @media (max-width: 599px) {
+
+    .imageWrapper__img {
+      width: 365px;
+      height: 365px;
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+
   
     /* Estilos que se aplican cuando la pantalla tiene menos de 600px de ancho */
   }

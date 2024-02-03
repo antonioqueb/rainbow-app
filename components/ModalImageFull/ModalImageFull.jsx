@@ -35,7 +35,6 @@ export const ModalImageFull = () => {
             alt='perfil'
             width={900}
             height={900}
-            layout="fixed"
             className={styles['ModalImageFull__section__image__Image']}
           />
         
