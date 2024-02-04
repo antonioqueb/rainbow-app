@@ -13,6 +13,9 @@
   z-index: 1000;
   flex-direction: row;
   padding: 2rem 10rem;
+  border:#ffb452 1px solid;
+  overflow-y: scroll;
+
 
 
 }
@@ -42,26 +45,20 @@
   display: flex;
   justify-content: center;  /* Centra la imagen dentro de su contenedor */
   align-items: center;
-  align-items: center;
   flex: 2;
   height: 100%;
+  border:#52dfff 1px solid;
 
 
 
 }
 
 
-
-
-
-
 .ModalImageFull__section__image__Image {
   border-radius: 20px;
-  width: 56rem;
-  height: 56rem;
-  overflow: hidden;
-
-
+  width: 55rem;
+  height: 55rem;
+  overflow: hidden;  /* Oculta el contenido que se sale del contenedor */
 
 }
 
@@ -85,6 +82,7 @@
   align-items: flex-start;
   justify-content: flex-end;  /* Alinea los comentarios a la derecha */
   overflow: hidden;
+  border:#ffb452 1px solid;
 
 }
 
@@ -285,295 +283,21 @@
 
 
 @media (max-width: 599px) {
-.ModalImageFull__section {
-    flex-direction: column;
-    padding: 0 2rem;
-    position: relative;
-    width: 100%;
-  
-
-}
-
-.ModalImageFull__section__content {
-    position: relative;
-    border:#F2529D 1px solid;
-    padding: 0;
-    margin: 0;
-
-
-}
-
-.ModalImageFull__section__close__modal {
-    position: absolute;
-    top: 4rem;
-    left: 0.1rem;
-   
-  
-}
-
-.ModalImageFull__section__close__modal__button__icon {
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-    background-color: #F2529D80;
-    border-radius: 50%;
-    padding: 10px;
-
-  
-}
-
-.ModalImageFull__section__image__Image {
-    border-radius: 20px;
-    width: 22rem;
-    height: 22rem;
-    overflow: hidden;
-  
-  
-  
-}
-  
-.ModalImageFull__section__comments {
-    margin-left: 0; /* Ajuste para separar la imagen de los comentarios */
-    flex:1;
-    height: 100%;
-    flex-direction: column;  /* Apila los comentarios verticalmente */
-    align-items: flex-start;
-    justify-content: flex-end;  /* Alinea los comentarios a la derecha */
-    overflow: hidden;
-    max-width: 902px;
-    width: 22rem;
-    overflow: auto;
-  
-}
-
-.ModalImageFull__section__close__modal__button__icon {
-  font-size: 3rem;
-  color: white;
-  cursor: pointer;
-  background-color: #F2529D80;
-  border-radius: 50%;
-  padding: 10px;
-
-
-}
-
-.ModalImageFull__section__info__artist__name p {
-  color: #FAEBFF;
-  font-size: 1rem;
-  margin: 0;
-  font-weight: 400;
-  margin-right: 10px;
-}
-
-.ModalImageFull__section__info__artist__name span {
-  color: #a1a1a1;
-  font-size: 1rem;
-  margin: 0;
-  font-weight: 400;
-}
-
-.ModalImageFull__section__info__artist__username {
-  color: #FAEBFF;
-  font-size: 0.8rem;
-  margin: 0;
-  font-weight: 50;
-}
-
-.ModalImageFull__section__info__artist__description p {
-  color: #FAEBFF;
-  font-size: 1rem;
-  margin: 0;
-  font-weight: 50;
-  margin-right: 10px;
-  padding-bottom: 4rem;
-}
-
-.ModalImageFull__section__info__artist__avatar__img {
-  border-radius: 50%;
-  margin-right: 10px;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-
-}
-
-}
-
-
-@media (min-width: 600px) and (max-width: 901px) {
 
   .ModalImageFull__section {
     flex-direction: column;
-    padding: 0 1rem;
-  
-  
-
   }
-
-
-
-  
-  .ModalImageFull__section__content {
-    position: relative;
-    max-height: 52%;
-
-  }
-
-  .ModalImageFull__section__close__modal {
-    position: absolute;
-    top: 1rem;
-    left: 0.1rem;
-
-   
-  
-  }
-
-  .ModalImageFull__section__close__modal__button__icon {
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-    background-color: #F2529D80;
-    border-radius: 50%;
-    padding: 10px;
-
-  
-  }
-
-
-
-
 
  
-  
-  .ModalImageFull__section__content {
-   
-    
-    overflow: hidden;
-  
-  }
-  
-  .ModalImageFull__section__comments {
-    margin-left: 0; /* Ajuste para separar la imagen de los comentarios */
-    flex:1;
-    height: 100%;
-    flex-direction: column;  /* Apila los comentarios verticalmente */
-    align-items: flex-start;
-    justify-content: flex-end;  /* Alinea los comentarios a la derecha */
-    overflow: auto;
-    
-  
-  }
-
-  
-.ModalImageFull__section__image__Image {
-  border-radius: 20px;
-  width: 36rem;
-  height: 36rem;
-  overflow: hidden;
-
-
-
 }
 
 
-.ModalImageFull__section__comments {
-  margin-left: 0; /* Ajuste para separar la imagen de los comentarios */
-  flex:1;
-  height: 100%;
-  flex-direction: column;  /* Apila los comentarios verticalmente */
-  align-items: flex-start;
-  justify-content: flex-end;  /* Alinea los comentarios a la derecha */
-  overflow: hidden;
-  max-width: 902px;
-  width: 36rem;
-  overflow: auto;
+/* Tabletas: desde 601px hasta 900px */
+@media (min-width: 601px) and (max-width: 900px) {
 
 }
 
+/* Escritorio: más de 900px */
+@media (min-width: 901px) {
 
-  
-}
-
-
-@media (min-width: 902px) and (max-width: 1506px) {
-  .ModalImageFull__section {
-    flex-direction: column;
-    padding: 0 1rem;
-  
-  
-
-  }
-
-
-  .ModalImageFull__section__content {
-    position: relative;
-    max-height: 57%;
-
-  }
-
-  .ModalImageFull__section__close__modal {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    
-   
-  
-  }
-
-  .ModalImageFull__section__close__modal__button__icon {
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-    background-color: #F2529D80;
-    border-radius: 50%;
-    padding: 10px;
-
-  
-  }
-
-
-
-  .ModalImageFull__section__content {
-   
-  
-    overflow: hidden;
-  
-  }
-
-  .ModalImageFull__section__comments {
-    margin-left: 0; /* Ajuste para separar la imagen de los comentarios */
-    flex:1;
-    height: 100%;
-    flex-direction: column;  /* Apila los comentarios verticalmente */
-    align-items: flex-start;
-    justify-content: flex-end;  /* Alinea los comentarios a la derecha */
-    overflow: hidden;
-    max-width: 902px;
-    width: 902px;
-    overflow: auto;
-  
-  }
-
-}
-
-@media (max-width: 1507px) {
-  .ModalImageFull__section {
-    flex-direction: column;
-    padding: 0 1rem;
-  
-  
-
-  }
-
-  .ModalImageFull__section__content {
-    position: relative;
-    max-height: 100%;
-    padding-top: 20rem;
-
-
-  }
-
-
-
-  
 }

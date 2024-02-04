@@ -22,12 +22,15 @@ export const ModalImageFull = () => {
       {/* Contenido de la imagen a la izquierda */}
       <div className={styles['ModalImageFull__section__content']}>
 
-           {/* Botón de cierre en la esquina superior derecha */}
-      <div className={styles['ModalImageFull__section__close__modal']}>
-        <button className={styles['ModalImageFull__section__close__modal__button']}>
-          <AiOutlineFullscreenExit  className={styles['ModalImageFull__section__close__modal__button__icon']} />
-        </button>
-      </div>
+        
+                     {/* Botón de cierre en la esquina superior derecha */}
+         <div className={styles['ModalImageFull__section__close__modal']}>
+            <button className={styles['ModalImageFull__section__close__modal__button']}>
+              <AiOutlineFullscreenExit  className={styles['ModalImageFull__section__close__modal__button__icon']} />
+            </button>
+          </div>
+
+
 
           {/* Imagen de perfil */}
           <Image
@@ -37,6 +40,8 @@ export const ModalImageFull = () => {
             height={900}
             className={styles['ModalImageFull__section__image__Image']}
           />
+  
+
         
       </div>
 
