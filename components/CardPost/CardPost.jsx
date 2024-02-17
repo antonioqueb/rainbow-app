@@ -5,6 +5,9 @@ import React, { useState, useEffect } from 'react';
 import styles from './CardPost.module.css';
 import Image from 'next/image';
 import SkeletonCardPost from './SkeletonCardPost'
+import Link from 'next/link';
+
+// CardPost.jsx
 
 export const CardPost = ({ Titulo, Description, ImagePost }) => {
   const [loading, setLoading] = useState(true);
@@ -31,7 +34,11 @@ export const CardPost = ({ Titulo, Description, ImagePost }) => {
   }
 
   return (
+    <Link href={/blog/como-comenzar-si-sueño-con-ser-artista}>
     <div className={styles.CardPosts__container__news}>
+     
+        
+      
       <Image
         src={ImagePost}
         alt={Titulo}
@@ -47,7 +54,9 @@ export const CardPost = ({ Titulo, Description, ImagePost }) => {
       <div className={styles.CardPost__container__news__description}>
         <p>{truncate(Description, maxDescriptionLength)}</p>
       </div>
+    
     </div>
+    </Link>
   );
 };
 
