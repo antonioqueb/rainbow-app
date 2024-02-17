@@ -34,7 +34,7 @@ export const CardPost = ({ Titulo, Description, ImagePost }) => {
   }
 
   return (
-    <Link href="/blog/como-comenzar-si-sueño-con-ser-artista">
+    <Link style={{textDecoration: 'none'}} href="/blog/como-comenzar-si-sueño-con-ser-artista">
     <div className={styles.CardPosts__container__news}>
      
         
