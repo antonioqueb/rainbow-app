@@ -13,7 +13,7 @@ const CardItemArtist = ({ content }) => {
     // Simula la carga de datos
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1); // Ajusta el tiempo según sea necesario
+    }, 2); // Ajusta el tiempo según sea necesario
     return () => clearTimeout(timer);
   }, [content]); // Dependencia para recargar si el contenido cambia
 
@@ -30,40 +30,40 @@ const CardItemArtist = ({ content }) => {
           width={200}
           height={200}
           className={style.imageWrapper__img}
-            
-         
+
+
         />
       </div>
       <div className={style.profile}>
         <div className={style.profileImageWrapper}>
-        <Image
-          className={style.profileImage}
-          src={content.profileUrl}
-          width={50}
-          height={50}
-          alt={content.profileAlt || "Profile image"}
-            
-         
-          
-        />
+          <Image
+            className={style.profileImage}
+            src={content.profileUrl}
+            width={50}
+            height={50}
+            alt={content.profileAlt || "Profile image"}
+
+
+
+          />
         </div>
         <div className={style.profileInfo}>
-      <div className={style.profileInfo}>
-        <h2 className={style.userName}>{content.user}</h2>
+          <div className={style.profileInfo}>
+            <h2 className={style.userName}>{content.user}</h2>
 
-    </div>
-    <div className={style.views}>
-      <FaEye className={style.viewsIcon} />
-      <p className={style.viewsNumber}>{content.views}</p>
-    </div>
-    <div className={style.likes}>
-      <FcLike className={style.likesIcon} />
-      <p className={style.likesNumber}>{content.likes}</p>
-      </div>
-    </div>
-
+          </div>
+          <div className={style.views}>
+            <FaEye className={style.viewsIcon} />
+            <p className={style.viewsNumber}>{content.views}</p>
+          </div>
+          <div className={style.likes}>
+            <FcLike className={style.likesIcon} />
+            <p className={style.likesNumber}>{content.likes}</p>
+          </div>
         </div>
-        
+
+      </div>
+
 
     </div>
 

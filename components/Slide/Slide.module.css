@@ -5,10 +5,9 @@
   border-bottom-right-radius: 20px;
   background-color: #0d0d0d;
   
+  
 
 }
-
-
 
 .imageWrapper {
   position: relative;
@@ -16,12 +15,14 @@
   height: 17rem;
   overflow: hidden;
   object-position: center;
+  
+  
 }
 
 .category {
   position: absolute;
   top: 10px; /* Ajusta según necesidades */
-  left: 0.3rem; /* Ajusta según necesidades */
+  left: 0.8rem; /* Ajusta según necesidades */
   color: #ffffff;
   text-shadow: #020000 3px 1px 10px;
   padding: 5px 15px;
@@ -35,18 +36,43 @@
 
 .slide__content {
   /* Tus estilos existentes */
-  backdrop-filter: blur(80px);
-  padding: 0px 0.3rem;
+  padding: 0.5rem 0.8rem;
+
 
 
   
 }
 
+.slide__content__div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.slide__link{
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 20px;
+  border: solid 1px #FF0295;
+  padding: 0.3rem 0.8rem;
+
+}
+
 .title{
-  margin: 10px 0;
+  margin: 10px 0 2px 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.username{ 
+  margin: 0 0 5px 0;
   color: #ffffff;
   font-size: 1rem;
-   font-weight: 400;
+  font-weight: 500;
+
 }
 
 .category {

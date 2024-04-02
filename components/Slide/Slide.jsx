@@ -1,5 +1,8 @@
+// Component {Slide} into CardSlider
+
 import style from './Slide.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 import SkeletonSlide from './SkeletonSlide'; // Importa el componente de esqueleto
 import { useState, useEffect } from 'react';
 
@@ -19,7 +22,7 @@ const Slide = ({ content }) => {
     return <SkeletonSlide />;
   }
   return (
-    <div  id="explorar" className={style.slide}>
+    <div id="explorar" className={style.slide}>
       <div className={style.imageWrapper}>
         <div className={style.category}>{content.category}</div>
         <Image
@@ -27,13 +30,19 @@ const Slide = ({ content }) => {
           alt={content.imageAlt || "Slide image"}
           width={500}
           height={500} 
-            
-           
         />
       </div>
       <section className={style.slide__content}>
-        <h4 className={style.title}>{content.title}</h4>
-        <p className={style.description}>{content.description.substring(0, 53) + "..." }</p>
+        <div className={style.slide__content__div}>        
+          <h4 className={style.title}>{content.title}</h4>
+          <Link href="/" style={{textDecoration: 'none'}} className={style['slide__link']}>
+          Contactar
+          </Link>
+          
+        </div>
+        <p className={style.username}>{content.user}</p>
+
+        <p className={style.description}>{content.description.substring(0, 46) + "..." }</p>
       </section>
     </div>
   );

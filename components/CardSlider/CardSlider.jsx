@@ -1,4 +1,5 @@
 // components/CardSlider/CardSlider.jsx
+// This is content of Slide
 "use client";
 
 import React from 'react';
