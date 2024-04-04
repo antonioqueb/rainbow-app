@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react';
 import styles from './page.module.css';
-import Image from 'next/image'; // Asegúrate de usar este componente si es necesario, de lo contrario, puedes quitarlo.
 import Link from 'next/link';
 import  {supabase}  from '../../lib/supabaseClient'; 
 
