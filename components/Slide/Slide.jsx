@@ -29,20 +29,22 @@ const Slide = ({ content }) => {
           src={content.imageUrl}
           alt={content.imageAlt || "Slide image"}
           width={500}
-          height={500} 
+          height={500}
         />
       </div>
       <section className={style.slide__content}>
-        <div className={style.slide__content__div}>        
-          <h4 className={style.title}>{content.title}</h4>
-          <Link href="/" style={{textDecoration: 'none'}} className={style['slide__link']}>
-          Contactar
+        <div className={style.slide__content__div}>
+          <Link href="/" style={{ textDecoration: 'none' }} >
+            <h4 className={style.title}>{content.title}</h4>
           </Link>
-          
+          <Link href="/" style={{ textDecoration: 'none' }} className={style['slide__link']}>
+            Galería
+          </Link>
+
         </div>
         <p className={style.username}>{content.user}</p>
 
-        <p className={style.description}>{content.description.substring(0, 46) + "..." }</p>
+        <p className={style.description}>{content.description.substring(0, 47) + '...'}</p>
       </section>
     </div>
   );

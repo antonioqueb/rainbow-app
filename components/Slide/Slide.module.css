@@ -1,11 +1,7 @@
 .slide {
-  /* Tus estilos existentes */
   min-height: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   background-color: #0d0d0d;
-  
-  
 
 }
 
@@ -15,14 +11,16 @@
   height: 17rem;
   overflow: hidden;
   object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   
   
 }
 
 .category {
   position: absolute;
-  top: 10px; /* Ajusta según necesidades */
-  left: 0.8rem; /* Ajusta según necesidades */
+  top: 10px; 
+  left: 0.8rem;
   color: #ffffff;
   text-shadow: #020000 3px 1px 10px;
   padding: 5px 15px;
@@ -33,10 +31,9 @@
 
 }
 
-
 .slide__content {
   /* Tus estilos existentes */
-  padding: 0.5rem 0.8rem;
+  padding: 0.8rem 0.8rem;
 
 
 
@@ -57,18 +54,25 @@
   border-radius: 20px;
   border: solid 1px #FF0295;
   padding: 0.3rem 0.8rem;
+  transition: background-color 0.2s ease-in-out, color 0.1s ease-in-out;
+}
+.slide__link:hover{
+  background-color: #FF0295;
+
+
 
 }
 
 .title{
-  margin: 10px 0 2px 0;
-  color: #ffffff;
-  font-size: 1.2rem;
+  margin: 5px 0 3px 0;
+  color: #e8c4f2;
+  font-size: 1.1rem;
   font-weight: 500;
+
 }
 
 .username{ 
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 500;
@@ -83,10 +87,11 @@
 .description {
   font-size: 1rem;
   color: #c1c1c1;
-  margin: 0 0 15px 0;
+  margin: 0 0 5px 0;
   font-weight: 100;
+  text-wrap: pretty;
+
 }
-/* Tus media queries y otros estilos */
 .slide__content {
   width: 100%;
 }
@@ -98,15 +103,30 @@
 }
 
 
-@media (max-width: 599px) {
+@media (max-width: 375px) {
   
   /* Estilos que se aplican cuando la pantalla tiene menos de 600px de ancho */
-
+  .slide {
+    min-height: 100%;
+    border-radius: 20px;
+    background-color: #0d0d0d;
+    width: 78%;
+  
+  }
 
 }
 
+@media (min-width: 376px) and (max-width: 435px) {
+  .slide {
+    min-height: 100%;
+    border-radius: 20px;
+    background-color: #0d0d0d;
+    width: 90%;
+  
+  }
 
-/* Tabletas: desde 601px hasta 900px */
+}
+
 @media (min-width: 601px) and (max-width: 900px) {
 
 }

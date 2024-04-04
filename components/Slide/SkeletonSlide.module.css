@@ -2,7 +2,7 @@
 .skeletonWrapper {
     display: flex;
     flex-direction: column;
-    border-radius: 14px;
+    border-radius: 20px;
     background-color: #41414140;
     overflow: hidden;
   }
