@@ -1,8 +1,9 @@
+'use client'
 import { useState } from 'react';
 import styles from './page.module.css';
 import Image from 'next/image'; // Asegúrate de usar este componente si es necesario, de lo contrario, puedes quitarlo.
 import Link from 'next/link';
-import { supabase } from './../../lib/supabaseClient'; // Verifica que la ruta de importación sea correcta.
+import  {supabase}  from '../../lib/supabaseClient'; 
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -14,18 +15,20 @@ export default function Login() {
     e.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
     setLoading(true); // Activar el indicador de carga
 
-    // Intento de inicio de sesión con Supabase
-    const { error } = await supabase.auth.signIn({
-      email,
-      password,
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: email,
+      password: password,
     });
+    
+    
 
     setLoading(false); // Desactivar el indicador de carga
 
     if (error) {
       alert(error.message); // Mostrar mensaje de error
     } else {
-      // Navegación a otra página o actualización del estado global del usuario
+      window.location.href = '/';
+
     }
   };
 
@@ -35,7 +38,7 @@ export default function Login() {
         <h1 className={styles['login-page__heading']}>Iniciar Sesión</h1>
         <form onSubmit={handleSubmit} className={styles['login-page__form']}>
           <div className={styles['form__input-group']}>
-            <label htmlFor="email" className={styles['form__label']}>Usuario</label>
+            <label htmlFor="email" className={styles['form__label']}>Email</label>
             <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className={styles['form__input']} autoComplete="off"/>
           </div>
           <div className={styles['form__input-group']}>
@@ -47,13 +50,13 @@ export default function Login() {
             <label htmlFor="remember" className={styles['form__label']}>Recuérdame</label>
           </div>
           <div className={styles['form__forgot-password']}>
-            <Link href="/forgot-password">¿Olvidaste la contraseña?</Link>
+            <Link style={{textDecoration:"none", color:'white'}} href="/forgot-password">¿Olvidaste la contraseña?</Link>
           </div>
           <button type="submit" disabled={loading} className={styles['form__submit-button']}>
             {loading ? 'Cargando...' : 'Iniciar Sesión'}
           </button>
           <div className={styles['form__signup-link']}>
-            <Link href="/registro">¿No tienes una cuenta? Regístrate</Link>
+            <Link style={{textDecoration:"none", color:'white'}} href="/registro">¿No tienes una cuenta? Regístrate</Link>
           </div>
         </form>
       </div>
