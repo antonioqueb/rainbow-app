@@ -107,20 +107,20 @@
 }
 
 
-@media (max-width: 375px) {
+@media (min-width: 100px) and (max-width: 399px) {
   
   /* Estilos que se aplican cuando la pantalla tiene menos de 600px de ancho */
   .slide {
     min-height: 100%;
     border-radius: 20px;
     background-color: #0d0d0d;
-    width: 78%;
+    width: 80%;
   
   }
 
 }
 
-@media (min-width: 376px) and (max-width: 435px) {
+@media (min-width: 400px) and (max-width: 435px) {
   .slide {
     min-height: 100%;
     border-radius: 20px;
