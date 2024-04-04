@@ -13,7 +13,7 @@ const CardItemArtist = ({ content }) => {
     // Simula la carga de datos
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2); // Ajusta el tiempo según sea necesario
+    }, 1); // Ajusta el tiempo según sea necesario
     return () => clearTimeout(timer);
   }, [content]); // Dependencia para recargar si el contenido cambia
 
@@ -30,11 +30,11 @@ const CardItemArtist = ({ content }) => {
           width={200}
           height={200}
           className={style.imageWrapper__img}
-
-
         />
       </div>
+
       <div className={style.profile}>
+        
         <div className={style.profileImageWrapper}>
           <Image
             className={style.profileImage}
@@ -42,11 +42,9 @@ const CardItemArtist = ({ content }) => {
             width={50}
             height={50}
             alt={content.profileAlt || "Profile image"}
-
-
-
           />
         </div>
+
         <div className={style.profileInfo}>
           <div className={style.profileInfo}>
             <h2 className={style.userName}>{content.user}</h2>
