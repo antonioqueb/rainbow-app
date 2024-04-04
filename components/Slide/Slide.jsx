@@ -34,16 +34,22 @@ const Slide = ({ content }) => {
       </div>
       <section className={style.slide__content}>
         <div className={style.slide__content__div}>
+          <section className={style.slide__content__user_and_name}>
           <Link href="/" style={{ textDecoration: 'none' }} >
             <h4 className={style.title}>{content.title}</h4>
           </Link>
+          <p className={style.username}>{content.user}</p>
+
+
+          </section>
+          
+
           <Link href="/" style={{ textDecoration: 'none' }} className={style['slide__link']}>
             Galería
           </Link>
 
         </div>
-        <p className={style.username}>{content.user}</p>
-
+        
         <p className={style.description}>{content.description.substring(0, 47) + '...'}</p>
       </section>
     </div>

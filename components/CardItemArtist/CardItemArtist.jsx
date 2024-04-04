@@ -21,6 +21,8 @@ const CardItemArtist = ({ content }) => {
     return <SkeletonCardItemArtist />;
   }
 
+  
+
   return (
     <div className={style.slide}>
       <div className={style.imageWrapper}>
@@ -34,7 +36,7 @@ const CardItemArtist = ({ content }) => {
       </div>
 
       <div className={style.profile}>
-        
+
         <div className={style.profileImageWrapper}>
           <Image
             className={style.profileImage}

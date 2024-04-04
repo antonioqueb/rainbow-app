@@ -1,7 +1,6 @@
 import { Roboto } from 'next/font/google';
 import './globals.css'
 import Navbar from '../components/Navbar/Navbar'
-import Footer from '../components/Footer/Footer'
 import Providers from '@/store/provider'
 
 
@@ -17,7 +16,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: 'ARK PROJECT',
-  description: 'Página web de divulgación y compra-venta de arte',
+  description: 'Ark Project emerge como una iniciativa cultural destinada a contrarrestar la discriminación y homofobia prevalente en la sociedad, ofreciendo un refugio seguro y una plataforma de lanzamiento para artistas de la comunidad LGBTQ+ en diversas disciplinas artísticas.',
 }
 
 export default function RootLayout({ children }) {
@@ -32,7 +31,6 @@ export default function RootLayout({ children }) {
        
        {children}
         
-       <Footer/>
         </div>
         <div className="moving-balls">
 			      <div className="ball small-day"></div>

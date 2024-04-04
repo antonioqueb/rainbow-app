@@ -6,10 +6,12 @@ import DynamicTitle from '@/components/DynamicTitle/DynamicTitle'
 
 
 
+
 export default function Home() {
   return (
     
     <main className={styles.main}>
+
         <CardSlider />
         <PrimaryTags />
         <DynamicTitle />

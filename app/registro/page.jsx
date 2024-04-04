@@ -8,14 +8,7 @@ export default function RegistroPage() {
       <div className={styles['login-page__form-section']}>
         <h1 className={styles['login-page__heading']}>¡Registrarme!</h1>
         <form action="#" method="POST" className={styles['login-page__form']}>
-        <div className={styles['form__input-group']}>
-            <label htmlFor="username" className={styles['form__label']}>Nombre Completo</label>
-            <input type="text" id="username" name="username" className={styles['form__input']} autoComplete="off"/>
-          </div>
-          <div className={styles['form__input-group']}>
-            <label htmlFor="username" className={styles['form__label']}>Apellidos</label>
-            <input type="text" id="username" name="username" className={styles['form__input']} autoComplete="off"/>
-          </div>
+        
           <div className={styles['form__input-group']}>
             <label htmlFor="username" className={styles['form__label']}>Correo</label>
             <input type="text" id="username" name="username" className={styles['form__input']} autoComplete="off"/>

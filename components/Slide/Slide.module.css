@@ -44,16 +44,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.8rem;
   
 }
-
+.slide__content__user_and_name{
+  display: flex;
+  flex-direction: column;
+ 
+}
 .slide__link{
   color: white;
   font-size: 1rem;
   font-weight: 500;
   border-radius: 20px;
   border: solid 1px #FF0295;
-  padding: 0.3rem 0.8rem;
+  padding: 0.4rem 0.8rem;
   transition: background-color 0.2s ease-in-out, color 0.1s ease-in-out;
 }
 .slide__link:hover{
@@ -64,15 +69,14 @@
 }
 
 .title{
-  margin: 5px 0 3px 0;
   color: #e8c4f2;
   font-size: 1.1rem;
   font-weight: 500;
+  padding-bottom: 0.3rem;
 
 }
 
 .username{ 
-  margin: 0 0 10px 0;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 500;
