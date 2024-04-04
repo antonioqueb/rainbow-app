@@ -1,3 +1,5 @@
+![image](https://github.com/antonioqueb/rainbow-app/assets/92013606/4a0bb3bd-c1d1-49fe-a2b0-fc664b223b54)
+
 ### Introducción
 
 Ark Project emerge como una iniciativa cultural destinada a contrarrestar la discriminación y homofobia prevalente en la sociedad, ofreciendo un refugio seguro y una plataforma de lanzamiento para artistas de la comunidad LGBTQ+ en diversas disciplinas artísticas. Este informe define la visión, misión, objetivos, público objetivo, estrategias de posicionamiento, competencia y diferenciadores clave de Ark Project. La información recopilada servirá como referencia esencial para el desarrollo y diseño de la plataforma web de Ark Project por parte de Alphaqueb Consulting S.A.S.
