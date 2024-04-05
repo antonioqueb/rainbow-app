@@ -4,6 +4,8 @@ import styles from './page.module.css';
 import Link from 'next/link';
 import  {supabase}  from '../../lib/supabaseClient'; 
 import Image from 'next/image'
+import { Toaster, toast } from 'sonner'
+
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -25,15 +27,16 @@ export default function Login() {
     setLoading(false); // Desactivar el indicador de carga
 
     if (error) {
-      alert(error.message); // Mostrar mensaje de error
+      toast.error(error.message);
     } else {
       window.location.href = '/';
-
     }
+    
   };
 
   return (
     <div className={styles['login-page']}>
+      <Toaster />
       <div className={styles['login-page__start']}>
         <Link href='/' >
         <Image alt='Logo' src='./logo-b.svg' width={250} height={250} />

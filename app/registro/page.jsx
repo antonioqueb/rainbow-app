@@ -4,6 +4,8 @@ import styles from './page.module.css';
 import Image from 'next/image'; // Si no usas este componente, puedes eliminar esta línea.
 import Link from 'next/link';
 import { supabase } from '../../lib/supabaseClient'; // Asegúrate de que la ruta es correcta.
+import { Toaster, toast } from 'sonner';
+
 
 export default function RegistroPage() {
   const [email, setEmail] = useState('');
@@ -15,26 +17,28 @@ export default function RegistroPage() {
     e.preventDefault(); // Prevenir el comportamiento predeterminado del formulario.
 
     if (password !== confirmPassword) {
-      alert('Las contraseñas no coinciden.');
+      toast.error('Las contraseñas no coinciden.');
       return;
     }
-
+    
     const { error } = await supabase.auth.signUp({
       email,
       password,
     });
-
+    
     if (error) {
-      alert(error.message);
+      toast.error(error.message);
     } else {
-      alert('Registro exitoso. Por favor, verifica tu correo electrónico para continuar.');
+      toast.success('Registro exitoso. Por favor, verifica tu email.');
       // Redireccionar a la página de inicio de sesión o donde prefieras.
       window.location.href = '/login';
     }
+    
   };
 
   return (
     <div className={styles['login-page']}>
+     <Toaster />
       <div className={styles['login-page__form-section']}>
         <h1 className={styles['login-page__heading']}>¡Registrarme!</h1>
         <form onSubmit={handleRegister} className={styles['login-page__form']}>
