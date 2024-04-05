@@ -3,7 +3,9 @@ import ContentCardArtist from '@/components/ContentCardArtist/ContentCardArtist'
 import CardSlider from '@/components/CardSlider/CardSlider'
 import PrimaryTags from '@/components/PrimaryTags/PrimaryTags'
 import DynamicTitle from '@/components/DynamicTitle/DynamicTitle'
-import Navbar from '../components/Navbar/Navbar'
+import NavbarComponent from '@/components/Navbar/Navbar'
+import 'tailwindcss/tailwind.css';
+
 
 
 
@@ -11,7 +13,7 @@ import Navbar from '../components/Navbar/Navbar'
 export default function Home() {
   return (
     <>
-    <Navbar/>
+    <NavbarComponent/>
     <main className={styles.main}>
 
         <CardSlider />

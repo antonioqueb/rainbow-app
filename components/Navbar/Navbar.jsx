@@ -7,10 +7,10 @@ import { GrMoreVertical } from 'react-icons/gr';
 import SidebarComponent from '../SidebarComponent/SidebarComponent';
 
 const links = [
-  { href: 'https://docs.google.com/forms/d/e/1FAIpQLSeLBSBXjW1vIp0DMtsT0m7leWSYeZU1TNGvsiZlVPaFDKDkyg/viewform', label: 'Colaborar', key: 'colaborar' },
-  { href: '/contacto', label: 'Contacto', key: 'contacto' },
-  { href: '/blog', label: 'Blog', key: 'blog' },
-  { href: '/nosotros', label: 'Nosotros', key: 'nosotros' },
+  
+  { href: '/explorar', label: 'Explorar', key: 'explorar' },
+  { href: '/tienda', label: 'Tienda', key: 'tienda' },
+  { href: 'https://docs.google.com/forms/d/e/1FAIpQLSeLBSBXjW1vIp0DMtsT0m7leWSYeZU1TNGvsiZlVPaFDKDkyg/viewform', label: 'Colaborar', key: 'colaborar' }
 ];
 
 const NavbarComponent = () => {
@@ -58,6 +58,8 @@ const NavbarComponent = () => {
           </Link>
         </div>
 
+
+
         <div className={styles['navbar__navigation']} >
           {links.map(({ href, label, key }) => (
             <Link href={href} key={key}  style={{ textDecoration: 'none', display: isSidebarOpen ? 'none' : 'flex' }}>
@@ -66,8 +68,18 @@ const NavbarComponent = () => {
           ))}
         </div>
 
+
+
         <div className={styles['navbar__icons']} onClick={toggleSidebar}>
+         <div className={styles['navbar__gamification']}>
+         <Image src='/gamification/gema.png' alt='Gema' width={40} height={40} />
+         <p>136</p>
+
+         </div>
+
+          <Image src='/artist/artist.jpeg' alt='Logo' width={50} height={50} className={styles['navbar__profile']} />
           <GrMoreVertical className={styles['navbar__icon']} />
+
         </div>
       </nav>
       {isSidebarOpen && <SidebarComponent onClose={closeSidebar} />} {/* Renderización condicional del Sidebar */}
