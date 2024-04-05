@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from './page.module.css';
 import Link from 'next/link';
 import  {supabase}  from '../../lib/supabaseClient'; 
+import Image from 'next/image'
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -33,6 +34,15 @@ export default function Login() {
 
   return (
     <div className={styles['login-page']}>
+      <div className={styles['login-page__start']}>
+        <Link href='/' >
+        <Image alt='Logo' src='./logo-b.svg' width={250} height={250} />
+        </Link> 
+        
+      
+        <h1 className={styles['login-page__start__title']}>Impulsa y celebra artistas LGBTQ+ ofreciendo un espacio seguro y oportunidades de crecimiento artístico.</h1>
+      </div>
+      <div className={styles['login-page__end']}>
       <div className={styles['login-page__form-section']}>
         <h1 className={styles['login-page__heading']}>Iniciar Sesión</h1>
         <form onSubmit={handleSubmit} className={styles['login-page__form']}>
@@ -59,6 +69,8 @@ export default function Login() {
           </div>
         </form>
       </div>
+      </div>
+      
     </div>
   );
 }

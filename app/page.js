@@ -3,13 +3,15 @@ import ContentCardArtist from '@/components/ContentCardArtist/ContentCardArtist'
 import CardSlider from '@/components/CardSlider/CardSlider'
 import PrimaryTags from '@/components/PrimaryTags/PrimaryTags'
 import DynamicTitle from '@/components/DynamicTitle/DynamicTitle'
+import Navbar from '../components/Navbar/Navbar'
 
 
 
 
 export default function Home() {
   return (
-    
+    <>
+    <Navbar/>
     <main className={styles.main}>
 
         <CardSlider />
@@ -29,5 +31,6 @@ export default function Home() {
      
     
      </main>
+     </>
   )
 }

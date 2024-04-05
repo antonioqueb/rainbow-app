@@ -1,6 +1,5 @@
 import { Roboto } from 'next/font/google';
 import './globals.css'
-import Navbar from '../components/Navbar/Navbar'
 import Providers from '@/store/provider'
 
 
@@ -27,7 +26,6 @@ export default function RootLayout({ children }) {
       
     <div className="container-layout">
         <div className="glass">
-        <Navbar />
        
        {children}
         
