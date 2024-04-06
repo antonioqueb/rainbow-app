@@ -61,12 +61,17 @@ const NavbarComponent = () => {
 
 
         <div className={styles['navbar__navigation']} >
-          {links.map(({ href, label, key }) => (
+        {links.map(({ href, label, key }) => (
             <Link href={href} key={key}  style={{ textDecoration: 'none', display: isSidebarOpen ? 'none' : 'flex' }}>
               <span className={styles['navbar__item']}>{label}</span>
             </Link>
           ))}
+        
         </div>
+        
+        
+         
+        
 
 
 
@@ -77,7 +82,7 @@ const NavbarComponent = () => {
 
          </div>
 
-          <Image src='/artist/artist.jpeg' alt='Logo' width={50} height={50} className={styles['navbar__profile']} />
+          <Image src='/artist/artist.jpeg' alt='Logo' width={45} height={45} className={styles['navbar__profile']} />
           <GrMoreVertical className={styles['navbar__icon']} />
 
         </div>
