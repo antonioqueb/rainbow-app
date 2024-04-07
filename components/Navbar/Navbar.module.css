@@ -1,7 +1,5 @@
-/* Estilo general de la navbar */
 
-/* Estilos previos... */
-
+/* Contenedor Principal */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -18,124 +16,141 @@
 }
 
 
+
+
+
+
+/* Contenedor 1/3 - - - - - - - - - */
+
+.navbar__logo {
+  align-items: center;
+  display: flex;
+  flex: 0.5;
+  height: 100%;
+ 
+
+
+}
+
+
+
+
+
+
+/* Contenedor 2/3  - - - - - - - - - */
+
 .navbar__navigation {
-  width: calc(100% - 16rem); /* ajusta el ancho para compensar el padding */
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: space-between;
   max-width: 100%;
-  /* Resto de tus estilos... */
-}
-
-.navbar.scrolled {
-  background-color: #0d0d0d50;
-
-}
-
-/* Resto de tus estilos... */
-
-  
-
-/* Secciones de la navbar: Elementos del Bloque navbar */
-.navbar__section--start{
-  flex: 20%;
-  display: flex;
-  align-items: center;
-}
-.navbar__section--end{
-  flex: 20%;
-  display: flex;
-  align-items: center;
-}
-
-.navbar__section--center {
-  flex: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-
-
-.navbar__navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1rem 2.5rem;
-  flex: 1;
   text-decoration: none;
-  
-  
+  width: calc(100% - 16rem); /* ajusta el ancho para compensar el padding */
+
+
 
 }
 
- .navbar__logo {
+.menu{
   display: flex;
-  flex: 0.5;
-  align-items: center;
-
+  justify-content: center;
+}
+.navbar__link{
+  height: 100%;
 }
 
-.navbar__icons {
-  display: flex;
-  justify-content: flex-end;
-  flex: 0.5;
-  transform: translateX(10px);
-  align-items: center;
-
-
-}
-
-.navbar__cta-button {
-  background-color:#FF0295; /* A pleasant blue */
-  color: #26211F;
-  border: none;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  outline: none;
-  font-size: 1rem;
-  padding: 0.8rem 1rem;
-  margin: 0 68px 0 0;
-
-}
-
-.navbar__cta{
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: flex-start;
-  padding: 5px 0;
-  margin: 0 0 0 128px;
-}
-
-
-
-/* Ítems de navegación: Modificador del Elemento navbar__navigation */
 .navbar__item {
-  flex: 1;
-  font-size: 1.3rem;
   color: #F2F2F2;
   cursor: pointer;
-  transition: color 0.3s ease;
-  text-align: center;
-  margin: 0 0 0 3vw;
+  flex: 1;
+  font-size: 1.3rem;
+  height: 100%;
   text-decoration: none; 
+  text-align: center;
+  transition: color 0.3s ease;
+  margin: 0 0 0 1rem;
+
+
 
 }
-
-
 
 
 .navbar__item:hover {
   color: #FF0295#BF9F78;
 }
 
+.search{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 0 1rem;
+  align-items: center;
+}
 
-/* Estilos para los iconos en la navbar */
+.search__input{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 0 1rem;
+  background-color: #303030;
+}
+
+.search__button{
+  padding: 0 1rem;
+  border: solid rgb(78, 78, 78) 1px;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #101010;
+  
+}
+
+
+
+/* Contenedor 3/3 - - - - -  - */
+
+.navbar__icons {
+  align-items: center;
+  display: flex;
+  flex: 0.5;
+  height: 100%;
+  justify-content: flex-end;
+
+}
+
+.navbar__gamification{
+  align-items: center;
+  background-color: #c28bd938;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0.3rem 0.5rem 0.3rem calc(0.5rem - 3px) ;
+}
+.navbar__gamification p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-left: 0.5rem;
+}
+
+.navbar__profile{
+  aspect-ratio: 1.1;
+  border-radius: 50%;
+  margin: 0 calc(2.5rem - 10px) 0 2.5rem; /* Ajuste para  arreglar el translateX de 10 px*/
+}
+
 .navbar__icon {
   color: #F2F2F2;
   cursor: pointer;
   font-size: 1.5rem;
+  height: 100%;
   transition-duration: 0.3s;
+  transform: translateX(10px);
 
 }
 
@@ -144,62 +159,20 @@
   transition-duration: 0.3s;
 }
 
-/* Estilos para los íconos: Elementos del Bloque navbar */
-.navbar__cart, .navbar__login {
-  margin-left: 50px;
-  color: #F2F2F2;
-  flex: 1;
-}
 
 
-.navbar__user {
-  color: #F2F2F2;
-  display: flex;
-  align-items: center;
-
-
-}
-
-
-.navbar__profile{
-  border-radius: 50%;
-  aspect-ratio: 1.1;
-  margin: 0 1.5rem 0 0;
-}
-
-
-.navbar__gamification{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0 2rem;
-}
-.navbar__gamification p {
-  font-size: 1.3rem;
-  font-weight: 400;
-}
 
 
 @media (max-width: 599px) {
   
   .navbar {
-    left: 2rem; /* ajustar según sea necesario */
-    right: 2rem; /* ajustar según sea necesario */
     background: #0d0d0d00; /* Color de fondo con transparencia */
     backdrop-filter: none; /* Efecto esmerilado */
-  }
-  
-  .navbar__section--start, .navbar__section--end {
-    /* Asegúrate de que estos estén definidos y tengan un ancho o flexión adecuados */
-    flex: 1;
+    left: 2rem; /* ajustar según sea necesario */
+    right: 2rem; /* ajustar según sea necesario */
+    
   }
 
- 
-
-  .navbar__navigation, .navbar__section--center {
-    display: none; /* Oculta los elementos del centro en modo móvil */
-  }
 }
 
 
@@ -211,9 +184,6 @@
       font-size: 1rem;
     }
     
-    .navbar__section--center{
-      display: none;
-    }
     .navbar__navigation{
       display: none;
     }
