@@ -10,7 +10,7 @@ import slidesData from '../../data/slides.json';
 
 const ContentCardArtist = () => {
   const { currentSlide, next, prev } = useSlider(slidesData.length);
-  const slidesToShow = 15;
+  const slidesToShow = 12;
 
   // Calcular los índices de las tarjetas a mostrar
   const slidesToRender = slidesData.slice(currentSlide, currentSlide + slidesToShow).concat(

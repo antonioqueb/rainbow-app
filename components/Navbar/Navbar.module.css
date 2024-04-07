@@ -87,7 +87,7 @@
   flex-direction: row;
   width: 100%;
   height: 100%;
-  margin: 0 1rem;
+  margin: 0 2rem;
   align-items: center;
 }
 
@@ -97,16 +97,18 @@
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 0 1rem;
-  background-color: #303030;
+  background-color: #30303064;
+  border: solid 1px rgba(255, 255, 255, 0.137);
 }
 
 .search__button{
   padding: 0 1rem;
-  border: solid rgb(78, 78, 78) 1px;
   height: 100%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #101010;
+  border: solid 1px rgba(255, 255, 255, 0.137);
+
   
 }
 

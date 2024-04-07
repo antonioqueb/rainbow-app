@@ -59,7 +59,7 @@ const NavbarComponent = () => {
 
         <div className={styles['navbar__logo']}>
           <Link href='/'>
-            <Image src='/logo-b.svg' alt='Logo Ark Project' width={75} height={75} />
+            <Image src='/logo-b.svg' alt='Logo Ark Project' width={95} height={95} />
           </Link>
         </div>
 

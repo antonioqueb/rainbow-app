@@ -50,7 +50,6 @@ const Slide = ({ content }) => {
 
         </div>
         
-        <p className={style.description}>{content.description.substring(0, 47) + '...'}</p>
       </section>
     </div>
   );

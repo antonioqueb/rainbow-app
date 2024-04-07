@@ -8,7 +8,8 @@
     "profileUrl": "/artist/artist.jpeg",
     "user": "@alexmar",
     "likes": "235",
-    "views": "250"
+    "views": "250",
+    "ImageTitle": "Pintura Vibrante"
   },
   {
     "id": "2",
@@ -19,7 +20,8 @@
     "profileUrl": "/artist/artist.jpeg",
     "user": "@sofabs",
     "likes": "754",
-    "views": "875"
+    "views": "875",
+    "ImageTitle": "Escultura Abstracta"
   },
   {
     "id": "3",
@@ -30,7 +32,8 @@
     "profileUrl": "/artist/artist.jpeg",
     "user": "@lugomez",
     "likes": "687",
-    "views": "965"
+    "views": "965",
+    "ImageTitle": "Música Multigénero"
   },
   {
     "id": "4",
@@ -41,9 +44,9 @@
     "profileUrl": "/artist/artist.jpeg",
     "user": "@camilike",
     "likes": "654",
-    "views": "978"
+    "views": "978",
+    "ImageTitle": "Fotografía de la Diversidad"
   },
- 
   {
     "id": "5",
     "title": "Gabriela Hernández",
@@ -53,7 +56,8 @@
     "profileUrl": "/artist/artist.jpeg",
     "user": "@ghernandez",
     "likes": "245",
-    "views": "475"
+    "views": "475",
+    "ImageTitle": "Novela LGBTQ+"
   },
   {
     "id": "6",
@@ -64,7 +68,8 @@
     "profileUrl": "/artist/artist.jpeg",
     "user": "@isalove",
     "likes": "356",
-    "views": "695"
+    "views": "695",
+    "ImageTitle": "Moda Rompedora"
   },
   {
     "id": "7",
@@ -75,9 +80,9 @@
     "profileUrl": "/artist/artist.jpeg",
     "user": "@carlang",
     "likes": "412",
-    "views": "546"
+    "views": "546",
+    "ImageTitle": "Cine LGBTQ+"
   },
-  
   {
     "id": "8",
     "title": "Diego Sánchez",
@@ -87,6 +92,7 @@
     "profileUrl": "/artist/artist.jpeg",
     "user": "@diegfull",
     "likes": "699",
-    "views": "875"
+    "views": "875",
+    "ImageTitle": "Actuación Drag Única"
   }
 ]
