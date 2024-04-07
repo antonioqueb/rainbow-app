@@ -175,6 +175,21 @@
     
   }
 
+  .menu {
+    display: none;
+  }
+  .navbar__profile{
+    display: none;
+  }
+
+  .navbar__gamification{
+    display: none;
+  }
+
+  .search{
+    display: none;
+  }
+
 }
 
 
