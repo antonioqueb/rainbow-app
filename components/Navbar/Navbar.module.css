@@ -97,7 +97,7 @@
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 0 1rem;
-  background-color: #30303064;
+  background-color: #c28bd92b;
   border: solid 1px rgba(255, 255, 255, 0.137);
   font-size: 1rem;
 
@@ -131,7 +131,7 @@
 
 .navbar__gamification{
   align-items: center;
-  background-color: #c28bd938;
+  background-color: #c28bd92b;
   border-radius: 20px;
   display: flex;
   flex-direction: row;

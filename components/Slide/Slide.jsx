@@ -33,7 +33,16 @@ const Slide = ({ content }) => {
         />
       </div>
       <section className={style.slide__content}>
+     
         <div className={style.slide__content__div}>
+        <div className={style.slide__content__div__profile}>
+        <Image
+                className={style.profileImage}
+                src={content.profileUrl}
+                width={50}
+                height={50}
+                alt={content.profileAlt || "Profile image"}
+              />
           <section className={style.slide__content__user_and_name}>
           <Link href="/" style={{ textDecoration: 'none' }} >
             <h4 className={style.title}>{content.title}</h4>
@@ -42,6 +51,7 @@ const Slide = ({ content }) => {
 
 
           </section>
+          </div>
           
 
           <Link href="/" style={{ textDecoration: 'none' }} className={style['slide__link']}>

@@ -34,10 +34,25 @@
 .slide__content {
   /* Tus estilos existentes */
   padding: 0.8rem 0.8rem;
-
+  flex-direction: row;
 
 
   
+}
+
+
+.slide__content__div__profile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 10px 10px;
+  aspect-ratio: 1.1;
 }
 
 .slide__content__div{
@@ -57,13 +72,14 @@
   font-size: 1rem;
   font-weight: 500;
   border-radius: 20px;
-  border: solid 1px #FF0295;
+  border: solid 1px #ff0296;
   padding: 0.5rem 1.5rem;
   transition: background-color 0.2s ease-in-out, color 0.1s ease-in-out;
-
+  background-color: #c28bd90e;
 }
 .slide__link:hover{
   background-color: #FF0295;
+  border: solid 1px #c28bd92b;
 
 
 

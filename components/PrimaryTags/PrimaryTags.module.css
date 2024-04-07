@@ -17,7 +17,7 @@
 
 /* Estilos para cada etiqueta */
 .tag {
-    width: 250px; 
+    width: 230px; 
     padding: 1.5rem 1rem; /* Ajusta el valor del segundo parámetro según sea necesario */
     box-sizing: border-box;
     border-radius: 20px;
@@ -25,7 +25,6 @@
     font-size: 1rem;
     font-weight: 400;
     background-color:  transparent;
-    border: solid 1px #FF0295;
     color: #FAEBFf;
     display: flex;
     align-items: center;
@@ -33,6 +32,7 @@
     max-width: 25rem;
     max-height: 50px;
     transition: all 0.15s ease;
+    background-color: #c28bd92b;
  
 
 }
