@@ -1,7 +1,7 @@
 .cardGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta el ancho mínimo de la columna */
-    grid-gap: 0.7rem; /* Espacio entre los elementos de la grilla */
+    grid-gap: 1rem; /* Espacio entre los elementos de la grilla */
     /*background: linear-gradient(to right, #2b506a82, #ff88ba70); */
     /* Otros estilos que necesites */
     
