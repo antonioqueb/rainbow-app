@@ -18,7 +18,6 @@ export default function Home() {
 
         <CardSlider />
         <PrimaryTags />
-        <DynamicTitle />
         <ContentCardArtist />
 
 

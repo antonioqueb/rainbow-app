@@ -46,7 +46,7 @@
   height: 100%;
   justify-content: space-between;
   max-width: 100%;
-  padding: 1rem 2.5rem;
+  padding: 1rem 0;
   text-decoration: none;
   width: calc(100% - 16rem); /* ajusta el ancho para compensar el padding */
 
@@ -71,7 +71,7 @@
   text-decoration: none; 
   text-align: center;
   transition: color 0.3s ease;
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 2rem;
 
 
 
