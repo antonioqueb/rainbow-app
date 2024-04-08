@@ -10,7 +10,7 @@ export const CardProfile = () => {
     <section className={styles['CardProfile']}>
         <header className={styles['CardProfile__CardProfile__header']} >
           <div className={styles['CardProfile__CardProfile__header__img']} >
-            <Image src='/artist/artist.jpeg' alt='perfil' width={100} height={100}  className={styles['CardProfile__CardProfile__header__img__Image']}/>
+            <Image src='/artist/artist.jpeg' alt='perfil' width={180} height={180}  className={styles['CardProfile__CardProfile__header__img__Image']}/>
            
             <div className={styles['CardProfile__CardProfile__header__title']} >
             <h5>Alex Martínez</h5>

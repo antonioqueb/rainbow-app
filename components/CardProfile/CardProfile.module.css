@@ -84,6 +84,7 @@
   background-size: 600% 600%; /* Ajusta el tamaño del fondo */
   margin: 1rem 0;
   animation: rotateColors 16s reverse infinite;
+  aspect-ratio: 1.1;
 }
 
 .CardProfile__CardProfile__header__title{
