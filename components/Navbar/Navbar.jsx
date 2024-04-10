@@ -102,7 +102,7 @@ const NavbarComponent = () => {
 
 
 
-        <div className={styles['navbar__icons']} onClick={toggleSidebar}>
+        <div className={styles['navbar__icons']} >
 
 
 
@@ -113,7 +113,8 @@ const NavbarComponent = () => {
           </div>
 
           <Image src='/artist/artist.jpeg' alt='Logo' width={60} height={60} className={styles['navbar__profile']} />
-          <GrMoreVertical className={styles['navbar__icon']} />
+          
+          <GrMoreVertical className={styles['navbar__icon']} onClick={toggleSidebar}/>
 
         </div>
 
