@@ -5,6 +5,10 @@ import Image from 'next/image';
 import styles from './Navbar.module.css';
 import { GrMoreVertical } from 'react-icons/gr';
 import SidebarComponent from '../SidebarComponent/SidebarComponent';
+import ButtonPro from '../ButtonPro/ButtonPro';
+import { CgSearch } from "react-icons/cg";
+
+
 
 const links = [
   
@@ -85,7 +89,7 @@ const NavbarComponent = () => {
           <section className={styles['search']}>
             <input type="text" placeholder="Buscar..." className={styles['search__input']} />
             <button className={styles['search__button']} onClick={handleSearch}>
-              Buscar
+            <CgSearch className={styles['navbar__icon__search']}/>
             </button>
           </section>
 
@@ -104,7 +108,9 @@ const NavbarComponent = () => {
 
         <div className={styles['navbar__icons']} >
 
-
+        <div className={styles['navbar__pro']}>
+          <ButtonPro/>
+          </div>
 
           <div className={styles['navbar__gamification']}>
             <Image src='/gamification/gema.png' alt='Gema' width={35} height={35} />

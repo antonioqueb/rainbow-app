@@ -104,7 +104,7 @@
 }
 
 .search__button{
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   height: 100%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -116,6 +116,15 @@
   
 }
 
+.navbar__icon__search{
+  color: #F2F2F2;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 100%;
+  transition-duration: 0.3s;
+ 
+
+}
 
 
 /* Contenedor 3/3 - - - - -  - */
@@ -136,11 +145,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 0.3rem 0.5rem 0.3rem calc(0.5rem - 3px) ;
+  padding: 0.28rem 0.5rem 0.28rem calc(0.5rem - 3px) ;
 }
 .navbar__gamification p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: bold;
   padding-left: 1rem;
   padding-right: 0.3rem;
 }
@@ -195,6 +204,10 @@
     display: none;
   }
 
+  .navbar__pro{
+    display: none;
+  }
+
 }
 
 
@@ -204,6 +217,24 @@
 
     .navbar__item {
       font-size: 1rem;
+    }
+    .menu {
+      display: none;
+    }
+
+    .navbar__icons {
+      align-items: center;
+      display: flex;
+      flex: 0.5;
+      height: 100%;
+      justify-content: flex-end;
+      flex: 1;
+    
+    }
+
+    .navbar__navigation{
+      flex:1;
+
     }
    
 

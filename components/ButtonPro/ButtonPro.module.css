@@ -1,0 +1,45 @@
+/* ButtonPro.module.css */
+.button {
+  width: fit-content;
+  display: flex;
+  padding: 0.6rem 0.7rem;
+  align-items: center;
+  gap: 0.6rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 80%);
+  background: linear-gradient(
+      15deg,
+      #C18BD9, /* Morado */
+      #F2529D, /* Rosa claro */
+      #EAF205, /* Amarillo */
+      #FF0295, /* Rosa fuerte */
+      #6971E4  /* Azul principal */
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+  margin: 0 2rem;
+  white-space: nowrap;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+}
+
+.button:hover {
+  background-size: 320%;
+  background-position: right center;
+}
+
+.button:hover svg {
+  fill: #fff;
+}
+
+.button svg {
+  width: 23px;
+  fill: #EAF205; /* Amarillo para el ícono */
+  transition: 0.3s ease;
+}

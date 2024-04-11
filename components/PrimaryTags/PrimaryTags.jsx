@@ -50,6 +50,8 @@ const PrimaryTags = () => {
                     <p className={style.tagText}>
                     {tag}
                     </p>
+
+                    
                 </button>
             ))}
         </div>
