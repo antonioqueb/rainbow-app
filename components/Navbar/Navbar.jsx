@@ -117,9 +117,9 @@ const NavbarComponent = () => {
             <p>1136</p>
 
           </div>
-
+          <Link href='./perfil'>
           <Image src='/artist/artist.jpeg' alt='Logo' width={60} height={60} className={styles['navbar__profile']} />
-          
+          </Link>
           <GrMoreVertical className={styles['navbar__icon']} onClick={toggleSidebar}/>
 
         </div>

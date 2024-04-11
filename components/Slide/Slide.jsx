@@ -54,7 +54,7 @@ const Slide = ({ content }) => {
           </div>
           
 
-          <Link href="/" style={{ textDecoration: 'none' }} className={style['slide__link']}>
+          <Link href="/perfil" style={{ textDecoration: 'none' }} className={style['slide__link']}>
             Galería
           </Link>
 
