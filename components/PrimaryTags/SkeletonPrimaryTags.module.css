@@ -4,18 +4,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1vh 0 0 0;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    gap: 1vh;
+
     
   }
   
   .skeletonTag {
     background-color: #2e2e2e40; /* Color de fondo del esqueleto */
     width: 250px; 
-    padding: 2rem 1rem; /* Ajusta el valor del segundo parámetro según sea necesario */
+    padding: 1.5rem 1rem; /* Ajusta el valor del segundo parámetro según sea necesario */
     box-sizing: border-box;
     border-radius: 20px;
     /* Resto de tus estilos... */
@@ -27,11 +26,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3.5rem 0 0 0;
+    margin: 1rem 0;
     max-width: 25vh;
     max-height: 50px;
     transition: all 0.3s ease-in;
     animation: loading 1.8s infinite;
+
   }
   
   .skeletonTagIcon {
