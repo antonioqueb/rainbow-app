@@ -104,6 +104,13 @@
 
 }
 
+.search__input::placeholder {
+  /* Cambia el color del texto del placeholder */
+  color: #ffffff; /* Puedes cambiar este color al que prefieras */
+  opacity: 0.45; /* Asegura que el color sea completamente opaco */
+}
+
+
 .search__input:focus {
   /* Cambia el color del borde cuando el input está enfocado */
   outline: none;  /* Elimina el contorno predeterminado */
