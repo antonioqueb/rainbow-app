@@ -1,12 +1,12 @@
-const cargarUsuarios = (username) => {
-    return fetch(`http://localhost:3000/api/usuarios?username=${encodeURIComponent(username)}`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Usuario no encontrado');
-            }
-            return response.json();
-        });
-}
+// const cargarUsuarios = (username) => {
+//     return fetch(`https://arktoart.es/api/usuarios?username=${encodeURIComponent(username)}`)
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error('Usuario no encontrado');
+//             }
+//             return response.json();
+//         });
+// }
 
 
 async function page({ params }) {
@@ -16,7 +16,7 @@ async function page({ params }) {
         return (
             <>
                 {/* Aquí puedes utilizar los datos obtenidos, como por ejemplo: */}
-                <div>Hola soy {datos.user.username}
+                {/* <div>Hola soy {datos.user.username} */}
 
                 </div>
 
