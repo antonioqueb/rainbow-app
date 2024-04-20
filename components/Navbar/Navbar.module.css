@@ -100,7 +100,14 @@
   background-color: #c28bd92b;
   border: solid 1px rgba(255, 255, 255, 0.137);
   font-size: 1rem;
+  transition: border-color 0.3s ease;
 
+}
+
+.search__input:focus {
+  /* Cambia el color del borde cuando el input está enfocado */
+  outline: none;  /* Elimina el contorno predeterminado */
+  border-color: #d7d7d748; /* Cambia este color al deseado */
 }
 
 .search__button{
