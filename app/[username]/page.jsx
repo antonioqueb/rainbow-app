@@ -15,8 +15,8 @@ async function page({ params }) {
         const datos = await cargarUsuarios(username);
         return (
             <>
-                {/* Aquí puedes utilizar los datos obtenidos, como por ejemplo: */}
-                {/* <div>Hola soy {datos.user.username} */}
+                {/* Aquí puedes utilizar los datos obtenidos, como por ejemplo: {datos.user.username} */}
+                <div>Hola soy 
 
                 </div>
 
